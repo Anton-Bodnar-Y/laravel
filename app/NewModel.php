@@ -15,7 +15,7 @@ class NewModel extends Model
 							->skip($start)->take($limit)
 							->get();
 		
-		//dump($news);
+		dump($news);
 		
 		return $news;
 		

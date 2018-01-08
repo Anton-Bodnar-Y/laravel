@@ -15,7 +15,7 @@ class ForumModel extends Model
 							->skip($start)->take($limit)
 							->get();
 		
-		//dump($forums);
+		dump($forums);
 		
 		return $forums;
 		
