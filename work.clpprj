@@ -5,6 +5,8 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php"/>
+		<file name="E:\OSPanel\domains\work\app\ForumModel.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php">
@@ -4742,15 +4744,17 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\Authenticate.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\PasswordController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1515194837"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1515426958"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Controller.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\routes.php" crc="1515194763"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Kernel.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Exceptions\Handler.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Events\Event.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\app\Console\Commands\Inspire.php" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\app\Console\Commands\Inspire.php" crc="1515353225"/>
 		<file name="E:\OSPanel\domains\work\app\Console\Kernel.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\User.php" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1515427257"/>
+		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515427253"/>
 		<file name="E:\OSPanel\domains\work\server.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1515182400"/>
