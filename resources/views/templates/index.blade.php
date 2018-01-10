@@ -10,7 +10,7 @@
 @section('header')
 	<div id="header">
 		<a href="{{ route('home') }}" >Главная</a>
-		<a href="" >Новости</a>
+		<a href="{{ route('news') }}" >Новости</a>
 		<a href="" >Форумы</a>
 		<a href="" >Магазин</a>
 	</div>
@@ -18,24 +18,27 @@
 
 
 
-@section('left_menu')
-	<div id="left_menu">
-		<ul>
-			<li><a href="" >Категория 1</a></li>
-			<li><a href="" >Категория 2</a></li>
-			<li><a href="" >Категория 3</a></li>
-			<li><a href="" >Категория 4</a></li>
-		</ul>
-	</div>
-@show
 
-<div id="forum">
-	@yield('forum')
-</div>
 
-<div id="content">
-	@yield('content')
-</div>
+
+
+
+
+
+
+
+
+
+
+@yield('content')
+
+
+
+
+
+
+
+
 
 
 @section('footer')
@@ -93,18 +96,18 @@
 	border: 1px solid #555;
 	box-sizing: border-box;
 }
-#forum{
+#home_forum{
 	position: relative;
 	float: left;
-	width: 40%;
+	width: 50%;
 	height: 300px;
 	border: 1px solid #555;
 	box-sizing: border-box;
 }
-#content{
+#home_news{
 	position: relative;
 	float: left;
-	width: 40%;
+	width: 50%;
 	height: 300px;
 	border: 1px solid #555;
 	box-sizing: border-box;
@@ -117,6 +120,25 @@
 	border: 1px solid #555;
 	box-sizing: border-box;
 }
+
+
+
+
+
+/**
+* NEWS PAGES
+*/
+#news{
+	position: relative;
+	float: left;
+	width: 70%;
+	height: 300px;
+	border: 1px solid #555;
+	box-sizing: border-box;
+}
+
+
+
 </style>
 
 

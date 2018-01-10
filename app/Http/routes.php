@@ -23,6 +23,7 @@ DB::listen(function($query) {
 
 
 Route::get('/', ['uses'=>'HomeController@getIndex', 'as'=>'home']);
+Route::get('/news', ['uses'=>'NewsController@getIndex', 'as'=>'news']);
 
 Route::get('/newsua', ['uses'=>'NewsUaController@getIndex', 'as'=>'newsua']);
 Route::get('/newsworld', ['uses'=>'NewsWorldController@getIndex', 'as'=>'newsworld']);

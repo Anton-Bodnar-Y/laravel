@@ -10,29 +10,30 @@
 
 
 
-@section('left_menu')
-	@parent
-@endsection
-
-
-
-@section('forum')
-
-	@foreach($forums as $forum)
-		<p>{{ $forum['forum_title'] }}</p>
-	@endforeach
-
-@endsection
 
 
 
 
 @section('content')
-
-	@foreach($news as $new)
-		<p>{{ $new['title'] }}</p>
-	@endforeach
-
+	<div id="wrap">
+		
+		
+		
+		
+		<div id="home_news">
+			<p>Новости:</p>
+			@foreach($news as $new)
+				<p>{{ $new['title'] }}</p>
+			@endforeach
+		</div>
+		<div id="home_forum">
+			<p>Форумы:</p>
+			@foreach($forums as $forum)
+				<p>{{ $forum['forum_title'] }}</p>
+			@endforeach
+		</div>
+		
+	</div>
 @endsection
 
 
