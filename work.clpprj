@@ -7,6 +7,9 @@
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
 		<file name="E:\OSPanel\domains\work\app\NewModel.php"/>
 		<file name="E:\OSPanel\domains\work\app\ForumModel.php"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_204620_greate_news_table.php"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_184529_create_newscontect_table.php"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_192313_add_category_to_news_table.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php">
@@ -4671,13 +4674,13 @@
 		<file name="E:\OSPanel\domains\work\vendor\doctrine\inflector\lib\Doctrine\Common\Inflector\Inflector.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\dnoegel\php-xdg-base-dir\tests\XdgTest.php" crc="1515182491"/>
 		<file name="E:\OSPanel\domains\work\vendor\dnoegel\php-xdg-base-dir\src\Xdg.php" crc="1515182491"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\ClassLoader.php" crc="1515189625"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_static.php" crc="1515189625"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_real.php" crc="1515189625"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_psr4.php" crc="1515189625"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_namespaces.php" crc="1515189625"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_files.php" crc="1515189625"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_classmap.php" crc="1515189625"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\ClassLoader.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_static.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_real.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_psr4.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_namespaces.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_files.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_classmap.php" crc="1515525798"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\Parser\StrictTypesVisitor.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\Parser\NodeTraverser.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\Parser\FileVisitor.php" crc="1515182502"/>
@@ -4693,7 +4696,7 @@
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\ClassNode.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\ClassLoader.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\ClassList.php" crc="1515182502"/>
-		<file name="E:\OSPanel\domains\work\vendor\autoload.php" crc="1515189625"/>
+		<file name="E:\OSPanel\domains\work\vendor\autoload.php" crc="1515525798"/>
 		<file name="E:\OSPanel\domains\work\tests\TestCase.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\tests\ExampleTest.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1515195603"/>
@@ -4712,6 +4715,8 @@
 		<file name="E:\OSPanel\domains\work\public\index.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\public\.htaccess" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\database\seeds\DatabaseSeeder.php" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_192313_add_category_to_news_table.php" crc="1515525941"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_184529_create_newscontect_table.php" crc="1515523918"/>
 		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_220019_greate_forum_table.php" crc="1515189707"/>
 		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_204620_greate_news_table.php" crc="1515185405"/>
 		<file name="E:\OSPanel\domains\work\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1515182400"/>

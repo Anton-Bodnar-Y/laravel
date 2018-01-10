@@ -12,7 +12,7 @@
 		<a href="{{ route('home') }}" >Главная</a>
 		<a href="" >Новости</a>
 		<a href="" >Форумы</a>
-		<a href="" >Сообщество</a>
+		<a href="" >Магазин</a>
 	</div>
 @show
 
