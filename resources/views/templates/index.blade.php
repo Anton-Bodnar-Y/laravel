@@ -11,8 +11,8 @@
 	<div id="header">
 		<a href="{{ route('home') }}" >Главная</a>
 		<a href="{{ route('news') }}" >Новости</a>
-		<a href="" >Форумы</a>
-		<a href="" >Магазин</a>
+		<a href="{{ route('forums') }}" >Форумы</a>
+		<a href="{{ route('shop') }}" >Магазин</a>
 	</div>
 @show
 
@@ -43,10 +43,11 @@
 
 @section('footer')
 	<div id="footer">
-		<a href="" >страница 1</a>
-		<a href="" >страница 2</a>
-		<a href="" >страница 3</a>
-		<a href="" >страница 4</a>
+		
+		@foreach($pages as $page)
+			<a href="/public/page/{{ $page['id'] }}">{{ $page['title'] }}</a>
+		@endforeach
+		
 	</div>
 @show
 
@@ -100,7 +101,7 @@
 	position: relative;
 	float: left;
 	width: 50%;
-	height: 300px;
+	height: auto;
 	border: 1px solid #555;
 	box-sizing: border-box;
 }
@@ -108,9 +109,15 @@
 	position: relative;
 	float: left;
 	width: 50%;
-	height: 300px;
+	height: auto;
 	border: 1px solid #555;
 	box-sizing: border-box;
+}
+#home_news .new .new_cont a img {
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin: 10px;
 }
 #footer{
 	position: relative;
@@ -132,11 +139,62 @@
 	position: relative;
 	float: left;
 	width: 70%;
-	height: 300px;
+	height: auto;
 	border: 1px solid #555;
 	box-sizing: border-box;
 }
+#news .new .new_cont a img {
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin: 10px;
+}
 
+
+/**
+* /LEFT MENU
+*/
+#left_menu ul {
+	list-style-type: none;
+}
+
+
+
+/**
+* /PAGE
+*/
+#wrap #page{
+	height: 500px;
+}
+#wrap #page img{
+	height: 200px;
+	width: 200px;
+}
+
+
+
+/**
+* pagination
+*/
+.pagination {
+	list-style-type: none;
+}
+.pagination li {
+	float: left;
+	border: 1px solid #000;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	
+}
+.pagination li a, span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 30px;
+}
 
 
 </style>

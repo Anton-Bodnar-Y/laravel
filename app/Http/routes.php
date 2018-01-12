@@ -24,8 +24,12 @@ DB::listen(function($query) {
 
 Route::get('/', ['uses'=>'HomeController@getIndex', 'as'=>'home']);
 Route::get('/news', ['uses'=>'NewsController@getIndex', 'as'=>'news']);
+Route::get('/forums', ['uses'=>'ForumsController@getIndex', 'as'=>'forums']);
+Route::get('/shop', ['uses'=>'shop\HomeController@getIndex', 'as'=>'shop']);
 
-Route::get('/newsua', ['uses'=>'NewsUaController@getIndex', 'as'=>'newsua']);
-Route::get('/newsworld', ['uses'=>'NewsWorldController@getIndex', 'as'=>'newsworld']);
-Route::get('/community', ['uses'=>'CommunityController@getIndex', 'as'=>'community']);
+
+
+Route::get('/page/{id?}', ['uses'=>'PagesController@getIndex', 'as'=>'page']);
+
+
 Route::get('/admin', ['uses'=>'admin\HomeAdminController@getIndex', 'as'=>'admin']);

@@ -15,6 +15,7 @@ use DB;
 
 use App\NewModel;
 use App\ForumModel;
+use App\PagesModel;
 
 
 class HomeController extends Controller
@@ -26,18 +27,26 @@ class HomeController extends Controller
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNews(0, 4);
+			$news = $NewModel->lastNews(0, 3);
 			/*
 			* get last forums for homePage
 			**/
 			$ForumModel = new ForumModel;
 			$forums = $ForumModel->getForums(0, 3);
+			
+			/*
+			* get pagesInfo
+			**/
+			$PagesModel = new PagesModel;
+			$pages = $PagesModel->getPages();
+			
 			/*
 			* call view
 			**/
 			$view = view('home', [
 									'news' => $news, 
-									'forums' => $forums
+									'forums' => $forums,
+									'pages' => $pages,
 								])->withTitle('Главная')
 								->withDescription('Главная Description')
 								->render();

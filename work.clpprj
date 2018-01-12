@@ -2,14 +2,8 @@
 <project name="E:\OSPanel\domains\work\work.clpprj">
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work/]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
 		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
-		<file name="E:\OSPanel\domains\work\app\NewModel.php"/>
-		<file name="E:\OSPanel\domains\work\app\ForumModel.php"/>
-		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_204620_greate_news_table.php"/>
-		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_184529_create_newscontect_table.php"/>
-		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_192313_add_category_to_news_table.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php">
@@ -4674,13 +4668,13 @@
 		<file name="E:\OSPanel\domains\work\vendor\doctrine\inflector\lib\Doctrine\Common\Inflector\Inflector.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\dnoegel\php-xdg-base-dir\tests\XdgTest.php" crc="1515182491"/>
 		<file name="E:\OSPanel\domains\work\vendor\dnoegel\php-xdg-base-dir\src\Xdg.php" crc="1515182491"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\ClassLoader.php" crc="1515525798"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_static.php" crc="1515525798"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_real.php" crc="1515525798"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_psr4.php" crc="1515525798"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_namespaces.php" crc="1515525798"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_files.php" crc="1515525798"/>
-		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_classmap.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\ClassLoader.php" crc="1515699037"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_static.php" crc="1515699037"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_real.php" crc="1515699037"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_psr4.php" crc="1515699037"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_namespaces.php" crc="1515699037"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_files.php" crc="1515699037"/>
+		<file name="E:\OSPanel\domains\work\vendor\composer\autoload_classmap.php" crc="1515699037"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\Parser\StrictTypesVisitor.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\Parser\NodeTraverser.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\Parser\FileVisitor.php" crc="1515182502"/>
@@ -4696,16 +4690,18 @@
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\ClassNode.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\ClassLoader.php" crc="1515182502"/>
 		<file name="E:\OSPanel\domains\work\vendor\classpreloader\classpreloader\src\ClassList.php" crc="1515182502"/>
-		<file name="E:\OSPanel\domains\work\vendor\autoload.php" crc="1515525798"/>
+		<file name="E:\OSPanel\domains\work\vendor\autoload.php" crc="1515699037"/>
 		<file name="E:\OSPanel\domains\work\tests\TestCase.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\tests\ExampleTest.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1515195603"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1515195326"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1515696586"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1515704809"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1006a409423ab3949cc4fdb55f4f69e4d4f730e1.php" crc="1515182669"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1515195323"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1515697175"/>
+		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1515704806"/>
 		<file name="E:\OSPanel\domains\work\resources\views\errors\503.blade.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php" crc="1515195600"/>
+		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1515697173"/>
+		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php" crc="1515696584"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\validation.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\passwords.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\pagination.php" crc="1515182400"/>
@@ -4714,11 +4710,14 @@
 		<file name="E:\OSPanel\domains\work\public\robots.txt" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\public\index.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\public\.htaccess" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\database\seeds\NewsTableSeeder.php" crc="1515610153"/>
+		<file name="E:\OSPanel\domains\work\database\seeds\NewscontentTableSeeder.php" crc="1515610523"/>
+		<file name="E:\OSPanel\domains\work\database\seeds\ForumTableSeeder.php" crc="1515610683"/>
 		<file name="E:\OSPanel\domains\work\database\seeds\DatabaseSeeder.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_192313_add_category_to_news_table.php" crc="1515525941"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_11_193029_create_page_table.php" crc="1515699165"/>
 		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_09_184529_create_newscontect_table.php" crc="1515523918"/>
-		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_220019_greate_forum_table.php" crc="1515189707"/>
-		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_204620_greate_news_table.php" crc="1515185405"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_220019_create_forum_table.php" crc="1515608698"/>
+		<file name="E:\OSPanel\domains\work\database\migrations\2018_01_05_204620_create_news_table.php" crc="1515608692"/>
 		<file name="E:\OSPanel\domains\work\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\database\migrations\2014_10_12_000000_create_users_table.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\database\factories\ModelFactory.php" crc="1515182400"/>
@@ -4747,19 +4746,23 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\RedirectIfAuthenticated.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\EncryptCookies.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\Authenticate.php" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\shop\HomeController.php" crc="1515698656"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\PasswordController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1515426958"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php" crc="1515704573"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1515618176"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1515618611"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\ForumsController.php" crc="1515698257"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Controller.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\app\Http\routes.php" crc="1515194763"/>
+		<file name="E:\OSPanel\domains\work\app\Http\routes.php" crc="1515704708"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Kernel.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Exceptions\Handler.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Events\Event.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Console\Commands\Inspire.php" crc="1515353225"/>
 		<file name="E:\OSPanel\domains\work\app\Console\Kernel.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\User.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1515427257"/>
-		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515427253"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1515698017"/>
+		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515697997"/>
 		<file name="E:\OSPanel\domains\work\server.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1515182400"/>

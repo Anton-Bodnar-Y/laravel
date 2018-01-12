@@ -29,10 +29,23 @@
 		
 		
 		<div id="news">
-			<p>Новости:</p>
+			<div class="new">
 			@foreach($news as $new)
-				<p>{{ $new['title'] }}</p>
+				<div class="new_cont"><a href=""><img src="/resources/views/img/{{ $new['img'] }}" alt="" /><a/></div>
+				<div class="new_cont"><a href="">{{ $new['title'] }}<a/></div>
+				<div class="new_cont">{{ $new['short_desc'] }}</div>
+				<div class="new_cont">категория: <a href="">{{ $new['category'] }}</a></div>
+				
+				<div class="new_cont">{{ date('l dS \o\f F Y h:i:s A', 1515696093) }}</div>
+				<div style="clear: both;"></div>
 			@endforeach
+			
+			
+			
+			</div>
+			
+			<?php echo $news->render(); ?>
+			
 		</div>
 		
 		

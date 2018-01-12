@@ -14,7 +14,7 @@ use DB;
 
 
 use App\NewModel;
-
+use App\PagesModel;
 
 
 class NewsController extends Controller
@@ -26,13 +26,18 @@ class NewsController extends Controller
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNews(0, 4);
-			
+			$news = $NewModel->getNews(2);
+			/*
+			* get pagesInfo
+			**/
+			$PagesModel = new PagesModel;
+			$pages = $PagesModel->getPages();
 			/*
 			* call view
 			**/
 			$view = view('news', [
 									'news' => $news, 
+									'pages' => $pages, 
 								])->withTitle('Новости')
 								->withDescription('Новости Description')
 								->render();

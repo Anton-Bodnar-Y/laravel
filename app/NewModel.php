@@ -9,13 +9,25 @@ use DB;
 class NewModel extends Model
 {
     //
-    public function getNews($start, $limit){
+    public function getNews($paginate){
+		$news = DB::table('news')
+							->orderBy('new_id', 'desc')
+							->paginate($paginate);
+		
+		//dump($news);
+		
+		return $news;
+		
+		
+	}
+	
+	public function lastNews($start, $limit){
 		$news = DB::table('news')
 							->orderBy('new_id', 'desc')
 							->skip($start)->take($limit)
 							->get();
 		
-		dump($news);
+		//dump($news);
 		
 		return $news;
 		
