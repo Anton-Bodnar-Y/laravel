@@ -8,6 +8,10 @@ use DB;
 
 class NewModel extends Model
 {
+    
+    
+    
+    
     /**
 	* GET ALL NEWS
 	*/
@@ -17,6 +21,11 @@ class NewModel extends Model
 							->paginate($paginate);
 		return $news;
 	}
+	
+	
+	
+	
+	
 	/**
 	* GET LAST NEWS
 	*/
@@ -27,6 +36,11 @@ class NewModel extends Model
 							->get();
 		return $news;
 	}
+	
+	
+	
+	
+	
 	/**
 	* GET ONE NEW
 	*/
@@ -37,15 +51,27 @@ class NewModel extends Model
 							->get();
 		return $new;
 	}
+	
+	
+	
+	
+	
+	
 	/**
-	* GET NEWS FROM CATEGORY
+	* GET LAST NEWS ALL CATEGORIES
 	*/
-	/*
-	public function getCategoryNews($id, $paginate){
-		$new = DB::table('news')
-							->orderBy('new_id', 'desc')
-							->paginate($paginate);
-		return $new;
+	public function lastNewsAllCat($categories){
+		for($i = 0; $i < count($categories); $i++){
+			$resArr[$i] = DB::table('news')
+								->where('category_id', $categories[$i]['category_id'])
+								->get();
+			$resArr[$i]['cat'] = $categories[$i]['category_title'];
+		}
+		return $resArr;
 	}
-    */
+	
+	
+	
+	
+	
 }
