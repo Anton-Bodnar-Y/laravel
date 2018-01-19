@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 13 2018 г., 19:12
+-- Время создания: Янв 18 2018 г., 22:39
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- База данных: `work`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `category`
+--
+
+CREATE TABLE `category` (
+  `category_id` int(11) NOT NULL,
+  `category_title` varchar(255) NOT NULL,
+  `category_desc` text NOT NULL,
+  `wwewewe` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `category`
+--
+
+INSERT INTO `category` (`category_id`, `category_title`, `category_desc`, `wwewewe`) VALUES
+(1, 'cat 1', 'category 1', ''),
+(2, 'cat 2', 'category 2', ''),
+(3, 'cat 3', 'category 3', ''),
+(4, 'cat 4', 'category 4', '');
 
 -- --------------------------------------------------------
 
@@ -78,8 +101,8 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 
 CREATE TABLE `news` (
   `new_id` int(10) UNSIGNED NOT NULL,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `category` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `news_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `category_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `short_desc` text COLLATE utf8_unicode_ci NOT NULL,
   `date` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -92,7 +115,7 @@ CREATE TABLE `news` (
 -- Дамп данных таблицы `news`
 --
 
-INSERT INTO `news` (`new_id`, `title`, `category`, `short_desc`, `date`, `img`, `remember_token`, `created_at`, `updated_at`) VALUES
+INSERT INTO `news` (`new_id`, `news_title`, `category_id`, `short_desc`, `date`, `img`, `remember_token`, `created_at`, `updated_at`) VALUES
 (2, 'На зерновом терминале Cargill начался монтаж силосных башен', '1', 'На строительстве зернового терминала глобального сырьевого трейдера Cargill в морском порту «Южный» началась сборка силосных башен для хранения зерна. Об этом сообщила компания «М.В. Карго», осуществляющая строительство терминала.', '1515696393', 'sm-img.jpg', NULL, NULL, NULL),
 (3, 'На зерновом терминале Cargill начался монтаж силосных башен', '1', 'На строительстве зернового терминала глобального сырьевого трейдера Cargill в морском порту «Южный» началась сборка силосных башен для хранения зерна. Об этом сообщила компания «М.В. Карго», осуществляющая строительство терминала.', '1515696393', 'sm-img.jpg', NULL, NULL, NULL),
 (4, 'На зерновом терминале Cargill начался монтаж силосных башен', '2', 'На строительстве зернового терминала глобального сырьевого трейдера Cargill в морском порту «Южный» началась сборка силосных башен для хранения зерна. Об этом сообщила компания «М.В. Карго», осуществляющая строительство терминала.', '1515696093', 'sm-img.jpg', NULL, NULL, NULL);
@@ -153,6 +176,30 @@ INSERT INTO `pages` (`id`, `title`, `text`, `img`, `remember_token`, `created_at
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `page_meta`
+--
+
+CREATE TABLE `page_meta` (
+  `id` int(11) NOT NULL,
+  `page_id` int(11) NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_desc` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `page_meta`
+--
+
+INSERT INTO `page_meta` (`id`, `page_id`, `meta_title`, `meta_desc`, `meta_keyword`) VALUES
+(1, 1, 'meta_title 1', 'meta_desc 1', 'meta_keyword 1'),
+(2, 2, 'meta_title 2', 'meta_desc 2', 'meta_keyword 2'),
+(3, 3, 'meta_title 3', 'meta_desc 3', 'meta_keyword 3'),
+(4, 4, 'meta_title 4', 'meta_desc 4', 'meta_keyword 4');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `password_resets`
 --
 
@@ -183,6 +230,12 @@ CREATE TABLE `users` (
 --
 
 --
+-- Индексы таблицы `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`category_id`);
+
+--
 -- Индексы таблицы `forum`
 --
 ALTER TABLE `forum`
@@ -207,6 +260,12 @@ ALTER TABLE `pages`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `page_meta`
+--
+ALTER TABLE `page_meta`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `password_resets`
 --
 ALTER TABLE `password_resets`
@@ -224,6 +283,11 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
+--
+-- AUTO_INCREMENT для таблицы `category`
+--
+ALTER TABLE `category`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT для таблицы `forum`
 --
@@ -244,6 +308,11 @@ ALTER TABLE `news_content`
 --
 ALTER TABLE `pages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT для таблицы `page_meta`
+--
+ALTER TABLE `page_meta`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --

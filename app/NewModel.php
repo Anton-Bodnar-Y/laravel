@@ -47,6 +47,7 @@ class NewModel extends Model
 	public function oneNew($id){
 		$new = DB::table('news')
 							->join('news_content', 'news.new_id', '=', 'news_content.new_id')
+							->join('news_meta', 'news.new_id', '=', 'news_meta.new_id')
 							->where('news.new_id', $id)
 							->get();
 		return $new;
@@ -65,7 +66,8 @@ class NewModel extends Model
 			$resArr[$i] = DB::table('news')
 								->where('category_id', $categories[$i]['category_id'])
 								->get();
-			$resArr[$i]['cat'] = $categories[$i]['category_title'];
+			$resArr[$i]['cat']['name'] = $categories[$i]['category_title'];
+			$resArr[$i]['cat']['id'] = $categories[$i]['category_id'];
 		}
 		return $resArr;
 	}

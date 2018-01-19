@@ -47,7 +47,7 @@ class HomeController extends Controller
 			
 			
 			
-			//dump($news);
+			dump($news);
 			
 			
 			

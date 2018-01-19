@@ -4,8 +4,9 @@
 
 
 
-
-
+@section('header')
+	@parent
+@endsection
 
 
 
@@ -14,24 +15,12 @@
 
 
 @section('content')
-	<div id="wrap">
-		
-		<div id="left_menu">
-			<ul>
-				<li><a href="" >Категория 1</a></li>
-				<li><a href="" >Категория 2</a></li>
-				<li><a href="" >Категория 3</a></li>
-				<li><a href="" >Категория 4</a></li>
-			</ul>
-		</div>
-		
-		
 		
 		
 		<div id="news">
 			<div class="new">
-			
-				
+					
+					
 					<?php //var_dump($new) ?>
 					@foreach($new as $val)
 						<h2>{{ $val['news_title'] }}</h2>
@@ -51,7 +40,7 @@
 		</div>
 		
 		
-	</div>
+	
 @endsection
 
 

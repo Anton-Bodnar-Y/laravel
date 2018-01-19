@@ -66,13 +66,13 @@ class NewsController extends Controller
 			* call view
 			**/
 			
-			dump($new);
+			//dump($new);
 			
 			$single = view('single', [
 									'new' => $new, 
 									'pages' => $pages, 
-								])->withTitle('Новости')
-								->withDescription('Новости Description')
+								])->withTitle($new[0]['new_title'])
+								->withDescription($new[0]['new_desc'])
 								->render();
 			
 			return (new Response($single))->header('charset', 'utf-8');

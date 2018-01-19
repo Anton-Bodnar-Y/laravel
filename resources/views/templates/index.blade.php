@@ -1,19 +1,76 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>{{ $title }}</title>
-<meta name="description" content="{{ $description }}" />
-</head>
-<body>
+	<meta charset="UTF-8"/>
+	<title>{{ $title }}</title>
+	<meta name="description" content="{{ $description }}" />
+		
+		
+		
+		
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet">
+		
+		
+		
+		
+		
+		<link href="../../resources/views/css/reset.css" rel="stylesheet"/>
+		
+		<link href="../../resources/views/css/bootstrap.css" rel="stylesheet">
+	<!--<script src="js/respond.js"></script>   
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>-->
+		
+		
+		
+		<link href="../../resources/views/css/styles.less" rel="stylesheet/less" type="text/css" />
+		<script src="../../resources/views/js/less.js"></script>
+		<!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
+		
+		
+	</head>
+	<body>
 
 
 
 @section('header')
-	<div id="header">
-		<a href="{{ route('home') }}" >Главная</a>
-		<a href="{{ route('news') }}" >Новости</a>
-		<a href="{{ route('forums') }}" >Форумы</a>
-		<a href="{{ route('shop') }}" >Магазин</a>
-	</div>
+	
+	<header id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="top-header col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+			<a class="logo" href="{{ route('home') }}"><img src="../../resources/views/img/7575757.png" alt="" /></a>
+			<p>ESA – European Society for Agronomy Through its web site, ESA acts as an open forum for agronomists, researchers, teachers and students who are concerned with basic and applied science in agronomy: the relationships between crops, soils, climates and agricultural practices, and between agriculture and the environment.</p>
+		</div>
+		<div class="bottom-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+			<div class="top-menu col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="wrap col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+					<ul>
+						<li><a href="{{ route('home') }}" >Главная</a></li>
+						<li>
+							<a href="{{ route('news') }}" >Новости</a>
+							<div class="wrap_child">
+								<ul>
+									<li><a href="">Новости зернового рынка</a></li>
+									<li><a href="">Масличный рынок</a></li>
+									<li><a href="">Новости живодноводства</a></li>
+									<li><a href="">Агроэкспорт</a></li>
+									<li><a href="">Влияние метеоусловий</a></li>
+									<li><a href="">Законодательство</a></li>
+									<li><a href="">Новости логистики</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="{{ route('forums') }}" >Форумы</a></li>
+						<li><a href="{{ route('shop') }}" >Магазин</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+	
 @show
 
 
@@ -42,163 +99,70 @@
 
 
 @section('footer')
-	<div id="footer">
-		
-		@foreach($pages as $page)
-			<a href="/public/page/{{ $page['id'] }}">{{ $page['title'] }}</a>
-		@endforeach
-		
-	</div>
+	
+	
+	
+			<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="wrap col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+					<div class="left-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<h3>Информация</h3>
+						<ul>
+							
+							@foreach($pages as $page)
+								<li><a href="/public/page/{{ $page['id'] }}">{{ $page['title'] }}</a></li>
+							@endforeach
+							
+						</ul>
+					</div>
+					<div class="right-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<h3>Контакты</h3>
+						<p>Украина, г. Харьков, пр-т Московский, 95/2</p>
+						<p>тел.: &nbsp;&nbsp;&nbsp; 050-219-64-16, &nbsp;&nbsp;&nbsp; 095-731-51-80, &nbsp;&nbsp;&nbsp; 057-859-95-56</p>
+						<p>skupe: &nbsp;&nbsp;&nbsp; anton_bodnar</p>
+						<p>email: &nbsp;&nbsp;&nbsp; bodnar_anton@ukr.net</p>
+					</div>
+				</div>
+			</footer>
 @show
 
 
 
 
-
-</body>
-<html>
-
-
-
-<style>
-#header a{
-	position: relative;
-	float: left;
-	display: block;
-	color: #555;
-	margin: 10px;
-}
-#left_menu a{
-	position: relative;
-	display: block;
-	color: #555;
-	margin: 10px;
-}
-#footer a{
-	position: relative;
-	float: left;
-	display: block;
-	color: #555;
-	margin: 10px;
-}
-#header{
-	position: relative;
-	float: left;
-	width: 100%;
-	height: 100px;
-	border: 1px solid #555;
-	box-sizing: border-box;
-}
-#left_menu{
-	position: relative;
-	float: left;
-	width: 20%;
-	height: 500px;
-	border: 1px solid #555;
-	box-sizing: border-box;
-}
-#home_forum{
-	position: relative;
-	float: left;
-	width: 50%;
-	height: auto;
-	border: 1px solid #555;
-	box-sizing: border-box;
-}
-#home_news{
-	position: relative;
-	float: left;
-	width: 50%;
-	height: auto;
-	border: 1px solid #555;
-	box-sizing: border-box;
-}
-#home_news .new .new_cont a img {
-	height: 100px;
-	width: 100px;
-	float: left;
-	margin: 10px;
-}
-#footer{
-	position: relative;
-	float: left;
-	width: 100%;
-	height: 100px;
-	border: 1px solid #555;
-	box-sizing: border-box;
-}
+	</body>
+	</html>
 
 
 
 
 
-/**
-* NEWS PAGES
-*/
-#news{
-	position: relative;
-	float: left;
-	width: 70%;
-	height: auto;
-	border: 1px solid #555;
-	box-sizing: border-box;
-}
-#news .new .new_cont a img {
-	height: 100px;
-	width: 100px;
-	float: left;
-	margin: 10px;
-}
-
-
-/**
-* /LEFT MENU
-*/
-#left_menu ul {
-	list-style-type: none;
-}
 
 
 
-/**
-* /PAGE
-*/
-#wrap #page{
-	height: 500px;
-}
-#wrap #page img{
-	height: 200px;
-	width: 200px;
-}
+	<script>
+		function load1() {
+			//content - appeal
+			var oBlock = document.getElementById('content');
+			//header height
+			var headerHeight = document.getElementById('header');
+			//alert(headerHeight.offsetHeight);
+			//footer height
+			var footerHeight = document.getElementById('footer');
+			//alert(footerHeight.offsetHeight);
+			//workspace height
+			var heightClient = document.documentElement.clientHeight;
+			//content height - calculation
+			var heightContent = heightClient - headerHeight.offsetHeight - footerHeight.offsetHeight;
+			//content height - appoint
+			if(oBlock.offsetHeight < heightContent){
+				document.getElementById('content').style.height = heightContent +"px";
+			}
+			//leftBlock height - appoint
+			document.getElementById('left_block').style.height = oBlock.offsetHeight+"px";
+		}
+		
+
+		setTimeout('load1()', 2000);
 
 
-
-/**
-* pagination
-*/
-.pagination {
-	list-style-type: none;
-}
-.pagination li {
-	float: left;
-	border: 1px solid #000;
-	width: 30px;
-	height: 30px;
-	margin: 5px;
-	
-}
-.pagination li a, span {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	line-height: 30px;
-}
-
-
-</style>
-
-
-
+	</script>
 
