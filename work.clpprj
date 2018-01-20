@@ -4,6 +4,13 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php"/>
 		<file name="E:\OSPanel\domains\work\app\NewModel.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\reset.css"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\bootstrap.css"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php"/>
+		<file name="E:\OSPanel\domains\work\app\CategoryModel.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\styles.less"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php">
@@ -4694,18 +4701,27 @@
 		<file name="E:\OSPanel\domains\work\tests\TestCase.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\tests\ExampleTest.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\fe310fa724c5b017f6e3519fd5c6cf960e954499.php" crc="1515787371"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1516225047"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1515787357"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1516226178"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1516397816"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1516394286"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1516402235"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1006a409423ab3949cc4fdb55f4f69e4d4f730e1.php" crc="1515182669"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1516226143"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1515787353"/>
+		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1516394282"/>
+		<file name="E:\OSPanel\domains\work\resources\views\js\npm.js" crc="1434456770"/>
+		<file name="E:\OSPanel\domains\work\resources\views\js\less.js" crc="1415507338"/>
+		<file name="E:\OSPanel\domains\work\resources\views\js\jquery-3.0.0.min.js" crc="1466062052"/>
+		<file name="E:\OSPanel\domains\work\resources\views\js\bootstrap.min.js" crc="1466510844"/>
+		<file name="E:\OSPanel\domains\work\resources\views\js\bootstrap.js" crc="1466510844"/>
 		<file name="E:\OSPanel\domains\work\resources\views\errors\503.blade.php" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\styles.less" crc="1516402203"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\styles.css" crc="1477462846"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\reset.css" crc="1515847493"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\bootstrap.css" crc="1501875130"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1516226176"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1516402232"/>
 		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1515787368"/>
 		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1516226139"/>
-		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php" crc="1516225046"/>
+		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php" crc="1516397813"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\validation.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\passwords.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\pagination.php" crc="1515182400"/>
@@ -4755,8 +4771,8 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\PasswordController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php" crc="1515787393"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1515857089"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1516222823"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1516392847"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1516395664"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\ForumsController.php" crc="1515698257"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Controller.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\CategoryController.php" crc="1515859292"/>
@@ -4768,9 +4784,10 @@
 		<file name="E:\OSPanel\domains\work\app\Console\Kernel.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\User.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\PagesModel.php" crc="1515787968"/>
-		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1516255351"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1516396750"/>
 		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515697997"/>
-		<file name="E:\OSPanel\domains\work\work.sql" crc="1515859949"/>
+		<file name="E:\OSPanel\domains\work\app\CategoryModel.php" crc="1516299547"/>
+		<file name="E:\OSPanel\domains\work\work.sql" crc="1516304352"/>
 		<file name="E:\OSPanel\domains\work\server.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1515182400"/>
