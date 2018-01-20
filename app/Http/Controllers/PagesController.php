@@ -11,14 +11,14 @@ use Illuminate\Http\Response;
 
 
 use App\PagesModel;
-
+use App\CategoryModel;
 
 class PagesController extends Controller
 {
     //
     public function getIndex($id = false){
 		
-		//return $id;
+		
 		
 		/*
 		* get news for homePage
@@ -27,9 +27,22 @@ class PagesController extends Controller
 		$page = $PagesModel->onePage($id);
 		$pages = $PagesModel->getPages();
 		
+		
+		
+		
+		/*
+		* get list categories
+		**/
+		$CategoryModel = new CategoryModel;
+		$categories = $CategoryModel->getIndex();
+		
+		
+		
+		
+		
 		//dump($page);
 		
-		$view = view('page', ['page' => $page, 'pages' => $pages])
+		$view = view('page', ['page' => $page, 'pages' => $pages, 'categories' => $categories,])
 								->withTitle($page[0]['title'])
 								->withDescription('Главная Description')
 								->render();

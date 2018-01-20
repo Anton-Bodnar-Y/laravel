@@ -31,7 +31,7 @@ Route::get('/page/{id}', ['uses'=>'PagesController@getIndex', 'as'=>'page']);
 
 
 Route::get('/new/{id}', ['uses'=>'NewsController@getOneNew', 'as'=>'new']);
-//Route::get('/category/{id}', ['uses'=>'NewsController@getNews', 'as'=>'category']);
+Route::get('/category/{id}', ['uses'=>'CategoryController@getNews', 'as'=>'category']);
 
 
 

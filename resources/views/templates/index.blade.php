@@ -51,13 +51,9 @@
 							<a href="{{ route('news') }}" >Новости</a>
 							<div class="wrap_child">
 								<ul>
-									<li><a href="">Новости зернового рынка</a></li>
-									<li><a href="">Масличный рынок</a></li>
-									<li><a href="">Новости живодноводства</a></li>
-									<li><a href="">Агроэкспорт</a></li>
-									<li><a href="">Влияние метеоусловий</a></li>
-									<li><a href="">Законодательство</a></li>
-									<li><a href="">Новости логистики</a></li>
+									@foreach($categories as $category)
+									<li><a href="/public/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
+									@endforeach
 								</ul>
 							</div>
 						</li>

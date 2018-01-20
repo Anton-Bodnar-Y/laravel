@@ -14,7 +14,6 @@ use DB;
 
 
 use App\NewModel;
-use App\ForumModel;
 use App\PagesModel;
 use App\CategoryModel;
 
@@ -34,6 +33,9 @@ class HomeController extends Controller
 			**/
 			$categoryModel = new CategoryModel;
 			$categories = $categoryModel->getIndex();
+			
+			
+			
 			
 			
 			
@@ -68,6 +70,7 @@ class HomeController extends Controller
 			**/
 			$view = view('home', [
 									'news' => $news, 
+									'categories' => $categories, 
 									'pages' => $pages,
 								])->withTitle('Главная')
 								->withDescription('Главная Description')

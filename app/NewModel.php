@@ -76,4 +76,29 @@ class NewModel extends Model
 	
 	
 	
+	
+	
+	
+	
+	/**
+	* GET LAST NEWS ALL CATEGORIES
+	*/
+	public function getNewsFromCategory($category_id){
+		
+		$news = DB::table('news')
+								->where('category_id', $category_id)
+								->get();
+		
+		return $news;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

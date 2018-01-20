@@ -15,6 +15,7 @@ use DB;
 
 use App\NewModel;
 use App\PagesModel;
+use App\CategoryModel;
 
 
 class NewsController extends Controller
@@ -22,21 +23,48 @@ class NewsController extends Controller
     public function getIndex(){
 		
 		if(view()->exists('home')){
+			
+			
+			
 			/*
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNews(2);
+			$news = $NewModel->getNews(4);
+			
+			
+			
+			
+			
+			/*
+			* get list categories
+			**/
+			$CategoryModel = new CategoryModel;
+			$categories = $CategoryModel->getIndex();
+			
+			
+			
+			
+			
 			/*
 			* get pagesInfo
 			**/
 			$PagesModel = new PagesModel;
 			$pages = $PagesModel->getPages();
+			
+			
+			
+			
+			
+			
+			
+			
 			/*
 			* call view
 			**/
 			$view = view('news', [
 									'news' => $news, 
+									'categories' => $categories,
 									'pages' => $pages, 
 								])->withTitle('Новости')
 								->withDescription('Новости Description')
@@ -52,11 +80,29 @@ class NewsController extends Controller
 	public function getOneNew($id){
 		
 		if(view()->exists('single')){
+			
+			
+			
+			
 			/*
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
 			$new = $NewModel->oneNew($id);
+			
+			
+			
+			
+			/*
+			* get list categories
+			**/
+			$CategoryModel = new CategoryModel;
+			$categories = $CategoryModel->getIndex();
+			
+			
+			
+			
+			
 			/*
 			* get pagesInfo
 			**/
@@ -70,6 +116,7 @@ class NewsController extends Controller
 			
 			$single = view('single', [
 									'new' => $new, 
+									'categories' => $categories,
 									'pages' => $pages, 
 								])->withTitle($new[0]['new_title'])
 								->withDescription($new[0]['new_desc'])

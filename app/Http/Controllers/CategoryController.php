@@ -6,36 +6,70 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use Illuminate\Http\Response;
+
+use App\Http\Controllers\Controller;
+
+use DB;
+
+
+use App\NewModel;
+use App\PagesModel;
+use App\CategoryModel;
+
+
 class CategoryController extends Controller
 {
     //
     public function getNews($id){
 		
-		if(view()->exists('news')){
+		if(view()->exists('category')){
+			
+			
+			
 			/*
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$new = $NewModel->oneNew($id);
+			$news = $NewModel->getNewsFromCategory($id);
+			
+			
+			
+			
+			
+			
+			/*
+			* get list categories
+			**/
+			$CategoryModel = new CategoryModel;
+			$categories = $CategoryModel->getIndex();
+			
+			
+			
+			
+			
+			
+			
+			
 			/*
 			* get pagesInfo
 			**/
 			$PagesModel = new PagesModel;
 			$pages = $PagesModel->getPages();
-			/*
-			* call view
-			**/
 			
-			dump($new);
 			
-			$single = view('single', [
-									'new' => $new, 
+			
+			
+			
+			$category = view('category', [
+									'news' => $news, 
+									'categories' => $categories,
 									'pages' => $pages, 
 								])->withTitle('Новости')
 								->withDescription('Новости Description')
 								->render();
 			
-			return (new Response($single))->header('charset', 'utf-8');
+			return (new Response($category))->header('charset', 'utf-8');
 			
 			
 		}
