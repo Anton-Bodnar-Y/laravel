@@ -85,10 +85,24 @@ class NewsController extends Controller
 			
 			
 			/*
-			* get news for homePage
+			* get new
 			**/
 			$NewModel = new NewModel;
 			$new = $NewModel->oneNew($id);
+			
+			
+			
+			
+			
+			/*
+			* get news for 'cross_news'
+			**/
+			$NewModel = new NewModel;
+			$cross_news = $NewModel->crossNews($new[0]['cross_news']);
+			
+			
+			
+			
 			
 			
 			
@@ -112,10 +126,16 @@ class NewsController extends Controller
 			* call view
 			**/
 			
-			//dump($new);
+			
+			
+			
+			
+			
+			
 			
 			$single = view('single', [
 									'new' => $new, 
+									'cross_news' => $cross_news,
 									'categories' => $categories,
 									'pages' => $pages, 
 								])->withTitle($new[0]['new_title'])

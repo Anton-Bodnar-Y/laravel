@@ -11,6 +11,7 @@
 		<file name="E:\OSPanel\domains\work\app\CategoryModel.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php">
@@ -4705,6 +4706,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1516456145"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1516449513"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1006a409423ab3949cc4fdb55f4f69e4d4f730e1.php" crc="1515182669"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1516455616"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1516455490"/>
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1516456141"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\npm.js" crc="1434456770"/>
@@ -4771,7 +4773,7 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\shop\HomeController.php" crc="1515698656"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\PasswordController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php" crc="1515787393"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php" crc="1516473322"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1516456360"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1516456225"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\ForumsController.php" crc="1515698257"/>
@@ -4788,7 +4790,7 @@
 		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1516451682"/>
 		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515697997"/>
 		<file name="E:\OSPanel\domains\work\app\CategoryModel.php" crc="1516299547"/>
-		<file name="E:\OSPanel\domains\work\work.sql" crc="1516438938"/>
+		<file name="E:\OSPanel\domains\work\work.sql" crc="1516473400"/>
 		<file name="E:\OSPanel\domains\work\server.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1515182400"/>

@@ -50,7 +50,33 @@ class NewModel extends Model
 							->join('news_meta', 'news.new_id', '=', 'news_meta.new_id')
 							->where('news.new_id', $id)
 							->get();
+		
 		return $new;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**
+	* GET NEWS 'CROSSNEWS'
+	*/
+	public function crossNews($arrayNewsId){
+		
+		$arrayNewsId = unserialize($arrayNewsId);
+		
+		if($arrayNewsId != false){
+			foreach($arrayNewsId as $val){
+				$news[] = DB::table('news')
+									->where('new_id', $val)
+									->get();
+			}
+			return $news;
+		}
 	}
 	
 	
