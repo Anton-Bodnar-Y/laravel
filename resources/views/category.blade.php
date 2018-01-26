@@ -25,7 +25,7 @@
 		<div id="left_menu">
 			<ul>
 				@foreach($categories as $category)
-				<li><a href="/public/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
+				<li><a href="/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
 				@endforeach
 			</ul>
 		</div>
@@ -43,12 +43,12 @@
 				
 				
 				<div class="new_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<a href="/public/new/{{ $new['new_id'] }}"><img src="/resources/views/img/news/img_preview/{{ $new['img'] }}" alt="" /></a>
-					<a href="/public/new/{{ $new['new_id'] }}"><h2 class="titlenews">{{ $new['news_title'] }}</h2></a>
+					<a href="/new/{{ $new['new_id'] }}"><img src="/resources/views/img/news/img_preview/{{ $new['img'] }}" alt="" /></a>
+					<a href="/new/{{ $new['new_id'] }}"><h2 class="titlenews">{{ $new['news_title'] }}</h2></a>
 					<span class="date"><span class="glyphicon glyphicon-calendar"></span>&#160;{{ date('j-m-o, G:i', $new['date']) }}</span>
 					<p>{{ $new['short_desc'] }}</p>
 					
-					<a href="/public/new/{{ $new['new_id'] }}" class="fool">Читать далее...</a>
+					<a href="/new/{{ $new['new_id'] }}" class="fool">Читать далее...</a>
 				</div>
 				
 				

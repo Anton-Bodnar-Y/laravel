@@ -24,10 +24,10 @@
 				@for($i = 0; $i < count($news); $i++)
 					<div class="category_block">
 						@if(count($news[$i]) > 1)
-							<a class="link_category" href="/public/category/{{ $news[$i]['cat']['id'] }}"><h3>{{ $news[$i]['cat']['name'] }}</h3></a>
+							<a class="link_category" href="/category/{{ $news[$i]['cat']['id'] }}"><h3>{{ $news[$i]['cat']['name'] }}</h3></a>
 							<?php $count = count($news[$i]) - 1; ?>
 							@for($t = 0; $t < $count; $t++)
-								<a class="link_title" href="/public/new/{{ $news[$i][$t]['new_id'] }}">{{ $news[$i][$t]['news_title'] }}</a>
+								<a class="link_title" href="/new/{{ $news[$i][$t]['new_id'] }}">{{ $news[$i][$t]['news_title'] }}</a>
 							@endfor
 						@endif
 					</div>

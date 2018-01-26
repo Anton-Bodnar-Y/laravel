@@ -52,7 +52,7 @@
 							<div class="wrap_child">
 								<ul>
 									@foreach($categories as $category)
-									<li><a href="/public/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
+									<li><a href="/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
 									@endforeach
 								</ul>
 							</div>
@@ -105,7 +105,7 @@
 						<ul>
 							
 							@foreach($pages as $page)
-								<li><a href="/public/page/{{ $page['id'] }}">{{ $page['title'] }}</a></li>
+								<li><a href="/page/{{ $page['id'] }}">{{ $page['title'] }}</a></li>
 							@endforeach
 							
 						</ul>
