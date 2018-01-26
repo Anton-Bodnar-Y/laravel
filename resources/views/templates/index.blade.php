@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8">
 	<title>{{ $title }}</title>
-	<meta name="description" content="{{ $description }}" />
+	<meta name="description" content="{{ $description }}" >
 		
 		
 		
 		
 		
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet" >
 		
 		
 		
 		
 		
-		<link href="../../resources/views/css/reset.css" rel="stylesheet"/>
+		<link href="../../resources/views/css/reset.css" rel="stylesheet" >
 		
-		<link href="../../resources/views/css/bootstrap.css" rel="stylesheet">
+		<link href="../../resources/views/css/bootstrap.css" rel="stylesheet" >
 	<!--<script src="js/respond.js"></script>   
 		<script src="js/jquery-3.0.0.min.js"></script>
 		<script src="js/bootstrap.js"></script>-->
 		
 		
 		
-		<link href="../../resources/views/css/styles.less" rel="stylesheet/less" type="text/css" />
+		<link href="../../resources/views/css/styles.less" rel="stylesheet/less" type="text/css" >
 		<script src="../../resources/views/js/less.js"></script>
 		<!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
 		
@@ -101,7 +101,7 @@
 			<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="wrap col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8">
 					<div class="left-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<h3>Информация</h3>
+						<h3><span style="font-size: 22px;" class="glyphicon glyphicon-info-sign"></span>&#160;Информация</h3>
 						<ul>
 							
 							@foreach($pages as $page)
@@ -111,7 +111,7 @@
 						</ul>
 					</div>
 					<div class="right-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<h3>Контакты</h3>
+						<h3><span style="font-size: 22px;" class="glyphicon glyphicon-earphone"></span>&#160;Контакты</h3>
 						<p>Украина, г. Харьков, пр-т Московский, 95/2</p>
 						<p>тел.: &nbsp;&nbsp;&nbsp; 050-219-64-16, &nbsp;&nbsp;&nbsp; 095-731-51-80, &nbsp;&nbsp;&nbsp; 057-859-95-56</p>
 						<p>skupe: &nbsp;&nbsp;&nbsp; anton_bodnar</p>

@@ -1,240 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="E:\OSPanel\domains\work\work.clpprj">
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work/]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\CategoryController.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php"/>
-		<file name="E:\OSPanel\domains\work\app\NewModel.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php"/>
-		<file name="E:\OSPanel\domains\work\app\CategoryModel.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\styles.less"/>
+		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\bootstrap.css"/>
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php"/>
 	</lastopfiles>
-	<errors version="5.11">
-		<errfile name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php">
-			<error val="22;162;23;162;102;1;"/>
-			<error val="22;660;23;660;102;1;"/>
-			<error val="22;835;23;835;102;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\var-dumper\Tests\Fixtures\GeneratorDemo.php">
-			<error val="18;13;22;13;102;1;"/>
-			<error val="14;19;28;19;102;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\var-dumper\Tests\CliDumperTest.php">
-			<error val="23;464;25;464;202;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\var-dumper\Cloner\VarCloner.php">
-			<error val="44;267;47;267;303;2;"/>
-			<error val="53;268;56;268;303;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\var-dumper\Cloner\AbstractCloner.php">
-			<error val="33;253;36;253;303;2;"/>
-			<error val="46;255;49;255;303;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\http-kernel\Kernel.php">
-			<error val="44;424;52;424;303;2;"/>
-			<error val="34;434;42;434;303;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\debug\DebugClassLoader.php">
-			<error val="58;198;69;198;303;2;"/>
-			<error val="64;202;75;202;303;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\symfony\console\Application.php">
-			<error val="63;604;69;604;303;2;"/>
-			<error val="72;605;78;605;303;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\swiftmailer\swiftmailer\tests\unit\Swift\ByteStream\ArrayByteStreamTest.php">
-			<error val="38;57;39;57;901;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\sebastian\diff\tests\ParserTest.php">
-			<error val="0;84;1;84;102;1;"/>
-			<error val="0;128;4;128;102;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\phpunit\php-token-stream\tests\_fixture\classUsesNamespacedFunction.php">
-			<error val="3;3;12;3;601;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\phpunit\php-token-stream\tests\_fixture\class_with_method_that_declares_anonymous_class2.php">
-			<error val="18;3;20;3;102;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\phpunit\php-token-stream\tests\_fixture\class_with_method_that_declares_anonymous_class.php">
-			<error val="22;8;24;8;102;1;"/>
-			<error val="22;9;23;9;102;1;"/>
-			<error val="22;10;30;10;102;1;"/>
-			<error val="22;11;30;11;102;1;"/>
-			<error val="22;12;33;12;102;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\test\PhpParser\LexerTest.php">
-			<error val="66;205;67;205;901;2;"/>
-			<error val="66;229;67;229;901;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\PrettyPrinter\Standard.php">
-			<error val="32;629;37;629;101;1;"/>
-			<error val="27;813;34;813;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\NodeVisitor\NameResolver.php">
-			<error val="32;36;39;36;101;1;"/>
-			<error val="28;48;35;48;101;1;"/>
-			<error val="42;89;47;89;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\Node\Stmt\TraitUseAdaptation\Precedence.php">
-			<error val="15;21;20;21;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\Node\Stmt\TraitUseAdaptation\Alias.php">
-			<error val="15;24;20;24;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\Node\Stmt\Interface_.php">
-			<error val="15;30;22;30;101;1;"/>
-			<error val="24;37;31;37;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\Node\Stmt\Class_.php">
-			<error val="15;46;22;46;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\Builder\Interface_.php">
-			<error val="19;33;26;33;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\lib\PhpParser\Builder\Class_.php">
-			<error val="15;38;22;38;101;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\nikic\php-parser\grammar\analyze.php">
-			<error val="30;49;37;49;303;2;"/>
-			<error val="50;60;57;60;303;2;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\monolog\monolog\tests\Monolog\Processor\MercurialProcessorTest.php">
-			<error val="11;32;16;32;102;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\mockery\mockery\tests\Mockery\Fixtures\MethodWithNullableReturnType.php">
-			<error val="41;32;43;32;204;1;"/>
-			<error val="36;42;38;42;204;1;"/>
-			<error val="37;52;39;52;204;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\mockery\mockery\tests\Mockery\MockingParameterAndReturnTypesTest.php">
-			<error val="38;139;40;139;204;1;"/>
-		</errfile>
-		<errfile name="E:\OSPanel\domains\work\vendor\doctrine\instantiator\src\Doctrine\Instantiator\Instantiator.php">
-			<error val="99;149;101;149;204;1;"/>
-		</errfile>
-	</errors>
-	<cakedata>
-	</cakedata>
-	<dplmenupath>
-	</dplmenupath><laravael>
-		<facade class="App" name="app"/>
-		<facade class="Artisan" name="Illuminate\Contracts\Console\Kernel"/>
-		<facade class="Auth" name="auth"/>
-		<facade class="Blade" name="view"/>
-		<facade class="Bus" name="Illuminate\Contracts\Bus\Dispatcher"/>
-		<facade class="Cache" name="cache"/>
-		<facade class="Config" name="config"/>
-		<facade class="Cookie" name="cookie"/>
-		<facade class="Crypt" name="encrypter"/>
-		<facade class="DB" name="db"/>
-		<facade class="Event" name="events"/>
-		<facade class="Facade" name="Facade does not implement getFacadeAccessor method."/>
-		<facade class="File" name="files"/>
-		<facade class="Gate" name="Illuminate\Contracts\Auth\Access\Gate"/>
-		<facade class="Hash" name="hash"/>
-		<facade class="Input" name="request"/>
-		<facade class="Lang" name="translator"/>
-		<facade class="Log" name="log"/>
-		<facade class="Mail" name="mailer"/>
-		<facade class="Password" name="auth.password"/>
-		<facade class="Queue" name="queue"/>
-		<facade class="Redirect" name="redirect"/>
-		<facade class="Redis" name="redis"/>
-		<facade class="Request" name="request"/>
-		<facade class="Response" name="Illuminate\Contracts\Routing\ResponseFactory"/>
-		<facade class="Route" name="router"/>
-		<facade class="Schema" name="db"/>
-		<facade class="Session" name="session"/>
-		<facade class="Storage" name="filesystem"/>
-		<facade class="URL" name="url"/>
-		<facade class="Validator" name="validator"/>
-		<facade class="View" name="view"/>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Cache\CacheServiceProvider.php">
-			<type name="memcached.connector" class="MemcachedConnector"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Database\DatabaseServiceProvider.php">
-			<type name="Illuminate\Contracts\Queue\EntityResolver" class="QueueEntityResolver"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Database\MigrationServiceProvider.php">
-			<type name="command.migrate.refresh" class="RefreshCommand"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Database\SeedServiceProvider.php">
-			<type name="seeder" class="Seeder"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Filesystem\FilesystemServiceProvider.php">
-			<type name="files" class="Filesystem"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Foundation\Application.php">
-			<type name="app" class="Illuminate\Foundation\Application"/>
-			<type name="auth" class="Illuminate\Auth\AuthManager"/>
-			<type name="auth.driver" class="Illuminate\Contracts\Auth\Guard"/>
-			<type name="auth.password" class="Illuminate\Auth\Passwords\PasswordBrokerManager"/>
-			<type name="auth.password.broker" class="Illuminate\Auth\Passwords\PasswordBroker"/>
-			<type name="blade.compiler" class="Illuminate\View\Compilers\BladeCompiler"/>
-			<type name="cache" class="Illuminate\Cache\CacheManager"/>
-			<type name="cache.store" class="Illuminate\Cache\Repository"/>
-			<type name="config" class="Illuminate\Config\Repository"/>
-			<type name="cookie" class="Illuminate\Cookie\CookieJar"/>
-			<type name="db" class="Illuminate\Database\DatabaseManager"/>
-			<type name="db.connection" class="Illuminate\Database\Connection"/>
-			<type name="encrypter" class="Illuminate\Encryption\Encrypter"/>
-			<type name="events" class="Illuminate\Events\Dispatcher"/>
-			<type name="files" class="Illuminate\Filesystem\Filesystem"/>
-			<type name="filesystem" class="Illuminate\Filesystem\FilesystemManager"/>
-			<type name="filesystem.cloud" class="Illuminate\Contracts\Filesystem\Cloud"/>
-			<type name="filesystem.disk" class="Illuminate\Contracts\Filesystem\Filesystem"/>
-			<type name="hash" class="Illuminate\Contracts\Hashing\Hasher"/>
-			<type name="log" class="Illuminate\Log\Writer"/>
-			<type name="mailer" class="Illuminate\Mail\Mailer"/>
-			<type name="queue" class="Illuminate\Queue\QueueManager"/>
-			<type name="queue.connection" class="Illuminate\Contracts\Queue\Queue"/>
-			<type name="queue.failer" class="Illuminate\Queue\Failed\FailedJobProviderInterface"/>
-			<type name="redirect" class="Illuminate\Routing\Redirector"/>
-			<type name="redis" class="Illuminate\Redis\Database"/>
-			<type name="request" class="Illuminate\Http\Request"/>
-			<type name="router" class="Illuminate\Routing\Router"/>
-			<type name="session" class="Illuminate\Session\SessionManager"/>
-			<type name="session.store" class="Illuminate\Session\Store"/>
-			<type name="translator" class="Illuminate\Translation\Translator"/>
-			<type name="url" class="Illuminate\Routing\UrlGenerator"/>
-			<type name="validator" class="Illuminate\Validation\Factory"/>
-			<type name="view" class="Illuminate\View\Factory"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Foundation\Providers\ArtisanServiceProvider.php">
-			<type name="command.auth.make" class="MakeAuthCommand"/>
-			<type name="command.auth.resets.clear" class="ClearResetsCommand"/>
-			<type name="command.clear-compiled" class="ClearCompiledCommand"/>
-			<type name="command.down" class="DownCommand"/>
-			<type name="command.environment" class="EnvironmentCommand"/>
-			<type name="command.event.generate" class="EventGenerateCommand"/>
-			<type name="command.key.generate" class="KeyGenerateCommand"/>
-			<type name="command.serve" class="ServeCommand"/>
-			<type name="command.tinker" class="TinkerCommand"/>
-			<type name="command.up" class="UpCommand"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Hashing\HashServiceProvider.php">
-			<type name="hash" class="BcryptHasher"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Queue\ConsoleServiceProvider.php">
-			<type name="command.queue.failed" class="ListFailedCommand"/>
-			<type name="command.queue.flush" class="FlushFailedCommand"/>
-			<type name="command.queue.forget" class="ForgetFailedCommand"/>
-			<type name="command.queue.retry" class="RetryCommand"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\Queue\QueueServiceProvider.php">
-			<type name="command.queue.restart" class="RestartCommand"/>
-		</file>
-		<file name="E:\OSPanel\domains\work\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php">
-			<type name="view.engine.resolver" class="EngineResolver"/>
-		</file>
-	</laravael><smartyassings>
-	</smartyassings><twigtemplate>
-	</twigtemplate><yiidata>
-	</yiidata>
 	<todoblock>
 		<todofile name="E:\OSPanel\domains\work\vendor\fzaninotto\faker\src\Faker\ORM\CakePHP\EntityPopulator.php">
 			<todo name="TODO check if TreeBehavior attached to modify lft/rgt cols" pos="9;117"/>
@@ -4701,30 +4478,30 @@
 		<file name="E:\OSPanel\domains\work\vendor\autoload.php" crc="1515859916"/>
 		<file name="E:\OSPanel\domains\work\tests\TestCase.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\tests\ExampleTest.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\fe310fa724c5b017f6e3519fd5c6cf960e954499.php" crc="1515787371"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\fe310fa724c5b017f6e3519fd5c6cf960e954499.php" crc="1516826214"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1516397816"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1516456145"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1516449513"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1516909935"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1516829693"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1006a409423ab3949cc4fdb55f4f69e4d4f730e1.php" crc="1515182669"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1516455616"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1516455490"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1516456141"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1516823223"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1516823238"/>
+		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1516909932"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\npm.js" crc="1434456770"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\less.js" crc="1415507338"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\jquery-3.0.0.min.js" crc="1466062052"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\bootstrap.min.js" crc="1466510844"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\bootstrap.js" crc="1466510844"/>
 		<file name="E:\OSPanel\domains\work\resources\views\errors\503.blade.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\resources\views\css\styles.less" crc="1516448443"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\styles.less" crc="1516824159"/>
 		<file name="E:\OSPanel\domains\work\resources\views\css\styles.css" crc="1477462846"/>
 		<file name="E:\OSPanel\domains\work\resources\views\css\reset.css" crc="1515847493"/>
-		<file name="E:\OSPanel\domains\work\resources\views\css\bootstrap.css" crc="1501875130"/>
+		<file name="E:\OSPanel\domains\work\resources\views\css\bootstrap.css" crc="1516822612"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1516449509"/>
-		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1515787368"/>
-		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1516455481"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1516829688"/>
+		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1516823024"/>
+		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1516823234"/>
 		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php" crc="1516397813"/>
-		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php" crc="1516455575"/>
+		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php" crc="1516823216"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\validation.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\passwords.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\pagination.php" crc="1515182400"/>
@@ -4774,7 +4551,7 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\PasswordController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php" crc="1516473322"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1516456360"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1516743243"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php" crc="1516456225"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\ForumsController.php" crc="1515698257"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Controller.php" crc="1515182400"/>
@@ -4787,10 +4564,10 @@
 		<file name="E:\OSPanel\domains\work\app\Console\Kernel.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\User.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\app\PagesModel.php" crc="1515787968"/>
-		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1516451682"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1516824645"/>
 		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515697997"/>
 		<file name="E:\OSPanel\domains\work\app\CategoryModel.php" crc="1516299547"/>
-		<file name="E:\OSPanel\domains\work\work.sql" crc="1516473400"/>
+		<file name="E:\OSPanel\domains\work\work.sql" crc="1516745290"/>
 		<file name="E:\OSPanel\domains\work\server.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1515182400"/>

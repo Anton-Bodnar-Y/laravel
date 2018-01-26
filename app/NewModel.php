@@ -107,7 +107,7 @@ class NewModel extends Model
 	
 	
 	/**
-	* GET LAST NEWS ALL CATEGORIES
+	* GET NEWS CATEGORY
 	*/
 	public function getNewsFromCategory($category_id){
 		

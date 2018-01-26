@@ -24,7 +24,7 @@
 			
 			@foreach($new as $val)
 				<h3 class="title">{{ $val['news_title'] }}</h3>
-				<p class="date">{{ date('j-m-o, G:i', $val['date']) }}</p>
+				<p class="date"><span class="glyphicon glyphicon-calendar"></span>&#160;{{ date('j-m-o, G:i', $val['date']) }}</p>
 				<p class="top_img"><img src="../../resources/views/img/news/img_preview/{{ $val['img'] }}" alt=""/></p>
 				<div class="text_article">{!! $val['text'] !!}</div>
 				<div class="block_img">
