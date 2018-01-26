@@ -18,11 +18,11 @@ use App\PagesModel;
 use App\CategoryModel;
 
 
-class HomeController extends Controller
+class MainController extends Controller
 {
     public function getIndex(){
 		
-		if(view()->exists('home')){
+		if(view()->exists('main')){
 			
 			
 			
@@ -68,7 +68,7 @@ class HomeController extends Controller
 			/*
 			* call view
 			**/
-			$view = view('home', [
+			$view = view('main', [
 									'news' => $news, 
 									'categories' => $categories, 
 									'pages' => $pages,

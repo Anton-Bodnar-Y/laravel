@@ -11,6 +11,8 @@
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\home.blade.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\HomeController.php"/>
 	</lastopfiles>
 	<todoblock>
 		<todofile name="E:\OSPanel\domains\work\vendor\fzaninotto\faker\src\Faker\ORM\CakePHP\EntityPopulator.php">

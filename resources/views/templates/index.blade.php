@@ -39,14 +39,14 @@
 	
 	<header id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="top-header col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
-			<a class="logo" href="{{ route('home') }}"><img src="../../resources/views/img/7575757.png" alt="" /></a>
+			<a class="logo" href="{{ route('main') }}"><img src="../../resources/views/img/7575757.png" alt="" /></a>
 			<p>ESA – European Society for Agronomy Through its web site, ESA acts as an open forum for agronomists, researchers, teachers and students who are concerned with basic and applied science in agronomy: the relationships between crops, soils, climates and agricultural practices, and between agriculture and the environment.</p>
 		</div>
 		<div class="bottom-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 			<div class="top-menu col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="wrap col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
 					<ul>
-						<li><a href="{{ route('home') }}" >Главная</a></li>
+						<li><a href="{{ route('main') }}" >Главная</a></li>
 						<li>
 							<a href="{{ route('news') }}" >Новости</a>
 							<div class="wrap_child">

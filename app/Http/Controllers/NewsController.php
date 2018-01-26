@@ -22,7 +22,7 @@ class NewsController extends Controller
 {
     public function getIndex(){
 		
-		if(view()->exists('home')){
+		if(view()->exists('news')){
 			
 			
 			
