@@ -7,6 +7,8 @@
 		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\CategoryController.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php"/>
 	</lastopfiles>
 	<todoblock>
 		<todofile name="E:\OSPanel\domains\work\vendor\fzaninotto\faker\src\Faker\ORM\CakePHP\EntityPopulator.php">
@@ -4476,12 +4478,13 @@
 		<file name="E:\OSPanel\domains\work\tests\ExampleTest.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\fe310fa724c5b017f6e3519fd5c6cf960e954499.php" crc="1516826214"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1516397816"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1516994310"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1517003203"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1517003046"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1516829693"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1006a409423ab3949cc4fdb55f4f69e4d4f730e1.php" crc="1515182669"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1516823223"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1516823238"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1516994308"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1517003114"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1517003167"/>
+		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1517003198"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\npm.js" crc="1434456770"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\less.js" crc="1415507338"/>
 		<file name="E:\OSPanel\domains\work\resources\views\js\jquery-3.0.0.min.js" crc="1466062052"/>
@@ -4495,9 +4498,9 @@
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1516829688"/>
 		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1516823024"/>
-		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1516823234"/>
-		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1516397813"/>
-		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php" crc="1516823216"/>
+		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1517003163"/>
+		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1517003044"/>
+		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php" crc="1517003017"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\validation.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\passwords.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\pagination.php" crc="1515182400"/>
@@ -4567,5 +4570,6 @@
 		<file name="E:\OSPanel\domains\work\server.php" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1515182400"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1515182400"/>
+		<file name="E:\OSPanel\domains\work\.htaccess" crc="1517002561"/>
 	</filescache>
 </project>

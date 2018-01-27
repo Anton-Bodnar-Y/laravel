@@ -27,8 +27,8 @@
 		
 		<link href="../../resources/views/css/styles.less" rel="stylesheet/less" type="text/css" >
 		<script src="../../resources/views/js/less.js"></script>
-		<!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
-		
+		<!-- ПОДКЛЮЧЕНИЕ ПРЕОБРАЗОВАННОГО ФАЙЛА СТИЛЕЙ -->
+		<link href="../../resources/views/css/styles.css" rel="stylesheet" >
 		
 	</head>
 	<body>
