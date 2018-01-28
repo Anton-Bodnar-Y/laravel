@@ -39,15 +39,35 @@
 			
 			<div id="home_block" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 				<div class="category_block">
-					<a class="link_category" href=""><h3>Украина</h3></a>
+					<a class="link_category" href=""><h3>ВАЖНОЕ:</h3></a>
 					<div class="ajax_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<a href="">
-							<img src="../resources/views/img/new.jpg" alt="" />
+							<img src="/resources/views/img/news/img_preview/new.jpg" alt="" />
 							<span class="title">На зерновом терминале Cargill начался монтаж силосных башен</span>
 						</a>
 						
 					</div>
+					
+					<div class="ajax_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<a href="">
+							<img src="/resources/views/img/news/img_preview/new.jpg" alt="" />
+							<span class="title">На зерновом терминале Cargill начался монтаж силосных башен</span>
+						</a>
+						
+					</div>
+					
+					<div class="ajax_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<a href="">
+							<img src="/resources/views/img/news/img_preview/new.jpg" alt="" />
+							<span class="title">На зерновом терминале Cargill начался монтаж силосных башен</span>
+						</a>
+						
+					</div>
+					
+					
 				</div>
+				
+				
 			</div>
 			
 			

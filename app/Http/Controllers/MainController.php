@@ -49,7 +49,7 @@ class MainController extends Controller
 			
 			
 			
-			dump($news);
+			//dump($news);
 			
 			
 			

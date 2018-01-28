@@ -36,3 +36,19 @@ Route::get('/category/{id}', ['uses'=>'CategoryController@getNews', 'as'=>'categ
 
 
 Route::get('/admin', ['uses'=>'admin\HomeAdminController@getIndex', 'as'=>'admin']);
+
+
+
+Route::auth();
+
+Route::group(['prefix'=>'admin', 'middleware'=>['web','auth']], function(){
+	
+	Route::get('/', ['uses'=>'AdminController@getIndex', 'as'=>'admin']);
+	
+});
+
+
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
