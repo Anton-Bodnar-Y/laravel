@@ -52,7 +52,11 @@
 							<div class="wrap_child">
 								<ul>
 									@foreach($categories as $category)
+									
+									@if($category['category_id'] != 0)
 									<li><a href="/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
+									@endif
+									
 									@endforeach
 								</ul>
 							</div>
