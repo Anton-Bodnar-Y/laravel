@@ -22,7 +22,7 @@
 			@foreach($page as $val)
 				
 				<h3>{{ $val['title'] }}</h3>
-				<img src="/resources/views/img/pages/{{ $val['img'] }}" alt="" />
+				<img src="/public/img/pages/{{ $val['img'] }}" alt="" />
 				<p>{!! $val['text'] !!}</p>
 				
 				<div style="clear: both;"></div>

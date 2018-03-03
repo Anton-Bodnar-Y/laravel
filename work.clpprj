@@ -4350,6 +4350,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\2f6ca6daa844572b750d9d6d0748af0aa1f3480b.php" crc="1518345775"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1b8d0714d30d41c2eca68eb1a81360735d55ee15.php" crc="1517252305"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\125117aaf41c379924499105cd5d266602b0181d.php" crc="1517084855"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\0eaa26ce59199145e221e2e096cd131ff78f6d04.php" crc="1518549307"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1518119614"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1518119680"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\035da4779faafe60a6da9d28c22b6021d02ce69f.php" crc="1517135151"/>
@@ -4454,6 +4455,7 @@
 		<file name="E:\OSPanel\domains\work\app\AdminUserModel.php" crc="1517135646"/>
 		<file name="E:\OSPanel\domains\work\app\AdminNewModel.php" crc="1517135594"/>
 		<file name="E:\OSPanel\domains\work\app\AdminCategoryModel.php" crc="1517135627"/>
+		<file name="E:\OSPanel\domains\work\work.sql" crc="1518641689"/>
 		<file name="E:\OSPanel\domains\work\server.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\phpunit.xml" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\gulpfile.js" crc="1517066563"/>

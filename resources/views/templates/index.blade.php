@@ -16,19 +16,13 @@
 		
 		
 		
-		<link href="../../resources/views/css/reset.css" rel="stylesheet" >
 		
-		<link href="../../resources/views/css/bootstrap.css" rel="stylesheet" >
-	<!--<script src="js/respond.js"></script>   
-		<script src="js/jquery-3.0.0.min.js"></script>
-		<script src="js/bootstrap.js"></script>-->
-		
-		
-		
-		<link href="../../resources/views/css/styles.less" rel="stylesheet/less" type="text/css" >
-		<script src="../../resources/views/js/less.js"></script>
-		<!-- ПОДКЛЮЧЕНИЕ ПРЕОБРАЗОВАННОГО ФАЙЛА СТИЛЕЙ -->
-		<link href="../../resources/views/css/styles.css" rel="stylesheet" >
+		<!-- НОВОЕ ПОДКЛЮЧЕНИЕ -->
+		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/reset.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/bootstrap.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.css') }}" />
+		<!--<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.less') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/js/less.js') }}" />-->
 		
 	</head>
 	<body>
@@ -39,7 +33,7 @@
 	
 	<header id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="top-header col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
-			<a class="logo" href="{{ route('main') }}"><img src="../../resources/views/img/7575757.png" alt="" /></a>
+			<a class="logo" href="{{ route('main') }}"><img src="../../public/img/7575757.png" alt="" /></a>
 			<p>ESA – European Society for Agronomy Through its web site, ESA acts as an open forum for agronomists, researchers, teachers and students who are concerned with basic and applied science in agronomy: the relationships between crops, soils, climates and agricultural practices, and between agriculture and the environment.</p>
 		</div>
 		<div class="bottom-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">

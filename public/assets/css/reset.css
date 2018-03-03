@@ -1,0 +1,61 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+input {outline: 0 !important;}
+
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body p {
+	font-size: 16px;
+	line-height: 25px;
+}
+body h4 {
+	font-size: 22px;
+}
+body h3 {
+	font-size: 28px;
+}
+body h2 {
+	font-size: 34px;
+}
+body h1 {
+	font-size: 40px;
+}
+
+.row, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12  {
+	margin:0;
+	padding:0;
+	
+}

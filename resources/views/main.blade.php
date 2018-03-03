@@ -42,7 +42,7 @@
 					<a class="link_category" href=""><h3>ВАЖНОЕ:</h3></a>
 					<div class="ajax_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<a href="">
-							<img src="/resources/views/img/news/img_preview/new.jpg" alt="" />
+							<img src="/public/img/news/img_preview/new.jpg" alt="" />
 							<span class="title">На зерновом терминале Cargill начался монтаж силосных башен</span>
 						</a>
 						
@@ -50,7 +50,7 @@
 					
 					<div class="ajax_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<a href="">
-							<img src="/resources/views/img/news/img_preview/new.jpg" alt="" />
+							<img src="/public/img/news/img_preview/new.jpg" alt="" />
 							<span class="title">На зерновом терминале Cargill начался монтаж силосных башен</span>
 						</a>
 						
@@ -58,7 +58,7 @@
 					
 					<div class="ajax_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<a href="">
-							<img src="/resources/views/img/news/img_preview/new.jpg" alt="" />
+							<img src="/public/img/news/img_preview/new.jpg" alt="" />
 							<span class="title">На зерновом терминале Cargill начался монтаж силосных башен</span>
 						</a>
 						
