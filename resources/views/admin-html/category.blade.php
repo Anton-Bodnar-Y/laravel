@@ -11,6 +11,15 @@
 				
                 <div class="panel-body">
             		
+            		@if(count($errors) > 0)
+					<div class="alert alert-danger">
+						<ul>
+							@foreach($errors->all() as $error)
+								<li>- {{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
             		
             		<form class="formEditNew" enctype="multipart/form-data" action="{{ route('updatecategory') }}" method="post">
             			

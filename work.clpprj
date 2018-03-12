@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="E:/OSPanel/domains/work\work.clpprj">
+<project name="E:\OSPanel\domains\work\work.clpprj">
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateNewRequest.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\new.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminCategoriesController.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addcategory.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddCategoryRequest.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminNewsController.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addnew.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateCategoryRequest.php"/>
 	</lastopfiles>
 	<todoblock>
 	</todoblock>
@@ -4317,58 +4326,55 @@
 		<file name="E:\OSPanel\domains\work\vendor\autoload.php" crc="1517066705"/>
 		<file name="E:\OSPanel\domains\work\tests\TestCase.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\tests\ExampleTest.php" crc="1517066563"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\fe310fa724c5b017f6e3519fd5c6cf960e954499.php" crc="1517126222"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\fe310fa724c5b017f6e3519fd5c6cf960e954499.php" crc="1520094833"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\efbd04ec06c7130c6f3c62fe91978b4a64bdefe9.php" crc="1517123438"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\d8b2aea7fbfc456fe6a0c73c8d46af72ddc3aaf4.php" crc="1517078771"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\ce5c5711a231e5569bc0531fa957706026e50811.php" crc="1520094061"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\cd6ff80c47c2cfbfe54e9c01d3abbaff024482f8.php" crc="1518548835"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\ca307f348b87148caf6959545457d352a670a3ee.php" crc="1520080576"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\c7901430811e1e5e7f593804713a517ddc040610.php" crc="1517649765"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\c5b008e91bb334bff663f1a6f30516e27cb32eca.php" crc="1517079800"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\c4bc4019d65648e1a41244d46bf38bbefdeb8ab8.php" crc="1517133483"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\b67d4959653a355859fd59c0b4c59fb803de2c63.php" crc="1517084957"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\b52f8279e18dda658406142f07e3c690ac026fff.php" crc="1517078521"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1518299206"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\b42fa5dc1f393e1979e8cccd8848cc707836e616.php" crc="1520093908"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1520537400"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\9c7d56c1b285f906e7c02329ae16065ffd1f6713.php" crc="1517084779"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\8282f47a607ddbac369ca9a9f222d13962e0a5a7.php" crc="1517084957"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6f9ba9c463deab9ab88043016eae5e609a760e88.php" crc="1517085038"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6e8efa4ea0228be851afb8f2b555d2fe8b926fb5.php" crc="1517255256"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\6c8dfbf629ccc8c2b79d4f25f8171ce32f69c392.php" crc="1520094007"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6a5a4098d1e6ffc922e87d4345e9d4c61ee93585.php" crc="1517084837"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1517126216"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1520094706"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6524d701f6693736574ad9cdee93f715c681e691.php" crc="1517084779"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1518119810"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1520797915"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\601cd0b81f8a3f12839467703fdc61939f038f6a.php" crc="1517137904"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\58aca885d32a1e5904cacff113d7fa52459d633c.php" crc="1517077395"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\57be9ee5a0e3d337976344ec2f4398996b34dc38.php" crc="1517341871"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\57b2df0fc20665f18fcba598e475e8d85d5bfda2.php" crc="1517137650"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\5589bbe247fbfcf7fc4d711149b224d12601bb71.php" crc="1517077395"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\45f1ae7e7e283f63fd94e25445bfbea2d935a2f3.php" crc="1518548637"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\45f1ae7e7e283f63fd94e25445bfbea2d935a2f3.php" crc="1520886666"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\4405af4f646a48a1112d96081f378284d49aa495.php" crc="1517134040"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\4134e14f9498c2edf07b3d9a47c052cd509e995d.php" crc="1518125861"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\4134e14f9498c2edf07b3d9a47c052cd509e995d.php" crc="1520885848"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\3fdbc86e0900e7da14081b522acf9252ece8c93f.php" crc="1517084799"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\34d2cbb8448266b34a2dcbba53f841a243731921.php" crc="1517665034"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\3d8cad917ae2571d0d11350f61125468f19aec01.php" crc="1520080515"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\34d2cbb8448266b34a2dcbba53f841a243731921.php" crc="1520790254"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\34c5498f0e4d2e34bfb4ef4fa27af770dc42f6c9.php" crc="1517077098"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\347367caf8f0e597a26e28e4dc9091f46da11f50.php" crc="1517137862"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\2f6ca6daa844572b750d9d6d0748af0aa1f3480b.php" crc="1518345775"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\239c3a95c4e7ff4990d5240e597019ff4a009fd2.php" crc="1520080522"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1b8d0714d30d41c2eca68eb1a81360735d55ee15.php" crc="1517252305"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\125117aaf41c379924499105cd5d266602b0181d.php" crc="1517084855"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\0eaa26ce59199145e221e2e096cd131ff78f6d04.php" crc="1518549307"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\0eaa26ce59199145e221e2e096cd131ff78f6d04.php" crc="1520886374"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\05ad4be2788fde6ae95238a2657687119e48f50d.php" crc="1518119614"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\0559eaa594fe07b9cd874b0bbf509ad7301e4576.php" crc="1518119680"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\035da4779faafe60a6da9d28c22b6021d02ce69f.php" crc="1517135151"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\02c8e7ae5ca98acd56b30ed8834003e3e71df973.php" crc="1517126249"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\016f4b407f3697b2121b299b528f896163d03407.php" crc="1517132918"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1518299201"/>
+		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php" crc="1520537395"/>
 		<file name="E:\OSPanel\domains\work\resources\views\templates\admin.blade.php" crc="1517341866"/>
 		<file name="E:\OSPanel\domains\work\resources\views\layouts\app2.blade.php" crc="1517081913"/>
-		<file name="E:\OSPanel\domains\work\resources\views\js\npm.js" crc="1434456770"/>
-		<file name="E:\OSPanel\domains\work\resources\views\js\less.js" crc="1415507338"/>
-		<file name="E:\OSPanel\domains\work\resources\views\js\jquery-3.0.0.min.js" crc="1466062052"/>
-		<file name="E:\OSPanel\domains\work\resources\views\js\bootstrap.min.js" crc="1466510844"/>
-		<file name="E:\OSPanel\domains\work\resources\views\js\bootstrap.js" crc="1466510844"/>
 		<file name="E:\OSPanel\domains\work\resources\views\errors\503.blade.php" crc="1515182400"/>
-		<file name="E:\OSPanel\domains\work\resources\views\css\styles.less" crc="1516824159"/>
-		<file name="E:\OSPanel\domains\work\resources\views\css\styles.css" crc="1518129227"/>
-		<file name="E:\OSPanel\domains\work\resources\views\css\reset.css" crc="1515847493"/>
-		<file name="E:\OSPanel\domains\work\resources\views\css\bootstrap.css" crc="1517048386"/>
 		<file name="E:\OSPanel\domains\work\resources\views\auth\passwords\reset.blade.php" crc="1517133476"/>
 		<file name="E:\OSPanel\domains\work\resources\views\auth\passwords\email.blade.php" crc="1517133478"/>
 		<file name="E:\OSPanel\domains\work\resources\views\auth\emails\password.blade.php" crc="1517081913"/>
@@ -4376,17 +4382,17 @@
 		<file name="E:\OSPanel\domains\work\resources\views\auth\login.blade.php" crc="1517133474"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\test.blade.php" crc="1517646771"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\news.blade.php" crc="1518345772"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\new.blade.php" crc="1518125590"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\category.blade.php" crc="1518548635"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\new.blade.php" crc="1520885835"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\category.blade.php" crc="1520886536"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\categories.blade.php" crc="1518548832"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\admin.blade.php" crc="1517255245"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addnew.blade.php" crc="1517664934"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addcategory.blade.php" crc="1518549231"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addnew.blade.php" crc="1520284655"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addcategory.blade.php" crc="1520886370"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1517081913"/>
-		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1518119806"/>
-		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1516823024"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1520797903"/>
+		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1520094058"/>
 		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1518119678"/>
-		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1517080802"/>
+		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1520094001"/>
 		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php" crc="1518119560"/>
 		<file name="E:\OSPanel\domains\work\resources\views\!!! home.blade.php" crc="1517133469"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\validation.php" crc="1517066563"/>
@@ -4394,7 +4400,20 @@
 		<file name="E:\OSPanel\domains\work\resources\lang\en\pagination.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\auth.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\resources\assets\sass\app.scss" crc="1517066563"/>
-		<file name="E:\OSPanel\domains\work\public\css\styles.css" crc="1518128986"/>
+		<file name="E:\OSPanel\domains\work\resources\assets\css\styles.less" crc="1516824159"/>
+		<file name="E:\OSPanel\domains\work\resources\assets\css\styles.css" crc="1518129227"/>
+		<file name="E:\OSPanel\domains\work\resources\assets\css\reset.css" crc="1515847493"/>
+		<file name="E:\OSPanel\domains\work\resources\assets\css\bootstrap.css" crc="1517048386"/>
+		<file name="E:\OSPanel\domains\work\public\assets\sass\app.scss" crc="1517066563"/>
+		<file name="E:\OSPanel\domains\work\public\assets\js\npm.js" crc="1434456770"/>
+		<file name="E:\OSPanel\domains\work\public\assets\js\less.js" crc="1415507338"/>
+		<file name="E:\OSPanel\domains\work\public\assets\js\jquery-3.0.0.min.js" crc="1466062052"/>
+		<file name="E:\OSPanel\domains\work\public\assets\js\bootstrap.min.js" crc="1466510844"/>
+		<file name="E:\OSPanel\domains\work\public\assets\js\bootstrap.js" crc="1466510844"/>
+		<file name="E:\OSPanel\domains\work\public\assets\css\styles.less" crc="1516824159"/>
+		<file name="E:\OSPanel\domains\work\public\assets\css\styles.css" crc="1520094297"/>
+		<file name="E:\OSPanel\domains\work\public\assets\css\reset.css" crc="1515847493"/>
+		<file name="E:\OSPanel\domains\work\public\assets\css\bootstrap.css" crc="1517048386"/>
 		<file name="E:\OSPanel\domains\work\public\robots.txt" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\public\index.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\public\.htaccess" crc="1517066563"/>
@@ -4422,7 +4441,11 @@
 		<file name="E:\OSPanel\domains\work\app\Providers\AuthServiceProvider.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\app\Providers\AppServiceProvider.php" crc="1517066563"/>
 		<file name="E:\OSPanel\domains\work\app\Jobs\Job.php" crc="1517066563"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateNewRequest.php" crc="1520885303"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateCategoryRequest.php" crc="1520886604"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\Request.php" crc="1517066562"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddNewRequest.php" crc="1520791186"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddCategoryRequest.php" crc="1520886612"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\VerifyCsrfToken.php" crc="1517066562"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\RedirectIfAuthenticated.php" crc="1517066562"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\EncryptCookies.php" crc="1517066562"/>
@@ -4431,9 +4454,9 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1517066562"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminUsersController.php" crc="1517249110"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminPagesController.php" crc="1517249106"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminNewsController.php" crc="1518037883"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminNewsController.php" crc="1520886636"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminController.php" crc="1517249029"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminCategoriesController.php" crc="1518549957"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminCategoriesController.php" crc="1520886661"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\PagesController.php" crc="1516473322"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php" crc="1516994458"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\MainController.php" crc="1517085914"/>

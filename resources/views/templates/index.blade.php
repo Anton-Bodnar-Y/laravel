@@ -24,6 +24,11 @@
 		<!--<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.less') }}" />
 		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/js/less.js') }}" />-->
 		
+		
+		
+		
+		
+		
 	</head>
 	<body>
 

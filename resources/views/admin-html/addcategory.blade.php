@@ -11,7 +11,15 @@
 				
                 <div class="panel-body">
             		
-            		
+            		@if(count($errors) > 0)
+					<div class="alert alert-danger">
+						<ul>
+							@foreach($errors->all() as $error)
+								<li>- {{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
             		
 					<form class="formEditNew" enctype="multipart/form-data" action="{{ route('addcategory') }}" method="post">
 					
@@ -22,12 +30,12 @@
 						
 						
 						<h4>Название категории</h4>
-						<input class="titleNew" type="text" name="title" value=""/><br/>
+						<input class="titleNew" type="text" name="title" value="{{ old('title') }}"/><br/>
 						
 						
 						
 						<h4>Описание статьи (без HTML)</h4>
-						<textarea name="newShortDesc" class="newShortDesc"></textarea><br/>
+						<textarea name="newShortDesc" class="newShortDesc">{{ old('newShortDesc') }}</textarea><br/>
 						
 						
 						

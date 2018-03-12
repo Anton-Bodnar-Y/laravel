@@ -5,10 +5,16 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\AddNewRequest;
+use App\Http\Requests\UpdateNewRequest;
 
 use Illuminate\Http\Response;
 
 use App\Http\Controllers\Controller;
+
+
+
+
 
 
 //use Illuminate\Support\Facades\Storage;
@@ -84,7 +90,7 @@ class AdminNewsController extends Controller
 	
 	
 	
-	public function updateNew(Request $request){
+	public function updateNew(UpdateNewRequest $request){
 		
 		if($request->isMethod('post')){
 			$request->flash();
@@ -132,7 +138,9 @@ class AdminNewsController extends Controller
 	
 	
 	
-	public function writeNew(Request $request){
+	public function writeNew(AddNewRequest $request){
+		
+		
 		
 		if($request->isMethod('post')){
 			

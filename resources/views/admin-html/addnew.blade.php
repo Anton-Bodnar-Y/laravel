@@ -11,7 +11,15 @@
 				
                 <div class="panel-body">
             		
-            		
+            		@if(count($errors) > 0)
+					<div class="alert alert-danger">
+						<ul>
+							@foreach($errors->all() as $error)
+								<li>- {{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
             		
 					<form class="formEditNew" enctype="multipart/form-data" action="{{ route('addnews') }}" method="post">
 					
@@ -22,7 +30,7 @@
 						
 						
 						<h4>Название статьи</h4>
-						<input class="titleNew" type="text" name="title" value=""/><br/>
+						<input class="titleNew" type="text" name="title" value="{{ old('title') }}"/><br/>
 						
 						
 						<h4>Укажите категорию</h4>
@@ -37,23 +45,23 @@
 						
 						
 						<h4>Короткое описание статьи (без HTML)</h4>
-						<textarea name="newShortDesc" class="newShortDesc"></textarea><br/>
+						<textarea name="newShortDesc" class="newShortDesc">{{ old('newShortDesc') }}</textarea><br/>
 						
 						<h4>Полный текст статьи статьи (с HTML)</h4>
-						<textarea name="newText" class="newText"></textarea><br/>
+						<textarea name="newText" class="newText">{{ old('newText') }}</textarea><br/>
 						
 						
 						
 						
 						
 						<h4>META TITLE</h4>
-						<input class="" type="text" name="new_title" /><br/>
+						<input class="" type="text" name="new_title" value="{{ old('new_title') }}" /><br/>
 						
 						<h4>META DESC</h4>
-						<input class="" type="text" name="new_desc" /><br/>
+						<input class="" type="text" name="new_desc" value="{{ old('new_desc') }}" /><br/>
 						
 						<h4>META KEY</h4>
-						<input class="" type="text" name="new_key" /><br/>
+						<input class="" type="text" name="new_key" value="{{ old('new_key') }}" /><br/>
 						
 						
 						

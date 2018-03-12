@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\AddCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
+
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Response;
@@ -75,7 +78,7 @@ class AdminCategoriesController extends Controller
 	}
 	
 	
-	public function updateCategory(Request $request){
+	public function updateCategory(UpdateCategoryRequest $request){
 		
 		if($request->isMethod('post')){
 			$request->flash();
@@ -118,7 +121,7 @@ class AdminCategoriesController extends Controller
 	
 	
 	
-	public function writeCategory(Request $request){
+	public function writeCategory(AddCategoryRequest $request){
 		
 		
 		
