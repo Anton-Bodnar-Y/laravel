@@ -145,4 +145,21 @@ class AdminCategoriesController extends Controller
 	
 	
 	
+	
+	public function deleteCategory($id){
+		
+		/*
+		* get all news
+		**/
+		$deleteCategory = new CategoryModel;
+		$count = $deleteCategory->deleteCategory($id);
+		
+		return redirect('admin/categories');
+		
+	}
+	
+	
+	
+	
+	
 }

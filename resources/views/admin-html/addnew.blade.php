@@ -34,7 +34,7 @@
 						
 						
 						<h4>Укажите категорию</h4>
-						<select name="category">
+						<select class="categorySelect" name="category">
 							@foreach($category as $value)
 							
 							<option value="{{ $value['category_id'] }}">{{ $value['category_title'] }}</option>
@@ -55,13 +55,13 @@
 						
 						
 						<h4>META TITLE</h4>
-						<input class="" type="text" name="new_title" value="{{ old('new_title') }}" /><br/>
+						<input class="metaInfo" type="text" name="new_title" value="{{ old('new_title') }}" /><br/>
 						
 						<h4>META DESC</h4>
-						<input class="" type="text" name="new_desc" value="{{ old('new_desc') }}" /><br/>
+						<input class="metaInfo" type="text" name="new_desc" value="{{ old('new_desc') }}" /><br/>
 						
 						<h4>META KEY</h4>
-						<input class="" type="text" name="new_key" value="{{ old('new_key') }}" /><br/>
+						<input class="metaInfo" type="text" name="new_key" value="{{ old('new_key') }}" /><br/>
 						
 						
 						
@@ -77,6 +77,25 @@
 						
 						<h4>Изображение 3</h4>
 						<input class="btn btn-default btn-lg" type="file" name="img_3" /><br/>
+						
+						
+						
+						
+						<h4>Кросс-статьи</h4>
+						
+						<select class="crossSelect" name="cross_1">
+							<option disabled>Выберите статью</option>
+							@foreach($listNews as $value)
+								<option value="{{ $value['new_id'] }}">{{ $value['news_title'] }}</option>
+							@endforeach
+						</select>
+						
+						<select class="crossSelect" name="cross_2">
+							<option disabled>Выберите статью</option>
+							@foreach($listNews as $value)
+								<option value="{{ $value['new_id'] }}">{{ $value['news_title'] }}</option>
+							@endforeach
+						</select>
 						
 						
 						

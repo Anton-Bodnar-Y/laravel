@@ -27,6 +27,23 @@ class NewModel extends Model
 	
 	
 	
+	
+	/**
+	* GET ALL LIST NEWS FOR CROSS-NEWS in ADMIN
+	*/
+    public function getNewsCross(){
+		//$news = DB::table('news')->orderBy('new_id', 'desc');
+		$news = DB::table('news')
+								->orderBy('new_id', 'desc')
+								->skip(0)->take(10)
+								->get();
+		return $news;
+	}
+	
+	
+	
+	
+	
 	/**
 	* GET LAST NEWS
 	*/
@@ -146,9 +163,15 @@ class NewModel extends Model
                     			
                     			]);
         
-        
+        /*
         DB::table('news_content')->where('new_id', $request->id)
 	                    	->update(['text' => $request->newText]);
+		*/
+		DB::table('news_content')->where('new_id', $request->id)
+	                    	->update([
+	                    			'text' => $request->newText,
+	                    			'cross_news' => serialize(array($request->cross_1,$request->cross_2)),
+	                    			]);
         
         
         
@@ -234,7 +257,7 @@ class NewModel extends Model
 		DB::table('news_content')->where('new_id', $idLastNew[0]['new_id'])
 	                    	->update([
 	                    			'text' => $request->newText,
-	                    			'cross_news' => serialize(array(2,3)),
+	                    			'cross_news' => serialize(array($request->cross_1,$request->cross_2)),
 	                    			
 	                    			]);
 		
@@ -294,6 +317,25 @@ class NewModel extends Model
 	                    			]);
         
         
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**
+	* DELETE NEW 
+	*/
+	public function deleteNew($id){
+		
+		DB::table('news')->where('new_id', $id)->delete();
+		DB::table('news_content')->where('new_id', $id)->delete();
+		DB::table('news_meta')->where('new_id', $id)->delete();
+		
 	}
 	
 	

@@ -7,7 +7,7 @@
 		
 		
 		
-		
+		<link rel="icon" type="path-to/favicon.ico" href="{{ url('public/img/favicon.ico') }}">
 		
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
 		<link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet" >
@@ -21,6 +21,8 @@
 		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/reset.css') }}" />
 		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/bootstrap.css') }}" />
 		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.css') }}" />
+		
+		
 		<!--<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.less') }}" />
 		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/js/less.js') }}" />-->
 		
@@ -120,7 +122,15 @@
 						<p>skupe: &nbsp;&nbsp;&nbsp; anton_bodnar</p>
 						<p>email: &nbsp;&nbsp;&nbsp; bodnar_anton@ukr.net</p>
 					</div>
+					
+					
+					
 				</div>
+				
+				<div class="bottomBlock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					© 2011 ESA, European Society for Agronomy
+				</div>
+				
 			</footer>
 @show
 
@@ -165,3 +175,4 @@
 
 	</script>
 
+<script src="{{ url('public/assets/js/galery.js') }}"></script>

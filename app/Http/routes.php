@@ -75,7 +75,7 @@ Route::group(['prefix'=>'admin'], function(){
 	/**
 	* DELETE NEW
 	*/
-	Route::get('/delete/new/{id}', ['uses'=>'Admin\AdminNewsController@getIndex', 'as'=>'admin/delete/new']);
+	Route::get('/delete/new/{id}', ['uses'=>'Admin\AdminNewsController@deleteNew', 'as'=>'admin/delete/new']);
 	
 	
 	
@@ -92,6 +92,11 @@ Route::group(['prefix'=>'admin'], function(){
 	*/
 	Route::get('/add/category', ['uses'=>'Admin\AdminCategoriesController@addCategory', 'as'=>'admin/add/category']);
 	Route::post('addcategory', ['uses'=>'Admin\AdminCategoriesController@writeCategory', 'as'=>'addcategory']);
+	
+	/**
+	* DELETE category
+	*/
+	Route::get('/delete/category/{id}', ['uses'=>'Admin\AdminCategoriesController@deleteCategory', 'as'=>'admin/delete/category']);
 	
 });
 

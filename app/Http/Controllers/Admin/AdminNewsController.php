@@ -64,6 +64,9 @@ class AdminNewsController extends Controller
 			$NewModel = new NewModel;
 			$new = $NewModel->oneNew($id);
 			
+			$NewModel = new NewModel;
+			$listNews = $NewModel->getNewsCross();
+			
 			
 			/*
 			* get categories
@@ -80,6 +83,7 @@ class AdminNewsController extends Controller
 			$view = view('admin-html/new', [
 									'new' => $new, 
 									'category' => $category,
+									'listNews' => $listNews,
 								])->withTitle('Редактировать новость')
 								->withDescription('Редактировать новость')
 								->render();
@@ -122,12 +126,17 @@ class AdminNewsController extends Controller
 		$categoryModel = new CategoryModel;
 		$category = $categoryModel->getIndex();
 		
+		$NewModel = new NewModel;
+		$listNews = $NewModel->getNewsCross();
+		
+		//dump($listNews);
 		
 		/*
 		* call view
 		**/
 		$view = view('admin-html/addnew', [
 								'category' => $category,
+								'listNews' => $listNews,
 							])->withTitle('Добавить новость')
 							->withDescription('Добавить новость')
 							->render();
@@ -153,6 +162,24 @@ class AdminNewsController extends Controller
 			$new = $NewModel->writeNew($request);
 			
 		}
+		
+		return redirect('admin/news');
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	public function deleteNew($id){
+		
+		/*
+		* get all news
+		**/
+		$deleteNew = new NewModel;
+		$deleteNew->deleteNew($id);
 		
 		return redirect('admin/news');
 		

@@ -146,8 +146,20 @@ th {
 	height: auto;
 	float: left;
 }
-
-
+.categorySelect{
+	height: 50px;
+}
+.crossSelect{
+	height: 50px;
+	margin: 10px 0;
+}
+.metaInfo{
+	height: 50px;
+	width: 100%;
+}
+.btn{
+	border-radius: 0px;
+}
 
 
 

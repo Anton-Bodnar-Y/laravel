@@ -45,4 +45,25 @@ class CategoryModel extends Model
 									]);
 		
 	}
+	
+	
+	
+	/**
+	* DELETE Category 
+	*/
+	public function deleteCategory($id){
+		
+		$countArt = DB::table('news')->where('category_id', $id)->count();
+		
+		if($countArt != 0){
+			DB::table('news')->where('category_id', $id)
+                    	->update([
+                    			'category_id' => '0',
+                    			
+                    			]);
+		}
+		
+		DB::table('category')->where('category_id', $id)->delete();
+		
+	}
 }
