@@ -46,13 +46,13 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                <!-- <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <li><a href="{{ route('admin') }}">Главная</a></li>
                     <li><a href="{{ route('admin/news') }}">Статьи</a></li>
                     <li><a href="{{ route('admin/categories') }}">Категории</a></li>
                     <li><a href="{{ route('admin/pages') }}">Информ-страницы</a></li>
                     <li><a href="{{ route('admin/users') }}">Пользователи</a></li>
-                </ul> -->
+                </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">

@@ -29,6 +29,8 @@ use App\CategoryModel;
 class AdminNewsController extends Controller
 {
     //
+	
+	
     public function getIndex(){
 		
 		if(view()->exists('admin-html/news')){

@@ -35,8 +35,7 @@ Route::get('/category/{id}', ['uses'=>'CategoryController@getNews', 'as'=>'categ
 
 
 
-Route::get('/admin', ['uses'=>'admin\HomeAdminController@getIndex', 'as'=>'admin']);
-
+//Route::get('/admin', ['uses'=>'admin\HomeAdminController@getIndex', 'as'=>'admin']);
 
 
 
@@ -48,7 +47,7 @@ Route::get('/admin', ['uses'=>'admin\HomeAdminController@getIndex', 'as'=>'admin
 
 Route::auth();
 
-Route::group(['prefix'=>'admin'], function(){
+Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	
 	Route::get('/', ['uses'=>'Admin\AdminController@getIndex', 'as'=>'admin']);
 	
@@ -56,7 +55,6 @@ Route::group(['prefix'=>'admin'], function(){
 	Route::get('/categories', ['uses'=>'Admin\AdminCategoriesController@getIndex', 'as'=>'admin/categories']);
 	Route::get('/pages', ['uses'=>'Admin\AdminPagesController@getIndex', 'as'=>'admin/pages']);
 	Route::get('/users', ['uses'=>'Admin\AdminUsersController@getIndex', 'as'=>'admin/users']);
-	
 	
 	/**
 	* UPDATE NEW
@@ -70,22 +68,16 @@ Route::group(['prefix'=>'admin'], function(){
 	Route::get('/add/new', ['uses'=>'Admin\AdminNewsController@addNew', 'as'=>'admin/add/new']);
 	Route::post('addnews', ['uses'=>'Admin\AdminNewsController@writeNew', 'as'=>'addnews']);
 	
-	
-	
 	/**
 	* DELETE NEW
 	*/
 	Route::get('/delete/new/{id}', ['uses'=>'Admin\AdminNewsController@deleteNew', 'as'=>'admin/delete/new']);
-	
-	
-	
 	
 	/**
 	* UPDATE category
 	*/
 	Route::get('/edit/category/{id}', ['uses'=>'Admin\AdminCategoriesController@edinCategory', 'as'=>'admin/edit/category']);
 	Route::post('updatecategory', ['uses'=>'Admin\AdminCategoriesController@updateCategory', 'as'=>'updatecategory']);
-	
 	
 	/**
 	* ADD category
@@ -98,11 +90,12 @@ Route::group(['prefix'=>'admin'], function(){
 	*/
 	Route::get('/delete/category/{id}', ['uses'=>'Admin\AdminCategoriesController@deleteCategory', 'as'=>'admin/delete/category']);
 	
+	
+	
+	
 });
 
-//Route::auth();
 
-//Route::get('/home', 'HomeController@index');
 
 
 
