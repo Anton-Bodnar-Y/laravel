@@ -371,7 +371,41 @@ body #content .new #show .collectionImages img {
 
 
 
+/*comments*/
+body #content .comments{
+	height: auto;
+	/*background: #bdbdbd;*/
+	font-family: "Roboto", sans-serif;
+}
+body #content .comments .commentsBlock{
+	margin: 25px 0;
+}
+body #content .comments .commentsBlock .comment{
+	margin: 15px 0 15px 15px;
+}
 
+body #content .comments .inputText{
+	width: 400px;
+	height: 30px;
+	box-sizing: border-box;
+	margin: 5px 0;
+}
+body #content .comments textarea{
+	width: 100%;
+	min-height: 200px;
+	box-sizing: border-box;
+	margin: 5px 0;
+}
+body #content .comments .inputBtn{
+	width: 200px;
+	height: 40px;
+	box-sizing: border-box;
+	border: none;
+	background: #31343b;
+	color: #fff;
+	margin: 5px 0;
+	cursor: pointer;
+}
 
 
 

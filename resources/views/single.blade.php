@@ -67,6 +67,45 @@
 			
 			</div>
 			
+			<div class="comments col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+				
+				
+				
+				
+				<p><i>Комментарии:</i></p>
+				<hr/>
+				@if(empty($comments))
+					<p class="message"><i>-- Здесь еще нет комментариев --</i></p>
+				@endif
+				<div class="commentsBlock">
+					
+					@foreach($comments as $value)
+					<div style="margin-left: 15px;">
+						<h4 style="margin: 15px 0 0 0;"><i>{{ $value['name'] }}</i></h4>
+						<p style="margin: 0 0 0 0;"><i>{{ date('Y:n:j', $value['date']) }}</i></p>
+						<p style="margin: 0 0 15px 0;">{{ $value['text'] }}</p>
+					</div>
+					@endforeach
+					
+					
+				</div>
+				
+				
+				
+				<hr/>
+				
+				<form id="form" method="POST">
+					<label>Имя:<br/><input type="text" name="name" class="inputText" id="name"/></label><br/>
+					<label>Почта:<br/><input type="text" name="email" class="inputText" id="email"/></label><br/>
+					<label>Текст комментария:<br/><textarea name="textConnemt" id="comment"></textarea></label><br/>
+					
+					<input type="hidden" name="news_id" value="{{ $new[0]['new_id'] }}" id="news_id"/>
+					
+					<input type="submit" name="btn" value="Отправить" class="inputBtn"/>
+				</form>
+				
+			</div>
+			
 			
 			@if(!empty($cross_news))
 			<div class="otherNews col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
@@ -100,3 +139,67 @@
 @section('footer')
 	@parent
 @endsection
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+	
+	
+	
+	
+	(function () { 
+		
+		window.onload = function() {
+			
+			var form = document.getElementById('form');
+			
+			form.onsubmit = function(e){
+				
+				e.preventDefault();
+				
+				var data = "comment=" + encodeURIComponent(document.getElementById('comment').value) + "&name=" + encodeURIComponent(document.getElementById('name').value) + "&email=" + encodeURIComponent(document.getElementById('email').value) + "&news_id=" + encodeURIComponent(document.getElementById('news_id').value);
+				
+				
+				var xhr = new XMLHttpRequest();
+				xhr.open("POST", "{{ route('sendcomment') }}", true);
+				xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				xhr.send(data);
+				
+				xhr.onreadystatechange = function(){
+					//alert(xhr.responseText);
+					console.log( xhr.responseText );
+					
+					document.getElementsByClassName('commentsBlock')[0].innerHTML = xhr.responseText;
+				}
+				
+				document.getElementById('name').value = '';
+				document.getElementById('email').value = '';
+				document.getElementById('comment').value = '';
+				
+				
+				document.getElementsByClassName('message')[0].style.display = 'none';
+				
+				
+				
+				
+				
+			}
+		}
+	})();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>

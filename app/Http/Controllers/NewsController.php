@@ -16,6 +16,7 @@ use DB;
 use App\NewModel;
 use App\PagesModel;
 use App\CategoryModel;
+use App\CommentModel;
 
 
 class NewsController extends Controller
@@ -90,22 +91,11 @@ class NewsController extends Controller
 			$NewModel = new NewModel;
 			$new = $NewModel->oneNew($id);
 			
-			
-			
-			
-			
 			/*
 			* get news for 'cross_news'
 			**/
 			$NewModel = new NewModel;
 			$cross_news = $NewModel->crossNews($new[0]['cross_news']);
-			
-			
-			
-			
-			
-			
-			
 			
 			/*
 			* get list categories
@@ -113,9 +103,11 @@ class NewsController extends Controller
 			$CategoryModel = new CategoryModel;
 			$categories = $CategoryModel->getIndex();
 			
-			
-			
-			
+			/*
+			* get list comments
+			**/
+			$commentModel = new CommentModel;
+			$comments = $commentModel->getCommentsFirst($id);
 			
 			/*
 			* get pagesInfo
@@ -130,14 +122,12 @@ class NewsController extends Controller
 			
 			
 			
-			
-			
-			
 			$single = view('single', [
 									'new' => $new, 
 									'cross_news' => $cross_news,
 									'categories' => $categories,
 									'pages' => $pages, 
+									'comments' => $comments, 
 								])->withTitle($new[0]['new_title'])
 								->withDescription($new[0]['new_desc'])
 								->render();

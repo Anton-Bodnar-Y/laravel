@@ -41,6 +41,12 @@ Route::get('/category/{id}', ['uses'=>'CategoryController@getNews', 'as'=>'categ
 
 
 
+Route::get('/sendcomment', ['uses'=>'CommentsController@getIndex', 'as'=>'sendcomment']);
+Route::post('/sendcomment', ['uses'=>'CommentsController@getIndex', 'as'=>'sendcomment']);
+
+
+
+
 /**
 * ADMIN PART
 */

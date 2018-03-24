@@ -147,7 +147,8 @@
 
 
 
-	<script>
+	<script type="text/javascript">
+		/*
 		function load1() {
 			//content - appeal
 			var oBlock = document.getElementById('content');
@@ -172,7 +173,7 @@
 
 		setTimeout('load1()', 2000);
 
-
+*/
 	</script>
 
 <script src="{{ url('public/assets/js/galery.js') }}"></script>

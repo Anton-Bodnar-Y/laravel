@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 22 2018 г., 23:34
+-- Время создания: Мар 24 2018 г., 15:37
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -48,6 +48,32 @@ INSERT INTO `category` (`category_id`, `category_title`, `category_desc`, `wwewe
 (5, 'Агроимпорт', 'Новости аграрного импорта. Поставка продукции из-за границы', ''),
 (6, 'События', 'События в агросфере. Встречи. Конференции', ''),
 (9, 'Криминал', 'Коррупция в земельной сфере, захваты рейдеров', '');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `comments`
+--
+
+CREATE TABLE `comments` (
+  `id` int(11) NOT NULL,
+  `news_id` int(11) NOT NULL,
+  `parent_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `text` text NOT NULL,
+  `date` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `comments`
+--
+
+INSERT INTO `comments` (`id`, `news_id`, `parent_id`, `name`, `email`, `text`, `date`) VALUES
+(25, 52, 0, 'Антон', 'sasha_akimova@ukr.net', 'Мой охуительно умный комментарий для того, чтобы поумничать немного!!!!!!', '1521889608'),
+(26, 52, 0, 'Антошка', 'bodnar_anton@ukr.net', 'Я думаю, что наша страна могла бы быть одной из пяти наиболее успешных стран мира, если бы не этот ебучий порох и не менее ебучий гройсман. Да и всех чиновников расстрелять к ебеням!', '1521889721'),
+(27, 52, 0, 'Санек', 'sanek@ukr.net', 'Да, именно так! НАша страна охуеть как богата на пидарасов во власти. Ебантяи ебаные!', '1521889779'),
+(28, 53, 0, 'Антон', 'bodnar_anton@ukr.net', 'Ну наконец то молочка попьем! Вот уж где заебок будет!', '1521890183');
 
 -- --------------------------------------------------------
 
@@ -270,7 +296,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'bodnar_anton@ukr.net', '$2y$10$Pvfd12uL3Ji55rK8ndxcj.Xm5SpDqkx7ZobHuZmemr4NJOPQ3Wlt2', 'BguGH4TkRSQfPui93xlJMuewn8JOMLiQleNNgr3XJyXTYL53jz3jlLT3Pan6', '2018-01-27 09:36:18', '2018-02-13 17:45:15'),
+(1, 'Admin', 'bodnar_anton@ukr.net', '$2y$10$Pvfd12uL3Ji55rK8ndxcj.Xm5SpDqkx7ZobHuZmemr4NJOPQ3Wlt2', 'N9NEkLrivNpUP8ENpd9ONzXqloktWECd59ZQ54KPcqCVlC1X2qtz0hjMvBPC', '2018-01-27 09:36:18', '2018-03-23 11:15:10'),
 (2, 'Bodnar', 'bodnar_anton@mail.ru', '$2y$10$Yh/g5tvZRj2xJ16gZu2Yeeih/zlP8bqzOzFYCeVX8.HMtjy/EG9NW', NULL, '2018-01-27 10:46:19', '2018-01-27 10:46:19');
 
 --
@@ -282,6 +308,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`category_id`);
+
+--
+-- Индексы таблицы `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Индексы таблицы `forum`
@@ -341,7 +373,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `category`
 --
 ALTER TABLE `category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT для таблицы `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT для таблицы `forum`
 --
@@ -351,17 +388,17 @@ ALTER TABLE `forum`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `new_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `new_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT для таблицы `news_content`
 --
 ALTER TABLE `news_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT для таблицы `news_meta`
 --
 ALTER TABLE `news_meta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT для таблицы `pages`
 --

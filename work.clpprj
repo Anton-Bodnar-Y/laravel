@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="E:\OSPanel\domains\work\work.clpprj">
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
-		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\auth\login.blade.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\auth\register.blade.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\admin.blade.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\adminContent.blade.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Middleware\Authenticate.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php"/>
+		<file name="E:\OSPanel\domains\work\public\assets\css\styles.css"/>
 	</lastopfiles>
 	<todoblock>
 	</todoblock>
-	<dbgurls>
-	</dbgurls>
 	<filescache>
 		<file name="E:\OSPanel\domains\work\vendor\webmozart\assert\tests\AssertTest.php" crc="1517066677"/>
 		<file name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php" crc="1517066676"/>
@@ -4348,7 +4341,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6a5a4098d1e6ffc922e87d4345e9d4c61ee93585.php" crc="1517084837"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1520094706"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6524d701f6693736574ad9cdee93f715c681e691.php" crc="1517084779"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1521295848"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1521839401"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\601cd0b81f8a3f12839467703fdc61939f038f6a.php" crc="1517137904"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\58aca885d32a1e5904cacff113d7fa52459d633c.php" crc="1517077395"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\57be9ee5a0e3d337976344ec2f4398996b34dc38.php" crc="1521809307"/>
@@ -4391,7 +4384,7 @@
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addnew.blade.php" crc="1521809683"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addcategory.blade.php" crc="1521809679"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1517081913"/>
-		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1521295844"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1521840267"/>
 		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1520094058"/>
 		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1518119678"/>
 		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1520094001"/>
@@ -4414,7 +4407,7 @@
 		<file name="E:\OSPanel\domains\work\public\assets\js\bootstrap.min.js" crc="1466510844"/>
 		<file name="E:\OSPanel\domains\work\public\assets\js\bootstrap.js" crc="1466510844"/>
 		<file name="E:\OSPanel\domains\work\public\assets\css\styles.less" crc="1516824159"/>
-		<file name="E:\OSPanel\domains\work\public\assets\css\styles.css" crc="1521570991"/>
+		<file name="E:\OSPanel\domains\work\public\assets\css\styles.css" crc="1521839035"/>
 		<file name="E:\OSPanel\domains\work\public\assets\css\reset.css" crc="1515847493"/>
 		<file name="E:\OSPanel\domains\work\public\assets\css\bootstrap.css" crc="1517048386"/>
 		<file name="E:\OSPanel\domains\work\public\robots.txt" crc="1517066563"/>
