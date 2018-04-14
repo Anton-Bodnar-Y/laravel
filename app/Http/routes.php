@@ -46,6 +46,9 @@ Route::post('/sendcomment', ['uses'=>'CommentsController@getIndex', 'as'=>'sendc
 
 
 
+Route::get('/tag/{tag_id}', ['uses'=>'NewsController@getNewsTag', 'as'=>'tag']);
+
+
 
 /**
 * ADMIN PART

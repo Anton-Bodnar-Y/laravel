@@ -20,6 +20,42 @@ body header .top-header p {
   color: #7b7b7b;
   line-height: 25px;
 }
+body header .top-header #searchForm{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #7b7b7b;
+}
+body header .top-header #searchForm .searchText{
+  height: 35px;
+  width: 250px;
+  border: 1px solid #79b458;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+  float: left;
+}
+body header .top-header #searchForm .searchSubmit{
+  height: 35px;
+  border: none;
+  background: #79b458;
+  margin: 0;
+  padding: 5px;
+  cursor: pointer;
+  padding: 0 15px;
+  color: #fff;
+}
+body header .top-header #searchForm .searchSubmit:hover{
+  background: #31343b;
+  color: #79b458;
+}
+
+
+
+
+
 body header .bottom-header {
   height: 280px;
   background: url(../../img/IMG_0788.JPG);
@@ -160,6 +196,10 @@ body #content #news_block .new_block .fool {
   margin: 15px 0;
   text-decoration: none;
 }
+body #content #news_block .noNews {
+  font-family: "Roboto", sans-serif;
+  margin: 50px 0;
+}
 body #content .pagination {
   height: 100px;
   line-height: 100px;
@@ -293,6 +333,7 @@ body #content .new .title {
 body #content .new .date {
   color: #79b458;
   font-size: 14px;
+  margin: 25px 0;
 }
 body #content .new .top_img img {
   width: 100%;
@@ -370,6 +411,22 @@ body #content .new #show .collectionImages img {
 
 
 
+/*tags*/
+body #content #tags {
+	padding: 25px 0;
+	/*background: #999;*/
+}
+body #content #tags a{
+	display: inline-block;
+	background: #79b458;
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+
+
+
 
 /*comments*/
 body #content .comments{
@@ -406,6 +463,9 @@ body #content .comments .inputBtn{
 	margin: 5px 0;
 	cursor: pointer;
 }
+
+
+
 
 
 

@@ -20,6 +20,23 @@
 			
 			
 			
+			<div id="left_menu">
+				<ul>
+					@foreach($categories as $category)
+					@if($category['category_id'] != 0)
+					<li><a href="/category/{{ $category['category_id'] }}">{{ $category['category_title'] }}</a></li>
+					@endif
+					@endforeach
+				</ul>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
 			<div class="new col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
 			
 			@foreach($new as $val)
@@ -28,7 +45,7 @@
 				<p class="top_img"><img src="../../public/path/{{ $val['img'] }}" alt=""/></p>
 				<div class="text_article">{!! $val['text'] !!}</div>
 				
-				<div class="block_img" id="block_img" >
+				<div class="block_img col-lg-12 col-md-12 col-sm-12 col-xs-12" id="block_img" >
 					
 					@if(!empty($val['img_1']))
 					<img class="imgGalery col-lg-4 col-md-4 col-sm-12 col-xs-12" src="../../public/path/{{ $val['img_1'] }}" alt=""/>
@@ -64,8 +81,23 @@
 				</div>
 				
 			@endforeach
-			
+				
+				@if($tags)
+				<div id="tags" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p><i>Теги:</i></p>
+					<hr/>
+					@foreach($tags as $tag)
+					<a href="/tag/{{ $tag['tag_id'] }}"><span class="glyphicon glyphicon-tag"></span>&#160;{{ $tag['tag_name'] }}</a>
+					@endforeach
+				</div>
+				@endif
 			</div>
+			
+			
+			
+			
+			
+			
 			
 			<div class="comments col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
 				
@@ -92,6 +124,8 @@
 				
 				
 				
+				
+				
 				<hr/>
 				
 				<form id="form" method="POST">
@@ -113,8 +147,9 @@
 				<h4 class="title">Читайте также:</h4>
 				@foreach($cross_news as $new)
 				<div class="otherNew col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<a href="/new/{{ $new[0]['new_id'] }}"><h5 class="title">{{ $new[0]['news_title'] }}</h5></a>
+					
 					<a href="/new/{{ $new[0]['new_id'] }}"><img src="/public/path/{{ $new[0]['img'] }}" alt=""/></a>
+					<a href="/new/{{ $new[0]['new_id'] }}"><h5 class="title">{{ $new[0]['news_title'] }}</h5></a>
 				</div>
 				@endforeach
 				

@@ -17,6 +17,7 @@ use App\NewModel;
 use App\PagesModel;
 use App\CategoryModel;
 use App\CommentModel;
+use App\TagsModel;
 
 
 class NewsController extends Controller
@@ -94,8 +95,18 @@ class NewsController extends Controller
 			/*
 			* get news for 'cross_news'
 			**/
-			$NewModel = new NewModel;
+			//$NewModel = new NewModel;
 			$cross_news = $NewModel->crossNews($new[0]['cross_news']);
+			
+			
+			
+			/*
+			* get tags for this new
+			**/
+			$TagsModel = new TagsModel;
+			$tags = $TagsModel->getTags($id);
+			
+			
 			
 			/*
 			* get list categories
@@ -115,6 +126,10 @@ class NewsController extends Controller
 			$PagesModel = new PagesModel;
 			$pages = $PagesModel->getPages();
 			/*
+			
+			
+			
+			/*
 			* call view
 			**/
 			
@@ -127,6 +142,7 @@ class NewsController extends Controller
 									'cross_news' => $cross_news,
 									'categories' => $categories,
 									'pages' => $pages, 
+									'tags' => $tags, 
 									'comments' => $comments, 
 								])->withTitle($new[0]['new_title'])
 								->withDescription($new[0]['new_desc'])
@@ -134,6 +150,68 @@ class NewsController extends Controller
 			
 			return (new Response($single))->header('charset', 'utf-8');
 			
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public function getNewsTag($tag_id){
+		
+		if(view()->exists('news')){
+			
+			//return $tag_link;
+			
+			
+			
+			/*
+			* get news for homePage
+			**/
+			$NewModel = new NewModel;
+			$news = $NewModel->getNewsTag($tag_id, 4);
+			
+			/*
+			* get list categories
+			**/
+			$CategoryModel = new CategoryModel;
+			$categories = $CategoryModel->getIndex();
+			
+			/*
+			* get pagesInfo
+			**/
+			$PagesModel = new PagesModel;
+			$pages = $PagesModel->getPages();
+			
+			
+			
+			
+			
+			
+			
+			
+			/*
+			* call view
+			**/
+			$view = view('news', [
+									'news' => $news, 
+									'categories' => $categories,
+									'pages' => $pages, 
+								])->withTitle('Новости')
+								->withDescription('Новости Description')
+								->render();
+			
+			return (new Response($view))->header('charset', 'utf-8');
 			
 		}
 		

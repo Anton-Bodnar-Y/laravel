@@ -29,6 +29,27 @@ class NewModel extends Model
 	
 	
 	/**
+	* GET NEWS FOR TAG
+	*/
+    public function getNewsTag($id, $paginate){
+		
+		$news = DB::table('tags_to_news')
+							->join('tags', 'tags.tag_id', '=', 'tags_to_news.tag_id')
+							->join('news', 'news.new_id', '=', 'tags_to_news.new_id')
+							->where('tags.tag_id', $id)
+							->paginate($paginate);
+		return $news;
+		
+		//return '77777777777777';
+		
+	}
+	
+	
+	
+	
+	
+	
+	/**
 	* GET ALL LIST NEWS FOR CROSS-NEWS in ADMIN
 	*/
     public function getNewsCross(){
