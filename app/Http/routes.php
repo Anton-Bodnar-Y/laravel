@@ -48,6 +48,9 @@ Route::post('/sendcomment', ['uses'=>'CommentsController@getIndex', 'as'=>'sendc
 
 Route::get('/tag/{tag_id}', ['uses'=>'NewsController@getNewsTag', 'as'=>'tag']);
 
+Route::post('/search/', ['uses'=>'NewsController@getNewsSearch', 'as'=>'search']);
+Route::get('/search/', ['uses'=>'NewsController@getNewsSearch', 'as'=>'search']);
+
 
 
 /**
@@ -62,6 +65,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	
 	Route::get('/news', ['uses'=>'Admin\AdminNewsController@getIndex', 'as'=>'admin/news']);
 	Route::get('/categories', ['uses'=>'Admin\AdminCategoriesController@getIndex', 'as'=>'admin/categories']);
+	Route::get('/tags', ['uses'=>'Admin\AdminTagsController@getIndex', 'as'=>'admin/tags']);
 	Route::get('/pages', ['uses'=>'Admin\AdminPagesController@getIndex', 'as'=>'admin/pages']);
 	Route::get('/users', ['uses'=>'Admin\AdminUsersController@getIndex', 'as'=>'admin/users']);
 	
@@ -99,6 +103,12 @@ Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	*/
 	Route::get('/delete/category/{id}', ['uses'=>'Admin\AdminCategoriesController@deleteCategory', 'as'=>'admin/delete/category']);
 	
+	
+	/**
+	* UPDATE GET
+	*/
+	Route::get('/edit/tag/{id}', ['uses'=>'Admin\AdminTagsController@edinTeg', 'as'=>'admin/edit/tag']);
+	Route::post('updatetags', ['uses'=>'Admin\AdminTagsController@updateTeg', 'as'=>'updatetags']);
 	
 	
 	

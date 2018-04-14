@@ -48,8 +48,9 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('admin') }}">Главная</a></li>
-                    <li><a href="{{ route('admin/news') }}">Статьи</a></li>
+                    <li><a href="{{ route('admin/news') }}">Новости</a></li>
                     <li><a href="{{ route('admin/categories') }}">Категории</a></li>
+                    <li><a href="{{ route('admin/tags') }}">Теги</a></li>
                     <li><a href="{{ route('admin/pages') }}">Информ-страницы</a></li>
                     <li><a href="{{ route('admin/users') }}">Пользователи</a></li>
                 </ul>

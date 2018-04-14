@@ -13,6 +13,7 @@
                     
                     <a class="link-home-admin" href="{{ route('admin/news') }}">Новости</a>
                     <a class="link-home-admin" href="{{ route('admin/categories') }}">Категории</a>
+                    <a class="link-home-admin" href="{{ route('admin/tags') }}">Теги</a>
                     <a class="link-home-admin" href="{{ route('admin/pages') }}">Информ-страницы</a>
                     <a class="link-home-admin" href="{{ route('admin/users') }}">Пользователи админки</a>
                     

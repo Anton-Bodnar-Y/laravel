@@ -155,12 +155,12 @@ class NewModel extends Model
 	/**
 	* GET NEWS CATEGORY
 	*/
-	public function getNewsFromCategory($category_id){
+	public function getNewsFromCategory($paginate, $category_id){
 		
 		$news = DB::table('news')
 								->where('category_id', $category_id)
 								->orderBy('new_id', 'desc')
-								->get();
+								->paginate($paginate);
 		
 		return $news;
 	}
@@ -338,6 +338,23 @@ class NewModel extends Model
 	                    			]);
         
         
+	}
+	
+	
+	
+	
+	
+	
+	
+	/**
+	* GET ALL NEWS SEARCH
+	*/
+    public function getNewsSearch($paginate, $search){
+		$news = DB::table('news')
+							->orderBy('new_id', 'desc')
+							->where('news_title', 'like', '%' . $search . '%')
+							->paginate($paginate);
+		return $news;
 	}
 	
 	

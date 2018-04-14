@@ -31,7 +31,7 @@ class CategoryController extends Controller
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNewsFromCategory($id);
+			$news = $NewModel->getNewsFromCategory(4, $id);
 			
 			
 			

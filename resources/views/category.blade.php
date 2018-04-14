@@ -42,7 +42,7 @@
 		<div id="news_block" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
 			
 			
-			@if($news)
+			@if(count($news) > 0)
 				
 				@foreach($news as $new)
 					
@@ -57,12 +57,24 @@
 					
 				@endforeach
 				
+				<div style="clear: both;"></div>
+				
+				
+				
+				<div class="pagination col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<?php echo $news->render(); ?>
+				</div>
+				
 			@else
 				<p class="noNews">В данном разделе еще нет новостей. Но скоро будут</p>
 			@endif
 			
 			
 		</div>
+		
+		
+		
+		
 		
 	</div>
 		

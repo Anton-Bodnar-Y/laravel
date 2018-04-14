@@ -31,8 +31,9 @@
 			<p>NewsArgo - агроновости, политика правительства в отношении ограриев Украины, импорт и экспорт аграрной продукции, рейдерство.</p>
 			<p>Независимое интернет-издательство.</p>
 			
-			<form id="searchForm">
-				<input type="text" class="searchText" name="searchText" placeholder="поиск по статьям" />
+			<form id="searchForm" action="{{ route('search') }}" method="post">
+				<input type="text" class="searchText" name="searchText" placeholder="поиск по статьям" required/>
+				{!! csrf_field() !!}
 				<input type="submit" class="searchSubmit" name="searchSubmit" value="Искать" />
 			</form>
 			

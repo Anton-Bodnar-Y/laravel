@@ -171,10 +171,6 @@ class NewsController extends Controller
 		
 		if(view()->exists('news')){
 			
-			//return $tag_link;
-			
-			
-			
 			/*
 			* get news for homePage
 			**/
@@ -193,11 +189,51 @@ class NewsController extends Controller
 			$PagesModel = new PagesModel;
 			$pages = $PagesModel->getPages();
 			
+			/*
+			* call view
+			**/
+			$view = view('news', [
+									'news' => $news, 
+									'categories' => $categories,
+									'pages' => $pages, 
+								])->withTitle('Новости')
+								->withDescription('Новости Description')
+								->render();
 			
+			return (new Response($view))->header('charset', 'utf-8');
 			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	public function getNewsSearch(Request $request){
+		//dump($request->searchText);
+		//return $request->flash();
+		if(view()->exists('news')){
 			
+			/*
+			* get news for search
+			**/
+			$NewModel = new NewModel;
+			$news = $NewModel->getNewsSearch(4, $request->searchText);
 			
+			/*
+			* get list categories
+			**/
+			$CategoryModel = new CategoryModel;
+			$categories = $CategoryModel->getIndex();
 			
+			/*
+			* get pagesInfo
+			**/
+			$PagesModel = new PagesModel;
+			$pages = $PagesModel->getPages();
 			
 			
 			/*

@@ -9,7 +9,7 @@
             
             <div class="panel panel-default">
                 
-                <div class="panel-heading">Панель приборов</div>
+                <div class="panel-heading">Список новостей</div>
 				
                 <div class="panel-body">
             		
