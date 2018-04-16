@@ -103,13 +103,22 @@ Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	*/
 	Route::get('/delete/category/{id}', ['uses'=>'Admin\AdminCategoriesController@deleteCategory', 'as'=>'admin/delete/category']);
 	
-	
 	/**
-	* UPDATE GET
+	* UPDATE TAG
 	*/
 	Route::get('/edit/tag/{id}', ['uses'=>'Admin\AdminTagsController@edinTeg', 'as'=>'admin/edit/tag']);
-	Route::post('updatetags', ['uses'=>'Admin\AdminTagsController@updateTeg', 'as'=>'updatetags']);
+	Route::post('updatetags', ['uses'=>'Admin\AdminTagsController@updateTag', 'as'=>'updatetags']);
 	
+	/**
+	* ADD TAG
+	*/
+	Route::get('/add/tag', ['uses'=>'Admin\AdminTagsController@addTag', 'as'=>'admin/add/tag']);
+	Route::post('addtags', ['uses'=>'Admin\AdminTagsController@writeTag', 'as'=>'addtags']);
+	
+	/**
+	* DELETE TAG
+	*/
+	Route::get('/delete/tag/{id}', ['uses'=>'Admin\AdminTagsController@deleteTag', 'as'=>'admin/delete/tag']);
 	
 	
 });

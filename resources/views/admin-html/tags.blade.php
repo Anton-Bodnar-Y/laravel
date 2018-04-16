@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             
-            <a href="{{ route('admin/add/new') }}" class="btn btn-default btn-lg active" role="button">Добавить тег</a>
+            <a href="{{ route('admin/add/tag') }}" class="btn btn-default btn-lg active" role="button">Добавить тег</a>
             
             <div class="panel panel-default">
                 
@@ -31,8 +31,8 @@
 								
 								<td>{{ $tag['tag_id'] }}</td>
 								<td>{{ $tag['tag_name'] }}</td>
-								<th><a href="/admin/edit/tag/">Изменить</a></th>
-								<th><a href="/admin/delete/tag/">Удалить</a></th>
+								<th><a href="/admin/edit/tag/{{ $tag['tag_id'] }}">Изменить</a></th>
+								<th><a href="/admin/delete/tag/{{ $tag['tag_id'] }}">Удалить</a></th>
 							</tr>
 							@endforeach
 						</tbody>

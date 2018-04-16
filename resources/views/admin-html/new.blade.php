@@ -40,8 +40,12 @@
 						<select class="categorySelect" name="category">
 							@foreach($category as $value)
 							
-							<option value="{{ $value['category_id'] }}">{{ $value['category_title'] }}</option>
-							
+								@if($value['category_id'] == $new[0]['category_id'])
+								<option selected value="{{ $value['category_id'] }}">{{ $value['category_title'] }}</option>
+								@else
+								<option value="{{ $value['category_id'] }}">{{ $value['category_title'] }}</option>
+								@endif
+								
 							@endforeach
 						</select>
 						
@@ -102,14 +106,22 @@
 						<select class="crossSelect" name="cross_1">
 							<option disabled>Выберите статью</option>
 							@foreach($listNews as $value)
+								@if(unserialize($new[0]['cross_news'])[0] == $value['new_id'])
+								<option selected value="{{ $value['new_id'] }}">{{ $value['news_title'] }}</option>
+								@else
 								<option value="{{ $value['new_id'] }}">{{ $value['news_title'] }}</option>
+								@endif
 							@endforeach
 						</select>
 						
 						<select class="crossSelect" name="cross_2">
 							<option disabled>Выберите статью</option>
 							@foreach($listNews as $value)
+								@if(unserialize($new[0]['cross_news'])[1] == $value['new_id'])
+								<option selected value="{{ $value['new_id'] }}">{{ $value['news_title'] }}</option>
+								@else
 								<option value="{{ $value['new_id'] }}">{{ $value['news_title'] }}</option>
+								@endif
 							@endforeach
 						</select>
 						
