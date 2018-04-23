@@ -37,7 +37,7 @@
 			
 			
 			
-			<div class="new col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+			<div class="new col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			
 			@foreach($new as $val)
 				<h3 class="title">{{ $val['news_title'] }}</h3>
@@ -80,6 +80,24 @@
 					
 				</div>
 				
+				
+				
+				<?php
+				$text = $new[0]['news_title']; // текст твита
+				$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  // ссылка на страницу
+				$hashtags = 'агро,Украина';
+				?>
+				<a class="twitterLink" href="http://twitter.com/share?text=<?php echo $title; ?>&related=truemisha&hashtags=<?php echo $hashtags ?>&url=<?php echo $url; ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Twitter</a>
+				
+				<?php
+				$title = $new[0]['news_title']; // заголовок
+				$summary = $val['short_desc']; // анонс поста
+				$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  // ссылка на страницу
+				$image_url = '../../public/path/' . $val['img']; // URL изображения
+				?>
+				<a class="facebookLink" href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">Facebook</a>
+				
+				
 			@endforeach
 				
 				@if($tags)
@@ -95,11 +113,24 @@
 			
 			
 			
+			@if(!empty($cross_news))
+			<div class="otherNews col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				
+				<h4 class="title">Читайте также:</h4>
+				@foreach($cross_news as $new)
+				<div class="otherNew col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					
+					<a href="/new/{{ $new[0]['new_id'] }}"><img src="/public/path/{{ $new[0]['img'] }}" alt=""/></a>
+					<a href="/new/{{ $new[0]['new_id'] }}"><h5 class="title">{{ $new[0]['news_title'] }}</h5></a>
+				</div>
+				@endforeach
+				
+			</div>
+			@endif
 			
 			
 			
-			
-			<div class="comments col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+			<div class="comments col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				
 				
 				
@@ -141,20 +172,7 @@
 			</div>
 			
 			
-			@if(!empty($cross_news))
-			<div class="otherNews col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
-				
-				<h4 class="title">Читайте также:</h4>
-				@foreach($cross_news as $new)
-				<div class="otherNew col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					
-					<a href="/new/{{ $new[0]['new_id'] }}"><img src="/public/path/{{ $new[0]['img'] }}" alt=""/></a>
-					<a href="/new/{{ $new[0]['new_id'] }}"><h5 class="title">{{ $new[0]['news_title'] }}</h5></a>
-				</div>
-				@endforeach
-				
-			</div>
-			@endif
+			
 			
 			
 		</div>

@@ -39,7 +39,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="toHome navbar-brand" href="{{ url('/') }}">
                     На сайт
                 </a>
             </div>
@@ -89,13 +89,11 @@
 
 
 
-
+<!-- https://color.adobe.com/ru/Flat-Design-Colors-color-theme-10679945/edit/?copy=true&base=1&rule=Custom&selected=0&name=Копия%20Flat%20Design%20Colors&mode=hsv&rgbvalues=0.89,0.4841600000000777,0.24920000000000003,0.27299999999999996,0.7,0.6146000000000776,0.87,0.35510499999980555,0.28709999999999997,0.198,0.3005999999999803,0.36,0.94,0.7908533333331782,0.30079999999999996&swatchOrder=0,1,2,3,4 -->
 
 
 <style>
-*{
-	border-radius: none;
-}
+
 
 
 
@@ -127,7 +125,7 @@ th {
 
 
 
-
+/*
 .titleNew{
 	height: 50px;
 	width: 100%;
@@ -176,8 +174,101 @@ th {
 }
 .pagination ul .disabled span {
 }
+*/
+
+.toHome{
+	background: #324D5C;
+	color: #E37B40 !important;
+}
+.toHome:hover{
+	color: #324D5C !important;
+}
+#app-layout{
+	background: #324D5C !important;
+}
+.panel{
+	border-radius: 0;
+	border: none;
+	background: #e7e7e7;
+}
+.panel-heading{
+	background: #E37B40 !important;
+	border-radius: 0;
+}
 
 
+
+hr{
+	height: 2px;
+	border: none;
+	margin: 50px 0;
+	background: #E37B40;
+}
+
+
+
+.formText{
+	border: 1px solid #324D5C;
+	padding: 0 25px;
+	width: 100%;
+	height: 50px;
+	color: #324D5C;
+}
+.formSelect{
+	border: 1px solid #324D5C;
+	padding: 0 25px;
+	width: 300px;
+	height: 50px;
+	color: #324D5C;
+}
+.formArea{
+	border: 1px solid #324D5C;
+	padding: 25px 25px;
+	width: 100%;
+	height: 100px;
+	color: #324D5C;
+}
+.formImg{
+	width: 200px;
+	height: auto;
+}
+.formSubmit{
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: 0;
+	margin: 30px 0;
+	color: #324D5C;
+	background: #E37B40 !important;
+}
+
+.addElements{
+	background: #E37B40 !important;
+	border-radius: 0;
+	border: none;
+	margin: 5px 0;
+}
+
+
+.pagination{
+	border-radius: 0 !important;
+}
+.pagination li a{
+	border: 1px solid #E37B40 !important;
+	color: #324D5C;
+	border-radius: 0 !important;
+}
+.pagination li span{
+	border: 1px solid #E37B40 !important;
+	border-radius: 0 !important;
+}
+.pagination .active span{
+	background: #E37B40 !important;
+	border-radius: 0 !important;
+}
+.panel-body a{
+	color: #E37B40;
+}
 
 </style>
 

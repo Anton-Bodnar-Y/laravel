@@ -18,8 +18,7 @@
 		<div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			
 			
-			
-			<div id="home_news" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+			<div id="home_news" class="col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				@for($i = 0; $i < count($news); $i++)
 					
 					@if($news[$i]['cat']['id'] != '0')
@@ -39,8 +38,16 @@
 				@endfor
 			</div>
 			
-			
-			
+			<div id="home_news_2" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+				
+				<h4>Самое читаемое</h4>
+				@for($i = 0; $i < count($newsFlag); $i++)
+					<a class="link_category" href="/new/{{ $newsFlag[$i]['new_id'] }}">
+						<p><span class="glyphicon glyphicon-flag"></span>&#160;{{ $newsFlag[$i]['news_title'] }}</p>
+					</a>
+				@endfor
+				
+			</div>
 			
 			
 			

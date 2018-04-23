@@ -39,7 +39,7 @@
 		
 		
 		
-		<div id="news_block" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		<div id="news_block" class="col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			
 			
 			@if(count($news) > 0)

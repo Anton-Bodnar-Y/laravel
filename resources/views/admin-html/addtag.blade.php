@@ -24,10 +24,12 @@
 					<form class="formEditNew" enctype="multipart/form-data" action="{{ route('addtags') }}" method="post">
 						
 						<h4>Имя тега</h4>
-						<input class="metaInfo" type="text" name="tag_name" value="{{ old('tag_name') }}" /><br/>
+						<p>required|min:3|max:20</p>
+						<input class="formText" type="text" name="tag_name" value="{{ old('tag_name') }}" /><br/>
 						
 						<h4>Link тега</h4>
-						<input class="metaInfo" type="text" name="tag_link" value="{{ old('tag_link') }}" /><br/>
+						<p>required|min:3|max:20</p>
+						<input class="formText" type="text" name="tag_link" value="{{ old('tag_link') }}" /><br/>
 						
 						
 						<!--<input type="hidden" name="_method" value="put">-->
@@ -35,7 +37,7 @@
 						
 						
 						
-						<input class="btn btn-default btn-lg btn-block" type="submit" name="saveNew" value="Добавить тег"/>
+						<input class="formSubmit" type="submit" name="saveNew" value="Добавить тег"/>
 						
 					</form>
 					

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             
-            <a href="{{ route('admin/add/new') }}" class="btn btn-default btn-lg active" role="button">Добавить новость</a>
+            <a href="{{ route('admin/add/new') }}" class="addElements btn btn-default btn-lg active" role="button">Добавить новость</a>
             
             <div class="panel panel-default">
                 
@@ -18,7 +18,7 @@
 					<table class="table table-striped">
 						<thead class="thead-inverse">
 							<tr>
-								<th>Выделить все</th>
+								
 								<th>id</th>
 								<th>Название статьи</th>
 								<th>Дата</th>
@@ -30,9 +30,9 @@
 						<tbody>
 							@foreach($news as $new)
 							<tr>
-								<td><input type="checkbox" name=""/></td>
+								
 								<td>{{ $new['new_id'] }}</td>
-								<td><a href="/admin/edit/new/{{ $new['new_id'] }}">{{ mb_substr($new['news_title'], 0, 50) }}{{ strlen($new['news_title']) > 50 ? '...' : ''}}</a></td>
+								<td>{{ mb_substr($new['news_title'], 0, 50) }}{{ strlen($new['news_title']) > 50 ? '...' : ''}}</td>
 								<td></span>{{ date('j-m-o', $new['date']) }}</span></td>
 								<td><a href="/admin/edit/new/{{ $new['new_id'] }}">Изменить</a></td>
 								<td><a href="/admin/delete/new/{{ $new['new_id'] }}">Удалить</a></td>

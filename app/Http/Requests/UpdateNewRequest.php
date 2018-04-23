@@ -25,6 +25,7 @@ class UpdateNewRequest extends Request
     {
         return [
             //
+            
             'title'=>'required|min:10|max:255',
 			'newShortDesc'=>'required|min:100|max:1000',
 			'newText'=>'required|min:200|max:10000',

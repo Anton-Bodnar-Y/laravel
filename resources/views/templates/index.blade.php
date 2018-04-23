@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>{{ $title }}</title>
 	<meta name="description" content="{{ $description }}" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="icon" type="path-to/favicon.ico" href="{{ url('public/img/favicon.ico') }}">
 		
@@ -26,10 +27,10 @@
 @section('header')
 	
 	<header id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<div class="top-header col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+		<div class="top-header col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
 			<a class="logo" href="{{ route('main') }}"><img src="../../public/img/7575757.png" alt="" /></a>
-			<p>NewsArgo - агроновости, политика правительства в отношении ограриев Украины, импорт и экспорт аграрной продукции, рейдерство.</p>
-			<p>Независимое интернет-издательство.</p>
+			<p>NewsArgo - Аграрные новости Украины и Мира. Новости зернового и масличного рынка, законы, рейдерство, коррупция в аграрном секторе, аналитика цен на продукцию мировых и украинских аграриев.</p>
+			
 			
 			<form id="searchForm" action="{{ route('search') }}" method="post">
 				<input type="text" class="searchText" name="searchText" placeholder="поиск по статьям" required/>
@@ -40,7 +41,7 @@
 		</div>
 		<div class="bottom-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 			<div class="top-menu col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="wrap col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+				<div class="wrap col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
 					<ul>
 						<li><a href="{{ route('main') }}" >Главная</a></li>
 						<li>
@@ -57,8 +58,7 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="{{ route('forums') }}" >Форумы</a></li>
-						<li><a href="{{ route('shop') }}" >Магазин</a></li>
+						<li><a href="" >Магазин</a></li>
 					</ul>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 	
 	
 			<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="wrap col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<div class="wrap col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12">
 					<div class="left-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<h3><span style="font-size: 22px;" class="glyphicon glyphicon-info-sign"></span>&#160;Информация</h3>
 						<ul>

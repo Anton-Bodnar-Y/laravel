@@ -49,6 +49,15 @@ class MainController extends Controller
 			
 			
 			
+			
+			/*
+			* get news for flag-block
+			**/
+			$NewModel = new NewModel;
+			$newsFlag = $NewModel->newsFlagBlock();
+			
+			
+			
 			//dump($news);
 			
 			
@@ -71,6 +80,7 @@ class MainController extends Controller
 			$view = view('main', [
 									'news' => $news, 
 									'categories' => $categories, 
+									'newsFlag' => $newsFlag, 
 									'pages' => $pages,
 								])->withTitle('Главная')
 								->withDescription('Главная Description')

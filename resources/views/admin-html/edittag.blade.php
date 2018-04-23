@@ -26,9 +26,11 @@
 						
 						<input type="hidden" name="tag_id" value="{{ $tag[0]['tag_id'] }}"> 
 						<h4>название тега</h4>
-						<input type="text" name="tag_name" value="{{ $tag[0]['tag_name'] }}"> 
+						<p>required|min:3|max:20</p>
+						<input class="formText" type="text" name="tag_name" value="{{ $tag[0]['tag_name'] }}"> 
 						<h4>link тега</h4>
-						<input type="text" name="tag_link" value="{{ $tag[0]['tag_link'] }}">
+						<p>required|min:3|max:20</p>
+						<input class="formText" type="text" name="tag_link" value="{{ $tag[0]['tag_link'] }}">
 						
 						
 						
@@ -37,7 +39,7 @@
 						
 						
 						
-						<input class="btn btn-default btn-lg btn-block" type="submit" name="saveNew" value="Сохранить"/>
+						<input class="formSubmit" type="submit" name="saveNew" value="Сохранить"/>
 						
 					</form>
 					

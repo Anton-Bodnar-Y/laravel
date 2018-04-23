@@ -167,6 +167,7 @@ body #content #news_block .new_block {
 }
 body #content #news_block .new_block img {
   max-width: 100%;
+  width: 100%;
 }
 body #content #news_block .new_block a {
   text-decoration: none;
@@ -268,7 +269,6 @@ body #content #home_news .category_block .link_title {
   position: relative;
   text-decoration: none;
   color: #000;
-  font-family: 'Exo 2', sans-serif;
   display: block;
   margin: 15px 0;
   font-family: "Roboto", sans-serif;
@@ -276,6 +276,44 @@ body #content #home_news .category_block .link_title {
 body #content #home_news .category_block .link_title:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+body #content #home_news_2 {
+  height: auto;
+  padding: 25px 0;
+  font-family: "Roboto", sans-serif;
+}
+body #content #home_news_2 h4 {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Exo 2', sans-serif;
+  display: block;
+  margin: 15px 0;
+}
+body #content #home_news_2 a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Exo 2', sans-serif;
+  display: block;
+  margin: 15px 0;
+  text-decoration: underline;
+}
+body #content #home_news_2 a p{
+  font-size: 14px;
+}
+body #content #home_news_2 a span {
+  color: #79b458;
+}
+
+
+
+
+
 body #content #home_block {
   padding: 25px 0;
 }
@@ -409,11 +447,30 @@ body #content .new #show .collectionImages img {
 }
 
 
+/*SHARED*/
+body #content .new .twitterLink {
+	padding: 10px 15px;
+	background: #4099ff;
+	color: #fff;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 10px 0;
+	text-decoration: none;
+}
+body #content .new .facebookLink {
+	padding: 10px 15px;
+	background: #3b5998;
+	color: #fff;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 10px 0;
+	text-decoration: none;
+}
 
 
 /*tags*/
 body #content #tags {
-	padding: 25px 0;
+	padding: 0px 0;
 	/*background: #999;*/
 }
 body #content #tags a{
@@ -516,7 +573,7 @@ body #footer {
   background: #1a1d25;
 }
 body #footer .wrap {
-  height: 350px;
+  height: 300px;
 }
 body #footer .wrap .left-block {
   height: 100%;
@@ -567,3 +624,80 @@ body #footer .bottomBlock {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*MOBILE VERSION*/
+@media (max-width: 992px) {
+body{
+  padding: 10px;
+  min-width: 500px;
+  box-sizing: border-box;
+}
+body header{
+  height: 180px;
+}
+body header .top-header  {
+  height: 120px;
+}
+body header .top-header .logo {
+  display: none;
+}
+body header .top-header #searchForm{
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  float: left;
+  width: 100%;
+}
+body header .top-header #searchForm .searchText{
+  width: 80%;
+}
+body header .top-header #searchForm .searchSubmit{
+  width: 20%;
+}
+body header .bottom-header {
+  height: 60px;
+  background: none;
+  background-size: none;
+}
+
+
+
+
+
+body #content #left_menu {
+  position: relative;
+  top: 5px;
+  width: 100%;
+  max-width: none;
+  padding: 5px 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  z-index: 10;
+  background: none;
+}
+body #content #left_menu ul li a {
+  line-height: 30px;
+  background: #1a1d25;
+  margin: 1px 0px;
+}
+
+body #footer .wrap .left-block, body #footer .wrap .right-block {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+body #content #news_block .new_block {
+  padding: 20px 0;
+}
+
+}

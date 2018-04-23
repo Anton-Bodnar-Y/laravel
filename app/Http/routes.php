@@ -121,6 +121,30 @@ Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	Route::get('/delete/tag/{id}', ['uses'=>'Admin\AdminTagsController@deleteTag', 'as'=>'admin/delete/tag']);
 	
 	
+	
+	
+	
+	
+	
+	
+	/**
+	* UPDATE page
+	*/
+	Route::get('/edit/page/{id}', ['uses'=>'Admin\AdminPagesController@editPage', 'as'=>'admin/edit/page']);
+	Route::post('updatepage', ['uses'=>'Admin\AdminPagesController@updatePage', 'as'=>'updatepage']);
+	
+	/**
+	* ADD page
+	*/
+	Route::get('/add/page', ['uses'=>'Admin\AdminPagesController@addPage', 'as'=>'admin/add/page']);
+	Route::post('addpage', ['uses'=>'Admin\AdminPagesController@writePage', 'as'=>'addpage']);
+	
+	/**
+	* DELETE page
+	*/
+	Route::get('/delete/page/{id}', ['uses'=>'Admin\AdminPagesController@deletePage', 'as'=>'admin/delete/page']);
+	
+	
 });
 
 

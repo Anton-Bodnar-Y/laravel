@@ -30,12 +30,14 @@
 						
 						
 						<h4>Название категории</h4>
-						<input class="titleNew" type="text" name="title" value="{{ old('title') }}"/><br/>
+						<p>required|min:3|max:50</p>
+						<input class="formText" type="text" name="title" value="{{ old('title') }}"/><br/>
 						
 						
 						
 						<h4>Описание статьи (без HTML)</h4>
-						<textarea name="newShortDesc" class="newShortDesc">{{ old('newShortDesc') }}</textarea><br/>
+						<p>required|min:10|max:1000</p>
+						<textarea name="newShortDesc" class="formArea">{{ old('newShortDesc') }}</textarea><br/>
 						
 						
 						
@@ -44,7 +46,7 @@
 						
 						
 						
-						<input class="btn btn-default btn-lg btn-block" type="submit" name="saveNew" value="Добавить категорию"/>
+						<input class="formSubmit" type="submit" name="saveNew" value="Добавить категорию"/>
 						
 					</form>
 					

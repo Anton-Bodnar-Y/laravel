@@ -147,6 +147,22 @@ class NewModel extends Model
 	
 	
 	
+	/**
+	* get news for flag-block
+	*/
+	public function newsFlagBlock(){
+		
+		$newsFlag = DB::table('news')
+								->where('flag', 'flag')
+								->orderBy('new_id', 'desc')->skip(0)->take(5)
+								->get();
+		
+		return $newsFlag;
+		
+	}
+	
+	
+	
 	
 	
 	

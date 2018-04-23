@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             
-            <a href="{{ route('admin/add/tag') }}" class="btn btn-default btn-lg active" role="button">Добавить тег</a>
+            <a href="{{ route('admin/add/tag') }}" class="addElements btn btn-default btn-lg active" role="button">Добавить тег</a>
             
             <div class="panel panel-default">
                 
