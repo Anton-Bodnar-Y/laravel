@@ -25,7 +25,7 @@
 					
 						
 						
-						
+						{{ dump($listTags) }}
 						
 						
 						
@@ -52,6 +52,38 @@
 						<h4>Полный текст статьи статьи (с HTML)</h4>
 						<p>required|min:200|max:10000</p>
 						<textarea name="newText" class="formArea">{{ old('newText') }}</textarea><br/>
+						
+						
+						<hr/>
+						
+						
+						<h4>Укажите хэш-теги</h4>
+						<select class="formSelect" name="tag_1">
+							<option value="0">-- Выберите значение --</option>
+							@foreach($listTags as $tag)
+							
+							<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+							
+							@endforeach
+						</select>
+						
+						<select class="formSelect" name="tag_2">
+							<option value="0">-- Выберите значение --</option>
+							@foreach($listTags as $tag)
+							
+							<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+							
+							@endforeach
+						</select>
+						
+						<select class="formSelect" name="tag_3">
+							<option value="0">-- Выберите значение --</option>
+							@foreach($listTags as $tag)
+							
+							<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+							
+							@endforeach
+						</select>
 						
 						
 						<hr/>

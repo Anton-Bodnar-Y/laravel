@@ -262,7 +262,26 @@ class NewModel extends Model
 	                    			'new_desc' => $request->new_desc,
 	                    			'new_key' => $request->new_key,
 	                    			]);
+	    
 		
+		/* delete old tag for this new */
+		DB::table('tags_to_news')->where('new_id', $request->id)->delete();
+		/* write new tag for this new */
+		if($request->tag_1 != '0'){
+			DB::table('tags_to_news')->insert(['new_id' => $request->id,
+									'tag_id' => $request->tag_1,
+									]);
+		}
+        if($request->tag_2 != '0'){
+			DB::table('tags_to_news')->insert(['new_id' => $request->id,
+									'tag_id' => $request->tag_2,
+									]);
+		}
+		if($request->tag_3 != '0'){
+			DB::table('tags_to_news')->insert(['new_id' => $request->id,
+									'tag_id' => $request->tag_3,
+									]);
+        }
 		
         
 	}
@@ -353,7 +372,21 @@ class NewModel extends Model
 	                    			'new_key' => $request->new_key,
 	                    			]);
         
-        
+        if($request->tag_1 != '0'){
+			DB::table('tags_to_news')->insert(['new_id' => $idLastNew[0]['new_id'],
+									'tag_id' => $request->tag_1,
+									]);
+		}
+        if($request->tag_2 != '0'){
+			DB::table('tags_to_news')->insert(['new_id' => $idLastNew[0]['new_id'],
+									'tag_id' => $request->tag_2,
+									]);
+		}
+		if($request->tag_3 != '0'){
+			DB::table('tags_to_news')->insert(['new_id' => $idLastNew[0]['new_id'],
+									'tag_id' => $request->tag_3,
+									]);
+        }
 	}
 	
 	
@@ -389,6 +422,7 @@ class NewModel extends Model
 		DB::table('news')->where('new_id', $id)->delete();
 		DB::table('news_content')->where('new_id', $id)->delete();
 		DB::table('news_meta')->where('new_id', $id)->delete();
+		DB::table('tags_to_news')->where('new_id', $id)->delete();
 		
 	}
 	

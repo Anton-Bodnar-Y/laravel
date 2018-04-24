@@ -23,6 +23,7 @@ use App\Http\Controllers\Controller;
 
 use App\NewModel;
 use App\CategoryModel;
+use App\TagsModel;
 
 
 
@@ -69,6 +70,10 @@ class AdminNewsController extends Controller
 			$NewModel = new NewModel;
 			$listNews = $NewModel->getNewsCross();
 			
+			$TagsModel = new TagsModel;
+			$listTags = $TagsModel->getTagsList();
+			
+			$newTags = $TagsModel->getTags($id);
 			
 			/*
 			* get categories
@@ -77,14 +82,14 @@ class AdminNewsController extends Controller
 			$category = $categoryModel->getIndex();
 			
 			
-			
-			
 			/*
 			* call view
 			**/
 			$view = view('admin-html/new', [
 									'new' => $new, 
 									'category' => $category,
+									'listTags' => $listTags,
+									'newTags' => $newTags,
 									'listNews' => $listNews,
 								])->withTitle('Редактировать новость')
 								->withDescription('Редактировать новость')
@@ -131,6 +136,9 @@ class AdminNewsController extends Controller
 		$NewModel = new NewModel;
 		$listNews = $NewModel->getNewsCross();
 		
+		$TagsModel = new TagsModel;
+		$listTags = $TagsModel->getTagsList();
+		
 		//dump($listNews);
 		
 		/*
@@ -139,6 +147,7 @@ class AdminNewsController extends Controller
 		$view = view('admin-html/addnew', [
 								'category' => $category,
 								'listNews' => $listNews,
+								'listTags' => $listTags,
 							])->withTitle('Добавить новость')
 							->withDescription('Добавить новость')
 							->render();

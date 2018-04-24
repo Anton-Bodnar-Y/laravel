@@ -129,7 +129,7 @@
 			</footer>
 @show
 
-
+	<a href="" class="goToUp"><p>НАВЕРХ</p></a>
 
 
 	</body>

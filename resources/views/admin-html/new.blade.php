@@ -65,6 +65,64 @@
 						<hr/>
 						
 						
+						<h4>Укажите хэш-теги</h4>
+						<select class="formSelect" name="tag_1">
+							<option value="0">-- Выберите значение --</option>
+							@foreach($listTags as $tag)
+							
+							@if( isset($newTags[0]['tag_id']))
+								@if( $newTags[0]['tag_id'] == $tag['tag_id'] )
+								<option selected value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+								@else
+								<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+								@endif
+							@else
+								<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+							@endif
+							
+							@endforeach
+						</select>
+						
+						<select class="formSelect" name="tag_2">
+							<option value="0">-- Выберите значение --</option>
+							@foreach($listTags as $tag)
+							
+							@if( isset($newTags[1]['tag_id']))
+								@if( $newTags[1]['tag_id'] == $tag['tag_id'] )
+								<option selected value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+								@else
+								<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+								@endif
+							@else
+								<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+							@endif
+							
+							@endforeach
+						</select>
+						
+						<select class="formSelect" name="tag_3">
+							<option value="0">-- Выберите значение --</option>
+							@foreach($listTags as $tag)
+							
+							@if( isset($newTags[2]['tag_id']))
+								@if( $newTags[2]['tag_id'] == $tag['tag_id'] )
+								<option selected value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+								@else
+								<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+								@endif
+							@else
+								<option value="{{ $tag['tag_id'] }}">{{ $tag['tag_name'] }}</option>
+							@endif
+							
+							@endforeach
+						</select>
+						
+						
+						
+						<hr/>
+						
+						
+						
 						<h4>META TITLE</h4>
 						<p>required|min:20|max:255</p>
 						<input class="formText" type="text" name="new_title" value="{{ isset($new[0]['new_title']) ? $new[0]['new_title'] : '' }}"/><br/>
