@@ -31,23 +31,29 @@
 						
 						
 						<h4>Название страницы</h4>
+						<p>required|min:10|max:255</p>
 						<input class="formText" type="text" name="title" value="{{ isset($page[0]['title']) ? $page[0]['title'] : '' }}"/><br/>
 						
 						<h4>Текст страницы (с HTML)</h4>
+						<p>required|min:100|max:1000</p>
 						<textarea name="text" class="formArea">{{ isset($page[0]['text']) ? $page[0]['text'] : '' }}</textarea><br/>
 						
 						<h4>meta_title</h4>
+						<p>required|min:20|max:255</p>
 						<input class="formText" type="text" name="meta_title" value="{{ isset($page[0]['meta_title']) ? $page[0]['meta_title'] : '' }}"/><br/>
 						
 						<h4>meta_desc</h4>
+						<p>required|min:20|max:500</p>
 						<input class="formText" type="text" name="meta_desc" value="{{ isset($page[0]['meta_desc']) ? $page[0]['meta_desc'] : '' }}"/><br/>
 						
 						<h4>meta_keyword</h4>
+						<p>required|min:20|max:255</p>
 						<input class="formText" type="text" name="meta_keyword" value="{{ isset($page[0]['meta_keyword']) ? $page[0]['meta_keyword'] : '' }}"/><br/>
 						
 						
 						
 						<h4>Главное изображение</h4>
+						<p>mimes:jpeg,bmp,png|max:256</p>
 						<div style="width: 300px; height: auto;">
 							<img class="formImg" src="/public/path/pages/{{ $page[0]['img'] }}" alt="" />
 						</div>

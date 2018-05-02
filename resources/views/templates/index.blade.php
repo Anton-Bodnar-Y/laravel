@@ -32,7 +32,19 @@
 			<p>NewsArgo - Аграрные новости Украины и Мира. Новости зернового и масличного рынка, законы, рейдерство, коррупция в аграрном секторе, аналитика цен на продукцию мировых и украинских аграриев.</p>
 			
 			
+			
 			<form id="searchForm" action="{{ route('search') }}" method="post">
+			
+				@if(count($errors) > 0)
+				<div class="alert alert-danger">
+					<ul>
+						@foreach($errors->all() as $error)
+							<li style="color: #ba0000; font-size: 14px;">- {{ $error }}</li>
+						@endforeach
+					</ul>
+				</div>
+				@endif
+				
 				<input type="text" class="searchText" name="searchText" placeholder="поиск по статьям" required/>
 				{!! csrf_field() !!}
 				<input type="submit" class="searchSubmit" name="searchSubmit" value="Искать" />
@@ -129,7 +141,7 @@
 			</footer>
 @show
 
-	<a href="" class="goToUp"><p>НАВЕРХ</p></a>
+	<div href="" id="goToUp" class="goToUp"><p>НАВЕРХ</p></div>
 
 
 	</body>
@@ -143,32 +155,37 @@
 
 
 	<script type="text/javascript">
-		/*
-		function load1() {
-			//content - appeal
-			var oBlock = document.getElementById('content');
-			//header height
-			var headerHeight = document.getElementById('header');
-			//alert(headerHeight.offsetHeight);
-			//footer height
-			var footerHeight = document.getElementById('footer');
-			//alert(footerHeight.offsetHeight);
-			//workspace height
-			var heightClient = document.documentElement.clientHeight;
-			//content height - calculation
-			var heightContent = heightClient - headerHeight.offsetHeight - footerHeight.offsetHeight;
-			//content height - appoint
-			if(oBlock.offsetHeight < heightContent){
-				document.getElementById('content').style.height = heightContent +"px";
-			}
-			//leftBlock height - appoint
-			document.getElementById('left_block').style.height = oBlock.offsetHeight+"px";
-		}
 		
-
-		setTimeout('load1()', 2000);
-
-*/
+		(function() {
+			
+			'use strict';
+			
+			
+			
+			window.onscroll = function() {
+				var btnScrollDown = document.querySelector('#goToUp');
+				var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+				if(scrolled > 200){
+					btnScrollDown.style.opacity = '0.7';
+				}else{
+					btnScrollDown.style.opacity = '0.1';
+				}
+			}
+			
+			
+			
+			
+		})();
+		
+		
+		
+		(function() {
+			var btnScroll = document.querySelector('#goToUp');
+			btnScroll.onclick = function() {
+				window.scrollTo(500, 0);
+			}
+		})();
+		
 	</script>
 
 <script src="{{ url('public/assets/js/galery.js') }}"></script>

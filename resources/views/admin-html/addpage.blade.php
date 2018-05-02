@@ -19,7 +19,7 @@
 							@endforeach
 						</ul>
 					</div>
-				@endif
+					@endif
             		
 					<form class="formEditNew" enctype="multipart/form-data" action="{{ route('addpage') }}" method="post">
 					
@@ -30,23 +30,29 @@
 						
 						
 						<h4>Название страницы</h4>
+						<p>required|min:10|max:255</p>
 						<input class="formText" type="text" name="titlePage" value="{{ old('titlePage') }}"/><br/>
 						
 						<h4>Текст страницы (с HTML)</h4>
+						<p>required|min:100|max:1000</p>
 						<textarea name="textPage" class="formArea">{{ old('textPage') }}</textarea><br/>
 						
 						<h4>meta_title</h4>
+						<p>required|min:20|max:255</p>
 						<input class="formText" type="text" name="meta_title" value="{{ old('meta_title') }}"/><br/>
 						
 						<h4>meta_desc</h4>
+						<p>required|min:20|max:500</p>
 						<input class="formText" type="text" name="meta_desc" value="{{ old('meta_desc') }}"/><br/>
 						
 						<h4>meta_keyword</h4>
+						<p>required|min:20|max:255</p>
 						<input class="formText" type="text" name="meta_keyword" value="{{ old('meta_keyword') }}"/><br/>
 						
 						
 						
 						<h4>Изображение</h4>
+						<p>mimes:jpeg,bmp,png|max:256</p>
 						<input class="btn btn-default btn-lg" type="file" name="imgPage" /><br/>
 						
 						

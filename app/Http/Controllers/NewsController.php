@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\SearchFormRequest;
 
 use Illuminate\Http\Response;
 
@@ -212,7 +213,7 @@ class NewsController extends Controller
 	
 	
 	
-	public function getNewsSearch(Request $request){
+	public function getNewsSearch(SearchFormRequest $request){
 		//dump($request->searchText);
 		//return $request->flash();
 		if(view()->exists('news')){

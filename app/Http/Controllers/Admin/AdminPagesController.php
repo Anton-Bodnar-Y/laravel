@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
+
 use App\Http\Requests;
+use App\Http\Requests\AddPageRequest;
+use App\Http\Requests\UpdatePageRequest;
+
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Response;
@@ -61,7 +65,7 @@ class AdminPagesController extends Controller
 	
 	
 	
-	public function writePage(Request $request){
+	public function writePage(AddPageRequest $request){
 		
 		if($request->isMethod('post')){
 			
@@ -115,7 +119,7 @@ class AdminPagesController extends Controller
 		
 	}
 	
-	public function updatePage(Request $request){
+	public function updatePage(UpdatePageRequest $request){
 		
 		//return 'updatePage';
 		//dump($request->all());
