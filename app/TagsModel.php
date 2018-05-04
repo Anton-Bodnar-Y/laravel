@@ -87,6 +87,7 @@ class TagsModel extends Model
 	public function deleteTag($id){
 		
 		DB::table('tags')->where('tag_id', $id)->delete();
+		DB::table('tags_to_news')->where('tag_id', $id)->delete();
 		
 	}
 	

@@ -117,11 +117,11 @@
 			<div class="otherNews col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				
 				<h4 class="title">Читайте также:</h4>
-				@foreach($cross_news as $new)
+				@foreach($cross_news as $new_cross)
 				<div class="otherNew col-lg-6 col-md-6 col-sm-6 col-xs-6">
 					
-					<a href="/new/{{ $new[0]['new_id'] }}"><img src="/public/path/{{ $new[0]['img'] }}" alt=""/></a>
-					<a href="/new/{{ $new[0]['new_id'] }}"><h5 class="title">{{ $new[0]['news_title'] }}</h5></a>
+					<a href="/new/{{ $new_cross[0]['new_id'] }}"><img src="/public/path/{{ $new_cross[0]['img'] }}" alt=""/></a>
+					<a href="/new/{{ $new_cross[0]['new_id'] }}"><h5 class="title">{{ $new_cross[0]['news_title'] }}</h5></a>
 				</div>
 				@endforeach
 				

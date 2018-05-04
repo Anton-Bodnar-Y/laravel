@@ -424,6 +424,8 @@ class NewModel extends Model
 		DB::table('news_meta')->where('new_id', $id)->delete();
 		DB::table('tags_to_news')->where('new_id', $id)->delete();
 		
+		DB::table('comments')->where('news_id', $id)->delete();
+		
 	}
 	
 	

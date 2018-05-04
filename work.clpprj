@@ -2,13 +2,11 @@
 <project name="E:\OSPanel\domains\work\work.clpprj">
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";E:\OSPanel\domains\work\resources\views\templates\Codelobster0.php;"/><added value=""/><lastopfiles>
 		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
-		<file name="E:\OSPanel\domains\work\public\assets\css\styles.css"/>
-		<file name="E:\OSPanel\domains\work\resources\views\templates\index.blade.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Requests\SearchFormRequest.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\NewsController.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateNewRequest.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminNewsController.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminPagesController.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddPageRequest.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addpage.blade.php"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdatePageRequest.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\editpage.blade.php"/>
 	</lastopfiles>
 	<todoblock>
 		<todofile name="E:\OSPanel\domains\work\vendor\symfony\css-selector\XPath\Extension\FunctionExtension.php">
@@ -33,6 +31,8 @@
 			<todo name="TODO" pos="21;1821"/>
 		</todofile>
 	</todoblock>
+	<dbgurls>
+	</dbgurls>
 	<filescache>
 		<file name="E:\OSPanel\domains\work\vendor\webmozart\assert\tests\AssertTest.php" crc="1517070277"/>
 		<file name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php" crc="1517070276"/>
@@ -4363,7 +4363,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\b42fa5dc1f393e1979e8cccd8848cc707836e616.php" crc="1520097508"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\ad2e15171c8b40790fc3361d3dbd39a35ba8eb26.php" crc="1525002684"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\a5a088059e9b7fe9ab71fd44faf2aeb18b0af029.php" crc="1525199311"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\a4df015dd17e12d1e8a833a3a07389535b04de85.php" crc="1524168283"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\a4df015dd17e12d1e8a833a3a07389535b04de85.php" crc="1525280927"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\9c7d56c1b285f906e7c02329ae16065ffd1f6713.php" crc="1517088379"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\8282f47a607ddbac369ca9a9f222d13962e0a5a7.php" crc="1517088557"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6f9ba9c463deab9ab88043016eae5e609a760e88.php" crc="1517088638"/>
@@ -4389,7 +4389,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\347367caf8f0e597a26e28e4dc9091f46da11f50.php" crc="1517141462"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\2f6ca6daa844572b750d9d6d0748af0aa1f3480b.php" crc="1524260231"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\239c3a95c4e7ff4990d5240e597019ff4a009fd2.php" crc="1520084122"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\224ceb6b8974f4a8fcd5a43a54fa392cfd52bb13.php" crc="1524507270"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\224ceb6b8974f4a8fcd5a43a54fa392cfd52bb13.php" crc="1525281178"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1b8d0714d30d41c2eca68eb1a81360735d55ee15.php" crc="1517255905"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\1402299d6daa36e2393e0c566878810da2d5db21.php" crc="1524429327"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\125117aaf41c379924499105cd5d266602b0181d.php" crc="1517088455"/>
@@ -4416,12 +4416,12 @@
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\news.blade.php" crc="1524260228"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\new.blade.php" crc="1524594442"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\edittag.blade.php" crc="1524429308"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\editpage.blade.php" crc="1524507262"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\editpage.blade.php" crc="1525281153"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\category.blade.php" crc="1524429194"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\categories.blade.php" crc="1524260257"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\admin.blade.php" crc="1523715771"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addtag.blade.php" crc="1524429322"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addpage.blade.php" crc="1525198610"/>
+		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addpage.blade.php" crc="1525280924"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addnew.blade.php" crc="1524592796"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addcategory.blade.php" crc="1524429239"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1517085513"/>
@@ -4481,11 +4481,13 @@
 		<file name="E:\OSPanel\domains\work\app\Providers\AppServiceProvider.php" crc="1517070163"/>
 		<file name="E:\OSPanel\domains\work\app\Jobs\Job.php" crc="1517070163"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateTagRequest.php" crc="1523904429"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdatePageRequest.php" crc="1525281259"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateNewRequest.php" crc="1524428555"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdateCategoryRequest.php" crc="1520890204"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\SearchFormRequest.php" crc="1525199194"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\Request.php" crc="1517070162"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddTagRequest.php" crc="1523904096"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddPageRequest.php" crc="1525281265"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddNewRequest.php" crc="1520794786"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddCategoryRequest.php" crc="1520890212"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Middleware\VerifyCsrfToken.php" crc="1521886672"/>
@@ -4496,7 +4498,7 @@
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Auth\AuthController.php" crc="1517070162"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminUsersController.php" crc="1517252710"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminTagsController.php" crc="1523904449"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminPagesController.php" crc="1524507327"/>
+		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminPagesController.php" crc="1525281070"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminNewsController.php" crc="1524593562"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminController.php" crc="1517252629"/>
 		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminCategoriesController.php" crc="1521810190"/>
