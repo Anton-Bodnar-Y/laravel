@@ -2,8 +2,11 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>{{ $title }}</title>
-	<meta name="description" content="{{ $description }}" >
+	
+	<title>{{ isset($title) ? $title : ''}}</title>
+	<meta name="description" content="{{ isset($description) ? $description : ''}}" >
+	<meta name="keywords" content="{{ isset($keywords) ? $keywords : ''}}" >
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="icon" type="path-to/favicon.ico" href="{{ url('public/img/favicon.ico') }}">
@@ -141,7 +144,7 @@
 			</footer>
 @show
 
-	<div href="" id="goToUp" class="goToUp"><p>НАВЕРХ</p></div>
+	<div id="goToUp" class="goToUp"><p>НАВЕРХ</p></div>
 
 
 	</body>

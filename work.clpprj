@@ -2,11 +2,6 @@
 <project name="E:\OSPanel\domains\work\work.clpprj">
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";E:\OSPanel\domains\work\resources\views\templates\Codelobster0.php;"/><added value=""/><lastopfiles>
 		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Controllers\Admin\AdminPagesController.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Requests\AddPageRequest.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addpage.blade.php"/>
-		<file name="E:\OSPanel\domains\work\app\Http\Requests\UpdatePageRequest.php"/>
-		<file name="E:\OSPanel\domains\work\resources\views\admin-html\editpage.blade.php"/>
 	</lastopfiles>
 	<todoblock>
 		<todofile name="E:\OSPanel\domains\work\vendor\symfony\css-selector\XPath\Extension\FunctionExtension.php">
@@ -4372,7 +4367,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6a5a4098d1e6ffc922e87d4345e9d4c61ee93585.php" crc="1517088437"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1524509619"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6524d701f6693736574ad9cdee93f715c681e691.php" crc="1517088379"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1524337270"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1525430825"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\601cd0b81f8a3f12839467703fdc61939f038f6a.php" crc="1517141504"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\58aca885d32a1e5904cacff113d7fa52459d633c.php" crc="1517080995"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\57be9ee5a0e3d337976344ec2f4398996b34dc38.php" crc="1524165431"/>
@@ -4425,7 +4420,7 @@
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addnew.blade.php" crc="1524592796"/>
 		<file name="E:\OSPanel\domains\work\resources\views\admin-html\addcategory.blade.php" crc="1524429239"/>
 		<file name="E:\OSPanel\domains\work\resources\views\welcome.blade.php" crc="1517085513"/>
-		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1524337265"/>
+		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php" crc="1525430811"/>
 		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1524337311"/>
 		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1524337039"/>
 		<file name="E:\OSPanel\domains\work\resources\views\myform.php" crc="1521883795"/>
@@ -4517,9 +4512,9 @@
 		<file name="E:\OSPanel\domains\work\app\Console\Commands\Inspire.php" crc="1517070162"/>
 		<file name="E:\OSPanel\domains\work\app\Console\Kernel.php" crc="1517070162"/>
 		<file name="E:\OSPanel\domains\work\app\User.php" crc="1517070163"/>
-		<file name="E:\OSPanel\domains\work\app\TagsModel.php" crc="1523903746"/>
+		<file name="E:\OSPanel\domains\work\app\TagsModel.php" crc="1525429899"/>
 		<file name="E:\OSPanel\domains\work\app\PagesModel.php" crc="1524507588"/>
-		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1524594796"/>
+		<file name="E:\OSPanel\domains\work\app\NewModel.php" crc="1525430090"/>
 		<file name="E:\OSPanel\domains\work\app\ForumModel.php" crc="1515701597"/>
 		<file name="E:\OSPanel\domains\work\app\CommentModel.php" crc="1521897768"/>
 		<file name="E:\OSPanel\domains\work\app\CategoryModel.php" crc="1521753772"/>

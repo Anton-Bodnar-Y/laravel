@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 23 2018 г., 22:24
+-- Время создания: Май 16 2018 г., 21:46
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -52,6 +52,33 @@ INSERT INTO `category` (`category_id`, `category_title`, `category_desc`, `wwewe
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `category_meta`
+--
+
+CREATE TABLE `category_meta` (
+  `meta_category_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `category_title` varchar(255) NOT NULL,
+  `category_desc` varchar(255) NOT NULL,
+  `category_key` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `category_meta`
+--
+
+INSERT INTO `category_meta` (`meta_category_id`, `category_id`, `category_title`, `category_desc`, `category_key`) VALUES
+(1, 1, 'cat title 1', 'cat desc 1', 'cat key 1'),
+(2, 2, 'cat title 2', 'cat desc 2', 'cat key 2'),
+(3, 4, 'cat title 4', 'cat desc 4', 'cat key 4'),
+(4, 5, 'cat title 5', 'cat desc 5', 'cat key 5'),
+(5, 6, 'cat title 6', 'cat desc 6', 'cat key 6'),
+(6, 9, 'cat title 9', 'cat desc 9', 'cat key 9'),
+(7, 10, 'cat title 10', 'cat desc 10', 'cat key 10');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `comments`
 --
 
@@ -86,7 +113,11 @@ INSERT INTO `comments` (`id`, `news_id`, `parent_id`, `name`, `email`, `text`, `
 (61, 53, 0, 'уцекуке', 'укеукеукеуке', 'укеукеукеукеукеукеуек', '1523388318'),
 (62, 50, 0, 'агае', 'аенкнекуен', 'кенкенкенкнекенкнекен', '1523389020'),
 (63, 53, 0, '5664', '651651651', '511561561651651651651561', '1523477638'),
-(64, 51, 0, 'sdff', 'sdfsdfsdf', 'ываывава ываываыаыва ываываыва ываываыаыва ываываыва ', '1524508575');
+(64, 51, 0, 'sdff', 'sdfsdfsdf', 'ываывава ываываыаыва ываываыва ываываыаыва ываываыва ', '1524508575'),
+(65, 50, 0, 'Алекс', 'bodnar_anton@mail.ru', 'НовостьНовостьНовость', '1525003044'),
+(66, 48, 0, 'ываываыва', 'bodnar_anton@ukr.net', 'ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ываываываываыа ', '1525430210'),
+(67, 48, 0, 'ываываываываыа ываываываываыа ываываываываыа ', 'bodnar_anton@mail.ru', 'ываываываываыа ываываываываыа ываываываываыа ', '1525430220'),
+(69, 48, 0, 'фsdasdasd', 'bodnar_anton@mail.ru', 'asdasdasdasdasdasdasdasdasd', '1525430764');
 
 -- --------------------------------------------------------
 
@@ -272,7 +303,7 @@ CREATE TABLE `page_meta` (
 --
 
 INSERT INTO `page_meta` (`id`, `page_id`, `meta_title`, `meta_desc`, `meta_keyword`) VALUES
-(1, 1, 'мета тайтл о нас', 'мета описание о нас', 'ключевые слова о нас'),
+(1, 1, 'мета тайтл о нас о нас о нас', 'мета описание о нас о нас о нас', 'ключевые слова о нас о нас о нас'),
 (3, 3, 'meta_title Сотрудничество', 'meta_desc Сотрудничество', 'meta_keyword Сотрудничество'),
 (4, 4, 'meta_title Фермерским хозяйствам', 'meta_desc Фермерским хозяйствам', 'meta_keyword Фермерским хозяйствам'),
 (12, 13, 'КонтактыКонтакты', 'КонтактыКонтакты', 'КонтактыКонтакты');
@@ -306,7 +337,6 @@ CREATE TABLE `tags` (
 --
 
 INSERT INTO `tags` (`tag_id`, `tag_name`, `tag_link`) VALUES
-(1, 'законы', 'zakoni'),
 (2, 'экспорт', 'eksport'),
 (3, 'пищепроизводство', 'pischeproizvodstvo'),
 (4, 'коррупция', 'korruptsiya'),
@@ -333,20 +363,17 @@ CREATE TABLE `tags_to_news` (
 --
 
 INSERT INTO `tags_to_news` (`id`, `new_id`, `tag_id`) VALUES
-(1, 51, 1),
 (2, 51, 2),
-(3, 53, 2),
-(4, 47, 1),
 (5, 47, 2),
 (6, 48, 2),
 (7, 49, 3),
 (8, 49, 2),
 (9, 49, 4),
-(10, 50, 1),
 (11, 50, 5),
 (12, 52, 5),
 (13, 52, 3),
-(14, 53, 3);
+(37, 53, 2),
+(38, 53, 3);
 
 -- --------------------------------------------------------
 
@@ -381,6 +408,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`category_id`);
+
+--
+-- Индексы таблицы `category_meta`
+--
+ALTER TABLE `category_meta`
+  ADD PRIMARY KEY (`meta_category_id`);
 
 --
 -- Индексы таблицы `comments`
@@ -460,10 +493,15 @@ ALTER TABLE `users`
 ALTER TABLE `category`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
+-- AUTO_INCREMENT для таблицы `category_meta`
+--
+ALTER TABLE `category_meta`
+  MODIFY `meta_category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
 -- AUTO_INCREMENT для таблицы `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 --
 -- AUTO_INCREMENT для таблицы `forum`
 --
@@ -473,17 +511,17 @@ ALTER TABLE `forum`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `new_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `new_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT для таблицы `news_content`
 --
 ALTER TABLE `news_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT для таблицы `news_meta`
 --
 ALTER TABLE `news_meta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT для таблицы `pages`
 --
@@ -503,7 +541,7 @@ ALTER TABLE `tags`
 -- AUTO_INCREMENT для таблицы `tags_to_news`
 --
 ALTER TABLE `tags_to_news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --

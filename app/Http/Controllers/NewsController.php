@@ -69,8 +69,9 @@ class NewsController extends Controller
 									'news' => $news, 
 									'categories' => $categories,
 									'pages' => $pages, 
-								])->withTitle('Новости')
-								->withDescription('Новости Description')
+								])->withTitle('Новости - Новости аграрного сектора Украины, мира, Европы')
+								->withDescription('Новости аграрного сектора Украины, импорт, экспорт, новости животноводства, посевные культуры')
+								->withKeywords('Аграрные новости Украины, агроновости, новости Украины, животноводство, растениеводство, импорт, экспорт, зерно')
 								->render();
 			
 			return (new Response($view))->header('charset', 'utf-8');
@@ -147,6 +148,7 @@ class NewsController extends Controller
 									'comments' => $comments, 
 								])->withTitle($new[0]['new_title'])
 								->withDescription($new[0]['new_desc'])
+								->withKeywords($new[0]['new_key'])
 								->render();
 			
 			return (new Response($single))->header('charset', 'utf-8');
@@ -244,8 +246,9 @@ class NewsController extends Controller
 									'news' => $news, 
 									'categories' => $categories,
 									'pages' => $pages, 
-								])->withTitle('Новости')
-								->withDescription('Новости Description')
+								])->withTitle('Новости - Новости аграрного сектора Украины, мира, Европы')
+								->withDescription('Новости аграрного сектора Украины, импорт, экспорт, новости животноводства, посевные культуры')
+								->withKeywords('Аграрные новости Украины, агроновости, новости Украины, животноводство, растениеводство, импорт, экспорт, зерно, порты')
 								->render();
 			
 			return (new Response($view))->header('charset', 'utf-8');

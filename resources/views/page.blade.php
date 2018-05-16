@@ -23,7 +23,7 @@
 				
 				<h3>{{ $val['title'] }}</h3>
 				<img src="/public/path/pages/{{ $val['img'] }}" alt="" />
-				<p>{!! $val['text'] !!}</p>
+				{!! $val['text'] !!}
 				
 				<div style="clear: both;"></div>
 			@endforeach

@@ -66,4 +66,23 @@ class CategoryModel extends Model
 		DB::table('category')->where('category_id', $id)->delete();
 		
 	}
+	
+	
+	
+	
+	/**
+	* get meta info from this category 
+	*/
+	public function getMetaInfo($id){
+		
+		$category_meta = DB::table('category_meta')->where('category_id', $id)->get();
+		
+		return $category_meta;
+		
+	}
+	
+	
+	
+	
+	
 }

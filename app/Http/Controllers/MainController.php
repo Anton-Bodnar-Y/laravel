@@ -82,8 +82,9 @@ class MainController extends Controller
 									'categories' => $categories, 
 									'newsFlag' => $newsFlag, 
 									'pages' => $pages,
-								])->withTitle('Главная')
-								->withDescription('Главная Description')
+								])->withTitle('Главная - Новости аграрного сектора Украины, мира, Европы')
+								->withDescription('Новости аграрного сектора Украины, импорт, экспорт, новости животноводства, посевные культуры')
+								->withKeywords('Аграрные новости Украины, новости Украины, животноводство, посевная, экспорт пшеницы, агроэкспорт')
 								->render();
 			
 			return (new Response($view))->header('charset', 'utf-8');

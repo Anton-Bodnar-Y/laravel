@@ -43,8 +43,9 @@ class PagesController extends Controller
 		//dump($page);
 		
 		$view = view('page', ['page' => $page, 'pages' => $pages, 'categories' => $categories,])
-								->withTitle($page[0]['title'])
-								->withDescription('Главная Description')
+								->withTitle($page[0]['meta_title'])
+								->withDescription($page[0]['meta_desc'])
+								->withKeywords($page[0]['meta_keyword'])
 								->render();
 			
 			return (new Response($view))->header('charset', 'utf-8');
