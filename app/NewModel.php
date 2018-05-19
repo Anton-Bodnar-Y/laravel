@@ -432,4 +432,23 @@ class NewModel extends Model
 	
 	
 	
+	
+	
+	
+	/**
+	* GET LIST NEWS FOR FLAGS in ADMIN
+	*/
+    public function getNewsForFlags(){
+		//$news = DB::table('news')->orderBy('new_id', 'desc');
+		$news = DB::table('news')
+								->orderBy('new_id', 'desc')
+								->skip(0)->take(100)
+								->get();
+		return $news;
+	}
+	
+	
+	
+	
+	
 }

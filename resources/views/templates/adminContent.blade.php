@@ -52,7 +52,7 @@
                     <li><a href="{{ route('admin/categories') }}">Категории</a></li>
                     <li><a href="{{ route('admin/tags') }}">Теги</a></li>
                     <li><a href="{{ route('admin/pages') }}">Информ-страницы</a></li>
-                    <li><a href="{{ route('admin/users') }}">Пользователи</a></li>
+                    <li><a href="{{ route('admin/flags') }}">FLAGS</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -269,6 +269,22 @@ hr{
 .panel-body a{
 	color: #E37B40;
 }
+
+
+
+
+
+
+
+.formFlags tbody tr td{
+	padding: 8px;
+}
+.formFlags thead tr th{
+	padding: 8px;
+}
+
+
+
 
 </style>
 

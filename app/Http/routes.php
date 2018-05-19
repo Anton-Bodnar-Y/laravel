@@ -67,6 +67,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	Route::get('/categories', ['uses'=>'Admin\AdminCategoriesController@getIndex', 'as'=>'admin/categories']);
 	Route::get('/tags', ['uses'=>'Admin\AdminTagsController@getIndex', 'as'=>'admin/tags']);
 	Route::get('/pages', ['uses'=>'Admin\AdminPagesController@getIndex', 'as'=>'admin/pages']);
+	Route::get('/flags', ['uses'=>'Admin\AdminFlagsController@getIndex', 'as'=>'admin/flags']);
 	Route::get('/users', ['uses'=>'Admin\AdminUsersController@getIndex', 'as'=>'admin/users']);
 	
 	/**
@@ -143,6 +144,17 @@ Route::group(['prefix'=>'admin', 'middleware'=>"auth"], function(){
 	* DELETE page
 	*/
 	Route::get('/delete/page/{id}', ['uses'=>'Admin\AdminPagesController@deletePage', 'as'=>'admin/delete/page']);
+	
+	
+	
+	
+	
+	
+	/**
+	* SAVE page
+	*/
+	//Route::get('/save/flags', ['uses'=>'Admin\AdminPagesController@addPage', 'as'=>'save/flags']);
+	Route::post('/saveflags', ['uses'=>'Admin\AdminFlagsController@saveFlags', 'as'=>'saveflags']);
 	
 	
 });
