@@ -25,7 +25,7 @@ class SaveFlagsRequest extends Request
     {
         return [
             //
-            'newId'=>'required|min:2|max:7',
+            'newId'=>'required|min:2|max:15',
         ];
     }
 }

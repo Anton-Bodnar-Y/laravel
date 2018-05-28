@@ -10,10 +10,6 @@
 
 
 
-
-
-
-
 @section('content')
 		
 		<div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -83,19 +79,19 @@
 				
 				
 				<?php
-				$text = $new[0]['news_title']; // текст твита
+				$title_twi = $new[0]['news_title']; // текст твита
 				$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  // ссылка на страницу
 				$hashtags = 'агро,Украина';
 				?>
-				<a class="twitterLink" href="http://twitter.com/share?text=<?php echo $title; ?>&related=truemisha&hashtags=<?php echo $hashtags ?>&url=<?php echo $url; ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Twitter</a>
+				<a class="twitterLink" href="http://twitter.com/share?text=<?php echo $title_twi; ?>&related=truemisha&hashtags=<?php echo $hashtags ?>&url=<?php echo $url; ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Twitter</a>
 				
 				<?php
-				$title = $new[0]['news_title']; // заголовок
+				$title_fb = $new[0]['news_title']; // заголовок
 				$summary = $val['short_desc']; // анонс поста
 				$url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  // ссылка на страницу
 				$image_url = '../../public/path/' . $val['img']; // URL изображения
 				?>
-				<a class="facebookLink" href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">Facebook</a>
+				<a class="facebookLink" href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title_fb ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">Facebook</a>
 				
 				
 			@endforeach

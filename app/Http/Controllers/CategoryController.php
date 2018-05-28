@@ -31,7 +31,7 @@ class CategoryController extends Controller
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNewsFromCategory(4, $id);
+			$news = $NewModel->getNewsFromCategory(7, $id);
 			
 			
 			
@@ -69,9 +69,9 @@ class CategoryController extends Controller
 									'news' => $news, 
 									'categories' => $categories,
 									'pages' => $pages, 
-								])->withTitle($category_meta[0]['category_title'])
-								->withDescription($category_meta[0]['category_desc'])
-								->withKeywords($category_meta[0]['category_key'])
+								])->withTitle('Title category')
+								->withDescription('Description category')
+								->withKeywords('Keywords category')
 								->render();
 			
 			return (new Response($category))->header('charset', 'utf-8');

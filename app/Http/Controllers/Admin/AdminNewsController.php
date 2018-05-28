@@ -40,7 +40,7 @@ class AdminNewsController extends Controller
 			* get all news
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNews(4);
+			$news = $NewModel->getNews(20);
 			
 			/*
 			* call view

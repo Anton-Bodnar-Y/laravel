@@ -33,7 +33,7 @@ class NewsController extends Controller
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNews(4);
+			$news = $NewModel->getNews(7);
 			
 			
 			
@@ -178,7 +178,7 @@ class NewsController extends Controller
 			* get news for homePage
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNewsTag($tag_id, 4);
+			$news = $NewModel->getNewsTag($tag_id, 7);
 			
 			/*
 			* get list categories
@@ -224,7 +224,7 @@ class NewsController extends Controller
 			* get news for search
 			**/
 			$NewModel = new NewModel;
-			$news = $NewModel->getNewsSearch(4, $request->searchText);
+			$news = $NewModel->getNewsSearch(7, $request->searchText);
 			
 			/*
 			* get list categories

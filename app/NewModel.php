@@ -37,6 +37,7 @@ class NewModel extends Model
 							->join('tags', 'tags.tag_id', '=', 'tags_to_news.tag_id')
 							->join('news', 'news.new_id', '=', 'tags_to_news.new_id')
 							->where('tags.tag_id', $id)
+							->orderBy('news.new_id', 'desc')
 							->paginate($paginate);
 		return $news;
 		
@@ -56,7 +57,7 @@ class NewModel extends Model
 		//$news = DB::table('news')->orderBy('new_id', 'desc');
 		$news = DB::table('news')
 								->orderBy('new_id', 'desc')
-								->skip(0)->take(10)
+								->skip(0)->take(20)
 								->get();
 		return $news;
 	}
@@ -154,7 +155,7 @@ class NewModel extends Model
 		
 		$newsFlag = DB::table('news')
 								->where('flag', 'flag')
-								->orderBy('new_id', 'desc')->skip(0)->take(5)
+								->orderBy('new_id', 'desc')->skip(0)->take(15)
 								->get();
 		
 		return $newsFlag;

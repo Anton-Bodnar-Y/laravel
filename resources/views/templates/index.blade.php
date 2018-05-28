@@ -127,10 +127,10 @@
 					</div>
 					<div class="right-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<h3><span style="font-size: 22px;" class="glyphicon glyphicon-earphone"></span>&#160;Контакты</h3>
-						<p>Украина, г. Харьков, пр-т Московский, 95/2</p>
-						<p>тел.: &nbsp;&nbsp;&nbsp; 050-219-64-16, &nbsp;&nbsp;&nbsp; 095-731-51-80, &nbsp;&nbsp;&nbsp; 057-859-95-56</p>
-						<p>skupe: &nbsp;&nbsp;&nbsp; anton_bodnar</p>
-						<p>email: &nbsp;&nbsp;&nbsp; bodnar_anton@ukr.net</p>
+						<p>Украина, Харьковская обл., Харьков</p>
+						<p>тел.: &nbsp;&nbsp;&nbsp; +38 (050) 406-23-02, &nbsp;&nbsp;&nbsp; +38 (067) 682-24-02</p>
+						<p>skupe: &nbsp;&nbsp;&nbsp; .......</p>
+						<p>email: &nbsp;&nbsp;&nbsp; khaskom_trade@ukr.net</p>
 					</div>
 					
 					
@@ -138,7 +138,7 @@
 				</div>
 				
 				<div class="bottomBlock col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					© 2011 ESA, European Society for Agronomy
+					<?php echo "© 2018 - " . Date('Y') . " Agro-News, аграрные новости Украины" ?>
 				</div>
 				
 			</footer>

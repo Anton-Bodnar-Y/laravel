@@ -25,7 +25,6 @@
 					
 						
 						
-						{{ dump($listTags) }}
 						
 						
 						

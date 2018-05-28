@@ -3,6 +3,7 @@
 	<settings><PM_URL><![CDATA[E:/OSPanel/domains/work]]></PM_URL><PM_HOME_URL><![CDATA[E:/OSPanel/domains/work]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";E:\OSPanel\domains\work\resources\views\templates\Codelobster0.php;"/><added value=""/><lastopfiles>
 		<file name="E:\OSPanel\domains\work\app\Http\routes.php"/>
 		<file name="E:\OSPanel\domains\work\resources\views\single.blade.php"/>
+		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php"/>
 	</lastopfiles>
 	<todoblock>
 		<todofile name="E:\OSPanel\domains\work\vendor\symfony\css-selector\XPath\Extension\FunctionExtension.php">
@@ -27,6 +28,8 @@
 			<todo name="TODO" pos="21;1821"/>
 		</todofile>
 	</todoblock>
+	<dbgurls>
+	</dbgurls>
 	<filescache>
 		<file name="E:\OSPanel\domains\work\vendor\webmozart\assert\tests\AssertTest.php" crc="1517070277"/>
 		<file name="E:\OSPanel\domains\work\vendor\webmozart\assert\src\Assert.php" crc="1517070276"/>
@@ -4365,7 +4368,7 @@
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6e8efa4ea0228be851afb8f2b555d2fe8b926fb5.php" crc="1526581890"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6c8dfbf629ccc8c2b79d4f25f8171ce32f69c392.php" crc="1520097607"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6a5a4098d1e6ffc922e87d4345e9d4c61ee93585.php" crc="1517088437"/>
-		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1524509619"/>
+		<file name="E:\OSPanel\domains\work\storage\framework\views\68645786f8e11657018171a0c764d26c8b137469.php" crc="1527182606"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\6524d701f6693736574ad9cdee93f715c681e691.php" crc="1517088379"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\640602d87e32c1e8044b609cba11cb6943244601.php" crc="1525430825"/>
 		<file name="E:\OSPanel\domains\work\storage\framework\views\601cd0b81f8a3f12839467703fdc61939f038f6a.php" crc="1517141504"/>
@@ -4425,7 +4428,7 @@
 		<file name="E:\OSPanel\domains\work\resources\views\page.blade.php" crc="1526496175"/>
 		<file name="E:\OSPanel\domains\work\resources\views\news.blade.php" crc="1524337039"/>
 		<file name="E:\OSPanel\domains\work\resources\views\myform.php" crc="1521883795"/>
-		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1524509616"/>
+		<file name="E:\OSPanel\domains\work\resources\views\main.blade.php" crc="1527182603"/>
 		<file name="E:\OSPanel\domains\work\resources\views\category.blade.php" crc="1524337580"/>
 		<file name="E:\OSPanel\domains\work\resources\views\!!! home.blade.php" crc="1517137069"/>
 		<file name="E:\OSPanel\domains\work\resources\lang\en\validation.php" crc="1517070163"/>
