@@ -15,13 +15,50 @@ class CommentModel extends Model
 	*/
     public function writeComment($request){
     	
-		DB::table('comments')->insert(['name' => $request->name,
-									'news_id' => $request->news_id,
-									'email' => $request->email,
-									'text' => $request->comment,
+    	
+    	function validName($str){
+			
+			$str = strip_tags($str);
+			return $str;
+			
+		}
+		
+		function validNewsId($str){
+			
+			$str = strip_tags($str);
+			return $str;
+			
+		}
+		
+		function validMail($str){
+			
+			$str = strip_tags($str);
+			return $str;
+			
+		}
+		
+		function validComment($str){
+			
+			$str = strip_tags($str);
+			return $str;
+			
+		}
+		
+		$name = validName($request->name);
+		$news_id = validNewsId($request->news_id);
+		$email = validMail($request->email);
+		$comment = validComment($request->comment);
+		
+		
+    	
+    	
+		DB::table('comments')->insert(['name' => $name,
+									'news_id' => $news_id,
+									'email' => $email,
+									'text' => $comment,
 									'date' => time(),
 									]);
-													
+									
 	}
 	
 	

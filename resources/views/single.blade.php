@@ -36,7 +36,7 @@
 			<div class="new col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			
 			@foreach($new as $val)
-				<h3 class="title">{{ $val['news_title'] }}</h3>
+				<h1 class="title">{{ $val['news_title'] }}</h1>
 				<p class="date"><span class="glyphicon glyphicon-calendar"></span>&#160;{{ date('j-m-o, G:i', $val['date']) }}</p>
 				<p class="top_img"><img src="../../public/path/{{ $val['img'] }}" alt=""/></p>
 				<div class="text_article">{!! $val['text'] !!}</div>
@@ -129,8 +129,6 @@
 			<div class="comments col-lg-offset-2 col-md-offset-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				
 				
-				
-				
 				<p><i>Комментарии:</i></p>
 				<hr/>
 				@if(empty($comments))
@@ -155,10 +153,20 @@
 				
 				<hr/>
 				
+				@if(count($errors) > 0)
+				<div class="alert alert-danger">
+					<ul>
+						@foreach($errors->all() as $error)
+							<li style="color: #ba0000; font-size: 14px;">- {{ $error }}</li>
+						@endforeach
+					</ul>
+				</div>
+				@endif
+				
 				<form id="form" method="POST">
-					<label>Имя:<br/><input type="text" name="name" class="inputText" id="name"/></label><br/>
-					<label>Почта:<br/><input type="text" name="email" class="inputText" id="email"/></label><br/>
-					<label>Текст комментария:<br/><textarea name="textConnemt" id="comment"></textarea></label><br/>
+					<label>Имя:<br/><input type="text" name="name" class="inputText" id="name" required/></label><br/>
+					<label>Почта:<br/><input type="text" name="email" class="inputText" id="email" required/></label><br/>
+					<label>Текст комментария:<br/><textarea name="textConnemt" id="comment" required></textarea></label><br/>
 					
 					<input type="hidden" name="news_id" value="{{ $new[0]['new_id'] }}" id="news_id"/>
 					

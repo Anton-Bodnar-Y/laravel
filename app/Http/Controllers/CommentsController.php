@@ -11,13 +11,24 @@ use Illuminate\Http\Response;
 use App\CommentModel;
 
 
+
+
+
+
+
+
 class CommentsController extends Controller
 {
     //
     public function getIndex(Request $request){
 		
-		//return 'NAME: ' . $request->name . ', MAIL: ' . $request->email;
 		$request->flash();
+		
+		/*if(count($request->all()) > 1){
+			//return dump($request->comment);
+			return strip_tags($request->comment);
+		}*/
+		
 		/*
 		* write comment to DB
 		**/

@@ -8,22 +8,37 @@
 	<meta name="keywords" content="{{ isset($keywords) ? $keywords : ''}}" >
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<link rel="icon" type="path-to/favicon.ico" href="{{ url('public/img/favicon.ico') }}">
-		
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
-		<link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet" >
-		
-		<!-- НОВОЕ ПОДКЛЮЧЕНИЕ -->
-		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/reset.css') }}" />
-		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/bootstrap.css') }}" />
-		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.css') }}" />
-		
-		<!--<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.less') }}" />
-		<link rel="stylesheet" type="text/css" href="{{ url('public/assets/js/less.js') }}" />-->
-		
-	</head>
-	<body>
+	
+	<link rel="icon" type="path-to/favicon.ico" href="{{ url('public/img/favicon.ico') }}">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet" >
+	
+	<!-- НОВОЕ ПОДКЛЮЧЕНИЕ -->
+	<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/reset.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/bootstrap.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.css') }}" />
+	
+	<!--<link rel="stylesheet" type="text/css" href="{{ url('public/assets/css/styles.less') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url('public/assets/js/less.js') }}" />-->
+	
+	
+	
+	
+	
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120802999-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-120802999-1');
+	</script>
+
+	
+</head>
+<body>
 
 
 
@@ -32,7 +47,7 @@
 	<header id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="top-header col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
 			<a class="logo" href="{{ route('main') }}"><img src="../../public/img/7575757.png" alt="" /></a>
-			<p>NewsArgo - Аграрные новости Украины и Мира. Новости зернового и масличного рынка, законы, рейдерство, коррупция в аграрном секторе, аналитика цен на продукцию мировых и украинских аграриев.</p>
+			<p>Argo-Inform - Аграрные новости Украины и Мира. Новости зернового и масличного рынка, законы, рейдерство, коррупция в аграрном секторе, аналитика цен на продукцию мировых и украинских аграриев.</p>
 			
 			
 			
@@ -129,8 +144,8 @@
 						<h3><span style="font-size: 22px;" class="glyphicon glyphicon-earphone"></span>&#160;Контакты</h3>
 						<p>Украина, Харьковская обл., Харьков</p>
 						<p>тел.: &nbsp;&nbsp;&nbsp; +38 (050) 406-23-02, &nbsp;&nbsp;&nbsp; +38 (067) 682-24-02</p>
-						<p>skupe: &nbsp;&nbsp;&nbsp; .......</p>
-						<p>email: &nbsp;&nbsp;&nbsp; khaskom_trade@ukr.net</p>
+						<p>skype: &nbsp;&nbsp;&nbsp; .......</p>
+						<p>email: &nbsp;&nbsp;&nbsp; agroinformua@gmail.com</p>
 					</div>
 					
 					
